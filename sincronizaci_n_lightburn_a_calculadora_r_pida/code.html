@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#006731", "on-tertiary": "#003918", "primary": "#c3f5ff", "secondary-container": "#fd6c00", "error": "#ffb4ab", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "on-tertiary-fixed-variant": "#005226", "secondary": "#ffb692", "secondary-fixed-dim": "#ffb692", "on-secondary-fixed-variant": "#7a3000", "on-background": "#dde3ee", "surface-container-highest": "#2f353e", "on-error": "#690005", "error-container": "#93000a", "surface-container-lowest": "#090f16", "surface-bright": "#343a42", "inverse-primary": "#006875", "tertiary-fixed": "#62ff96", "primary-container": "#00e5ff", "on-primary-fixed-variant": "#004f58", "surface-container-high": "#242a33", "on-tertiary-fixed": "#00210b", "on-surface": "#dde3ee", "primary-fixed-dim": "#00daf3", "background": "#0e141c", "primary-fixed": "#9cf0ff", "on-secondary": "#562000", "surface": "#0e141c", "on-secondary-fixed": "#341100", "secondary-fixed": "#ffdbcb", "tertiary-container": "#22ef7e", "inverse-surface": "#dde3ee", "surface-tint": "#00daf3", "surface-container-low": "#161c24", "on-error-container": "#ffdad6", "inverse-on-surface": "#2b3139", "surface-container": "#1a2028", "tertiary": "#b1ffbf", "on-primary": "#00363d", "tertiary-fixed-dim": "#00e475", "surface-dim": "#0e141c", "on-secondary-container": "#562000", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "on-primary-container": "#00626e", "outline": "#849396" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin-mobile": "1rem", "margin": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-md": ["Inter"], "metric-md": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "code-param": ["JetBrains Mono"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-sm": ["Inter"], "headline-md": ["Space Grotesk"], "metric-xl": ["JetBrains Mono"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "metric-md": ["16px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-param": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "title-sm": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }], "metric-xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.03em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,229,255,0.2)]"><span class="material-symbols-outlined text-[20px]">blur_on</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">OpticCut</span><span class="font-metric-md text-code-param text-primary-container leading-none">20W</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#22ef7e]"></span><span class="font-label-mono text-label-mono text-tertiary uppercase">Diodo 20W • Listo</span></div></div></div><div class="flex items-center gap-space-sm"><button aria-label="Estado de conexión máquina" class="h-11 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded flex items-center gap-1.5 transition-colors" type="button"><span class="material-symbols-outlined text-primary-container text-[18px]">link</span><span class="font-label-mono text-label-mono text-on-surface uppercase hidden sm:inline">Conectado</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full gap-space-md">
+<!-- Sub-header de Sincronización Telemetría -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">sync_alt</span>
+<span class="font-label-mono text-label-mono text-primary-container uppercase tracking-wider">Taller Sync Core</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-tertiary-container/10">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">Enlace Bidireccional</span>
+</div>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface">LightBurn <span class="text-primary-container">⇄</span> Calc Rápida</h1>
+</div>
+<!-- Tarjeta de Archivo Activo con Metadatos -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center shrink-0 text-secondary-container">
+<span class="material-symbols-outlined text-[16px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Archivo Activo</span>
+<span class="font-metric-md text-code-param text-on-surface truncate">caja_alhajero_3mm.lbrn2</span>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded bg-primary-container/15 text-primary-container font-label-mono text-label-mono uppercase shrink-0">Sincronizado</span>
+</div>
+<!-- Selector Horizontal de Capas .lbrn2 -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Seleccionar Capa LightBurn</span>
+<span class="font-label-mono text-label-mono text-primary-container" id="active-layer-indicator">C02 ACTIVA</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5" id="layer-selector-group">
+<!-- Capa C02 (Default activa) -->
+<button class="layer-btn flex flex-col p-2 rounded bg-surface-container-highest text-left transition-all relative overflow-hidden shadow-sm" data-layer="C02" onclick="selectLayer('C02', this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-mono text-label-mono text-secondary-container font-bold">C02</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface mt-1 font-semibold truncate">Corte Huecos</span>
+<span class="font-metric-md text-[10px] text-on-surface-variant leading-none mt-0.5">90% · 400 mm</span>
+<div class="indicator-bar absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container"></div>
+</button>
+<!-- Capa C01 -->
+<button class="layer-btn flex flex-col p-2 rounded bg-surface-container text-left transition-all relative overflow-hidden opacity-75" data-layer="C01" onclick="selectLayer('C01', this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-mono text-label-mono text-on-surface-variant font-bold">C01</span>
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface mt-1 font-semibold truncate">Grabado</span>
+<span class="font-metric-md text-[10px] text-on-surface-variant leading-none mt-0.5">24% · 3500</span>
+<div class="indicator-bar absolute bottom-0 left-0 right-0 h-0.5 bg-transparent"></div>
+</button>
+<!-- Capa C00 -->
+<button class="layer-btn flex flex-col p-2 rounded bg-surface-container text-left transition-all relative overflow-hidden opacity-75" data-layer="C00" onclick="selectLayer('C00', this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-mono text-label-mono text-on-surface-variant font-bold">C00</span>
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface mt-1 font-semibold truncate">Corte Perim.</span>
+<span class="font-metric-md text-[10px] text-on-surface-variant leading-none mt-0.5">85% · 420 mm</span>
+<div class="indicator-bar absolute bottom-0 left-0 right-0 h-0.5 bg-transparent"></div>
+</button>
+</div>
+</div>
+</div>
+<!-- Visualizador y Comparador en Cascada / Dos Vías -->
+<div class="flex flex-col gap-2">
+<!-- Tarjeta 1: Parámetro en Archivo .lbrn2 -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">folder_open</span>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider">Entrada .lbrn2 Nativo</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant px-1.5 py-0.5 rounded bg-surface-container">Sin Procesar</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center py-1">
+<div class="flex flex-col p-2 rounded bg-surface-container items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Potencia</span>
+<span class="font-metric-md text-metric-md text-on-surface mt-0.5" id="src-power">90%</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Velocidad</span>
+<span class="font-metric-md text-metric-md text-on-surface mt-0.5" id="src-speed">400</span>
+<span class="font-label-mono text-[9px] text-outline">mm/m</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Pases</span>
+<span class="font-metric-md text-metric-md text-on-surface mt-0.5" id="src-passes">1</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Air Assist</span>
+<span class="font-metric-md text-metric-md text-tertiary mt-0.5" id="src-air">M8 ON</span>
+</div>
+</div>
+</div>
+<!-- Conector / Transformador IA Tuning -->
+<div class="relative py-1 flex items-center justify-center">
+<div class="w-full bg-surface-container-high rounded-full p-1.5 flex items-center justify-between px-3 shadow-inner">
+<div class="flex items-center gap-1.5">
+<div class="w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span>
+</div>
+<span class="font-label-mono text-label-mono text-primary font-semibold uppercase">OpticCut IA Tuning</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+<span class="font-label-mono text-label-mono font-bold" id="tuning-badge">+12% vel. óptima</span>
+</div>
+</div>
+</div>
+<!-- Tarjeta 2: Ajuste Calculadora Rápida Aplicado -->
+<div class="w-full bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-md shadow-primary-container/5">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">tune</span>
+<span class="font-label-mono text-label-mono text-primary-container uppercase tracking-wider font-semibold">Cálculo Rápido Optimizado</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-primary-fixed bg-primary-fixed px-2 py-0.5 rounded uppercase font-bold">20W Perfil</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center py-1">
+<div class="flex flex-col p-2 rounded bg-surface-container-highest items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Potencia</span>
+<span class="font-metric-xl text-metric-md text-primary-container font-bold mt-0.5" id="tgt-power">85%</span>
+<span class="font-label-mono text-[9px] text-tertiary">-5% vida útil</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container-highest items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Velocidad</span>
+<span class="font-metric-xl text-metric-md text-primary-container font-bold mt-0.5" id="tgt-speed">450</span>
+<span class="font-label-mono text-[9px] text-primary">mm/min</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container-highest items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Pases</span>
+<span class="font-metric-xl text-metric-md text-on-surface font-bold mt-0.5" id="tgt-passes">1</span>
+<span class="font-label-mono text-[9px] text-on-surface-variant">Limpio</span>
+</div>
+<div class="flex flex-col p-2 rounded bg-surface-container-highest items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase text-[9px]">Foco Z</span>
+<span class="font-metric-xl text-metric-md text-secondary font-bold mt-0.5" id="tgt-focus">20.0</span>
+<span class="font-label-mono text-[9px] text-outline">mm galga</span>
+</div>
+</div>
+<!-- Barra de Carga Térmica y Estrés de Diodo -->
+<div class="mt-1 p-2 rounded bg-surface-container-lowest flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-mono">
+<span class="text-on-surface-variant font-label-mono uppercase text-[10px]">Carga de Trabajo Diodo Láser</span>
+<span class="text-primary-container font-label-mono text-[10px]" id="duty-label">4.25W/mm² (Nominal Óptimo)</span>
+</div>
+<div class="flex gap-1 h-2 w-full">
+<div class="flex-1 rounded-sm bg-primary-container"></div>
+<div class="flex-1 rounded-sm bg-primary-container"></div>
+<div class="flex-1 rounded-sm bg-primary-container"></div>
+<div class="flex-1 rounded-sm bg-secondary-container"></div>
+<div class="flex-1 rounded-sm bg-surface-bright"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel Diagnóstico de Compatibilidad Diodo 20W -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">verified_user</span>
+<span class="font-title-sm text-title-sm text-on-surface">Diagnóstico Diodo 20W (MDF 3mm)</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Check Seguro -->
+<div class="flex items-start gap-2.5 p-2.5 rounded bg-tertiary-container/10">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-semibold">Corte Libre de Carbonizado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="diag-positive">
+            Velocidad segura a 450 mm/min: Mayor penetración óptica por pulso, minimiza rebabas y reduce el riesgo de llama en MDF de 3mm.
+          </p>
+</div>
+</div>
+<!-- Advertencia Preventiva -->
+<div class="flex items-start gap-2.5 p-2.5 rounded bg-secondary-container/10">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-semibold">Calibración de Asistencia de Aire</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="diag-warn">
+            Mantenga la boquilla a 2.5 bar constante. La capa C01 usa 24% de potencia: perfecto para sombreado sepia sin profundizar en la veta.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Acciones Rápidas Ergonómicas -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full py-3 px-space-md rounded bg-primary-container text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-all" id="btn-sync-send" type="button">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span>Cargar a Calculadora y Enviar a Máquina</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-mono text-label-mono uppercase flex items-center justify-center gap-2 transition-colors" id="btn-overwrite" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">save</span>
+<span>Sobrescribir archivo .lbrn2</span>
+</button>
+<div class="flex justify-center pt-1 pb-2">
+<a class="inline-flex items-center gap-1 font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container uppercase transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Volver al Lector LightBurn</span>
+</a>
+</div>
+</div>
+<!-- Toast Notification Inline Interactiva -->
+<div class="fixed top-20 left-4 right-4 z-50 p-3 rounded bg-surface-container-highest text-on-surface shadow-xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none transform -translate-y-2" id="toast-notify">
+<span class="material-symbols-outlined text-primary-container text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-text">Sincronización completada con éxito.</span>
+</div>
+</div>
+<script>
+  const layerData = {
+    'C02': {
+      name: 'Corte Huecos',
+      srcPower: '90%',
+      srcSpeed: '400',
+      srcPasses: '1',
+      srcAir: 'M8 ON',
+      tgtPower: '85%',
+      tgtSpeed: '450',
+      tgtPasses: '1',
+      tgtFocus: '20.0',
+      badge: '+12% vel. óptima',
+      duty: '4.25W/mm² (Nominal Óptimo)',
+      diagPositive: 'Velocidad segura a 450 mm/min: Mayor penetración óptica por pulso, minimiza rebabas y reduce el riesgo de llama en MDF de 3mm.',
+      diagWarn: 'Mantenga la boquilla a 2.5 bar constante. Flujo continuo previene el ahumado en las aristas interiores.'
+    },
+    'C01': {
+      name: 'Grabado Raster',
+      srcPower: '24%',
+      srcSpeed: '3500',
+      srcPasses: '1',
+      srcAir: 'M7 LOW',
+      tgtPower: '22%',
+      tgtSpeed: '3800',
+      tgtPasses: '1',
+      tgtFocus: '21.5',
+      badge: '+8% contraste limpio',
+      duty: '1.20W/mm² (Grabado Frío)',
+      diagPositive: 'Paso fino de 0.08mm calibrado. Ausencia total de micro-carbonizado sobre chapado natural.',
+      diagWarn: 'La capa C01 usa 22% de potencia: idóneo para tonos sepia limpios sin hendidura táctil en el MDF.'
+    },
+    'C00': {
+      name: 'Corte Perimetral',
+      srcPower: '85%',
+      srcSpeed: '420',
+      srcPasses: '1',
+      srcAir: 'M8 ON',
+      tgtPower: '80%',
+      tgtSpeed: '460',
+      tgtPasses: '1',
+      tgtFocus: '20.0',
+      badge: '+10% ciclo rápido',
+      duty: '4.10W/mm² (Margen Seguro)',
+      diagPositive: 'Corte periférico continuo: El ajuste a 460 mm/min garantiza desprendimiento limpio sin fijación de esquinas.',
+      diagWarn: 'Asegurar soportes tipo panal limpios para evitar reflexión posterior del haz láser azul de 450nm.'
+    }
+  };
+
+  function selectLayer(layerKey, clickedBtn) {
+    const data = layerData[layerKey];
+    if (!data) return;
+
+    // Actualizar estados visuales de botones
+    const buttons = document.querySelectorAll('.layer-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-surface-container-highest', 'shadow-sm');
+      btn.classList.add('bg-surface-container', 'opacity-75');
+      const bar = btn.querySelector('.indicator-bar');
+      if (bar) bar.className = 'indicator-bar absolute bottom-0 left-0 right-0 h-0.5 bg-transparent';
+    });
+
+    clickedBtn.classList.remove('bg-surface-container', 'opacity-75');
+    clickedBtn.classList.add('bg-surface-container-highest', 'shadow-sm');
+    const activeBar = clickedBtn.querySelector('.indicator-bar');
+    if (activeBar) activeBar.className = 'indicator-bar absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container';
+
+    // Textos de estado
+    document.getElementById('active-layer-indicator').innerText = layerKey + ' ACTIVA';
+
+    // Asignación de parámetros nativos
+    document.getElementById('src-power').innerText = data.srcPower;
+    document.getElementById('src-speed').innerText = data.srcSpeed;
+    document.getElementById('src-passes').innerText = data.srcPasses;
+    document.getElementById('src-air').innerText = data.srcAir;
+
+    // Asignación de parámetros optimizados
+    document.getElementById('tgt-power').innerText = data.tgtPower;
+    document.getElementById('tgt-speed').innerText = data.tgtSpeed;
+    document.getElementById('tgt-passes').innerText = data.tgtPasses;
+    document.getElementById('tgt-focus').innerText = data.tgtFocus;
+
+    // Badges y Diagnóstico
+    document.getElementById('tuning-badge').innerText = data.badge;
+    document.getElementById('duty-label').innerText = data.duty;
+    document.getElementById('diag-positive').innerText = data.diagPositive;
+    document.getElementById('diag-warn').innerText = data.diagWarn;
+  }
+
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toast-notify');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastText.innerText = msg;
+    toastIcon.innerText = icon;
+
+    toast.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+    }, 2800);
+  }
+
+  document.getElementById('btn-sync-send').addEventListener('click', () => {
+    showToast('Parámetros cargados en memoria y transmitidos a diodo 20W.');
+  });
+
+  document.getElementById('btn-overwrite').addEventListener('click', () => {
+    showToast('caja_alhajero_3mm.lbrn2 sobrescrito con nuevos offsets.', 'save');
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="ia-parametros" href="#"><span class="material-symbols-outlined text-[22px]">target</span><span class="font-label-mono text-label-mono uppercase">IA Calc</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="mi-maquina" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-mono text-label-mono uppercase">Máquina</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="test-lab" href="#"><span class="material-symbols-outlined text-[22px]">science</span><span class="font-label-mono text-label-mono uppercase">Test Lab</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="nuevo-test" href="#"><span class="material-symbols-outlined text-[22px]">add_a_photo</span><span class="font-label-mono text-label-mono uppercase">+ Test</span></a></div></nav></body></html>

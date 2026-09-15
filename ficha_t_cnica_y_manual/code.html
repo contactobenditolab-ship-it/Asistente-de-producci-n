@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#006731", "on-tertiary": "#003918", "primary": "#c3f5ff", "secondary-container": "#fd6c00", "error": "#ffb4ab", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "on-tertiary-fixed-variant": "#005226", "secondary": "#ffb692", "secondary-fixed-dim": "#ffb692", "on-secondary-fixed-variant": "#7a3000", "on-background": "#dde3ee", "surface-container-highest": "#2f353e", "on-error": "#690005", "error-container": "#93000a", "surface-container-lowest": "#090f16", "surface-bright": "#343a42", "inverse-primary": "#006875", "tertiary-fixed": "#62ff96", "primary-container": "#00e5ff", "on-primary-fixed-variant": "#004f58", "surface-container-high": "#242a33", "on-tertiary-fixed": "#00210b", "on-surface": "#dde3ee", "primary-fixed-dim": "#00daf3", "background": "#0e141c", "primary-fixed": "#9cf0ff", "on-secondary": "#562000", "surface": "#0e141c", "on-secondary-fixed": "#341100", "secondary-fixed": "#ffdbcb", "tertiary-container": "#22ef7e", "inverse-surface": "#dde3ee", "surface-tint": "#00daf3", "surface-container-low": "#161c24", "on-error-container": "#ffdad6", "inverse-on-surface": "#2b3139", "surface-container": "#1a2028", "tertiary": "#b1ffbf", "on-primary": "#00363d", "tertiary-fixed-dim": "#00e475", "surface-dim": "#0e141c", "on-secondary-container": "#562000", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "on-primary-container": "#00626e", "outline": "#849396" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin-mobile": "1rem", "margin": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-md": ["Inter"], "metric-md": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "code-param": ["JetBrains Mono"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-sm": ["Inter"], "headline-md": ["Space Grotesk"], "metric-xl": ["JetBrains Mono"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "metric-md": ["16px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-param": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "title-sm": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }], "metric-xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.03em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,229,255,0.2)]"><span class="material-symbols-outlined text-[20px]">blur_on</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">OpticCut</span><span class="font-metric-md text-code-param text-primary-container leading-none">20W</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#22ef7e]"></span><span class="font-label-mono text-label-mono text-tertiary uppercase">Diodo 20W • Listo</span></div></div></div><div class="flex items-center gap-space-sm"><button aria-label="Estado de conexión máquina" class="h-11 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded flex items-center gap-1.5 transition-colors" type="button"><span class="material-symbols-outlined text-primary-container text-[18px]">link</span><span class="font-label-mono text-label-mono text-on-surface uppercase hidden sm:inline">Conectado</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full gap-space-md">
+<!-- Status & Quick Telemetry Ribbon -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-xs rounded shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse shadow-[0_0_8px_#22ef7e]"></span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">DIODO ACTIVO • GRBL 1.1h</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span>PERFIL:</span>
+<span class="text-primary-container font-code-param text-code-param">OPTIC-20W-PRO</span>
+</div>
+</div>
+<!-- Hero Hardware Card: Diodo Cuádruple 20W -->
+<div class="relative bg-surface-container-low rounded p-space-md shadow-md overflow-hidden">
+<div class="absolute -right-8 -top-8 w-36 h-36 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="bg-primary-container/15 text-primary-container font-label-mono text-label-mono px-1.5 py-0.5 rounded uppercase">Módulo Láser Principal</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono px-1.5 py-0.5 rounded">FAS-4X</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface leading-tight">Módulo Óptico Diodo Cuádruple</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tecnología de compresión espacial por haz cuádruple de 5.5W combinados</p>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary-container shadow-[0_0_12px_rgba(0,229,255,0.25)] flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">flare</span>
+</div>
+</div>
+<!-- Visual Focal Compression Blueprint Diagram -->
+<div class="bg-surface-container-lowest rounded p-space-sm mb-space-md relative">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono mb-2">
+<span class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[14px]">adjust</span>
+          DIAGRAMA DE COMPRESIÓN FOCAL (FAC LENS)
+        </span>
+<span class="text-tertiary">EN FOCO: Z = 0.00mm</span>
+</div>
+<div class="relative h-20 w-full flex items-center justify-center">
+<!-- SVG Optical Ray Assembly -->
+<svg class="w-full h-full text-outline" fill="none" viewbox="0 0 340 70" xmlns="http://www.w3.org/2000/svg">
+<!-- 4 Diode Sources -->
+<rect fill="#00E5FF" fill-opacity="0.25" height="8" rx="1" stroke="#00E5FF" stroke-width="0.8" width="16" x="10" y="8"></rect>
+<rect fill="#00E5FF" fill-opacity="0.25" height="8" rx="1" stroke="#00E5FF" stroke-width="0.8" width="16" x="10" y="22"></rect>
+<rect fill="#00E5FF" fill-opacity="0.25" height="8" rx="1" stroke="#00E5FF" stroke-width="0.8" width="16" x="10" y="36"></rect>
+<rect fill="#00E5FF" fill-opacity="0.25" height="8" rx="1" stroke="#00E5FF" stroke-width="0.8" width="16" x="10" y="50"></rect>
+<!-- Ray Paths Converging to Prism -->
+<path d="M26 12 L90 28" opacity="0.6" stroke="#00E5FF" stroke-dasharray="3 2" stroke-width="1.2"></path>
+<path d="M26 26 L90 32" opacity="0.8" stroke="#00E5FF" stroke-width="1.2"></path>
+<path d="M26 40 L90 38" opacity="0.8" stroke="#00E5FF" stroke-width="1.2"></path>
+<path d="M26 54 L90 42" opacity="0.6" stroke="#00E5FF" stroke-dasharray="3 2" stroke-width="1.2"></path>
+<!-- Mirror Prism Unit -->
+<polygon fill="#1A2028" points="90,16 114,35 90,54" stroke="#3B494C" stroke-width="1.2"></polygon>
+<text fill="#BAC9CC" font-family="JetBrains Mono" font-size="7" x="94" y="38">FAC</text>
+<!-- Combined Concentrated Beam -->
+<path d="M114 35 L220 35" stroke="#00E5FF" stroke-linecap="round" stroke-width="3"></path>
+<path d="M114 35 L220 35" stroke="#FFFFFF" stroke-width="1"></path>
+<!-- Quartz Protective Lens -->
+<rect fill="#242A33" height="34" rx="2" stroke="#00E5FF" stroke-width="1" width="8" x="220" y="18"></rect>
+<!-- Focused Convergent Cone to Micron Spot -->
+<polygon fill="#00E5FF" fill-opacity="0.35" points="228,26 310,34 310,36 228,44"></polygon>
+<line stroke="#FF6D00" stroke-width="1.5" x1="228" x2="310" y1="35" y2="35"></line>
+<!-- Spot Indicator Crosshair -->
+<circle cx="310" cy="35" fill="#FD6C00" fill-opacity="0.3" r="4"></circle>
+<circle cx="310" cy="35" fill="#FFFFFF" r="1.5"></circle>
+<line stroke="#FD6C00" stroke-width="0.8" x1="310" x2="310" y1="26" y2="44"></line>
+</svg>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono mt-1 pt-1 bg-surface-container/60 px-2 py-1 rounded">
+<span>SPOT CONCENTRADO: <strong class="text-secondary font-code-param text-code-param">0.08 × 0.06 mm</strong></span>
+<span class="text-primary-container">4x DIODOS INCLINADOS</span>
+</div>
+</div>
+<!-- Tech Specs Grid (2 columns on mobile) -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-container">bolt</span> Potencia Óptica
+        </span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-primary-container">20.000</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mW</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">100% Salida Real Continua</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">waves</span> Espectro / Onda
+        </span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-secondary">455</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">± 5 nm</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Luz Azul Visible Clase 4</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">filter_center_focus</span> Punto Focal
+        </span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-md text-metric-md text-on-surface">0.08 × 0.06</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ultra-comprimido FAC</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">height</span> Distancia Focal
+        </span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-md text-metric-md text-on-surface">20.0</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">Bloque patrón acrílico</span>
+</div>
+</div>
+</div>
+<!-- Hardware Live Metrics & Diagnostics -->
+<div class="bg-surface-container-low rounded p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">troubleshoot</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Telemetría de Hardware</h2>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary uppercase bg-surface-container-high px-2 py-0.5 rounded">En tiempo real</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Temperature Metric -->
+<div class="bg-surface-container rounded p-space-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">device_thermostat</span>
+<span class="font-body-md text-body-md text-on-surface">Temperatura del Cabezal</span>
+</div>
+<span class="font-metric-md text-metric-md text-tertiary">34°C <span class="font-body-sm text-body-sm text-on-surface-variant">/ máx 55°C</span></span>
+</div>
+<!-- Segmented 20-segment gauge -->
+<div class="grid grid-cols-20 gap-0.5 h-2 my-1">
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-tertiary-container rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span class="text-tertiary">Estado: Óptimo (Ventilador 7200 RPM)</span>
+<span>Umbral: 48%</span>
+</div>
+</div>
+<!-- Diode Life Cycle -->
+<div class="bg-surface-container rounded p-space-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">timelapse</span>
+<span class="font-body-md text-body-md text-on-surface">Horas de Emisión Acumuladas</span>
+</div>
+<span class="font-metric-md text-metric-md text-on-surface">142 h <span class="font-body-sm text-body-sm text-on-surface-variant">/ 10.000 h</span></span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden my-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 1.42%;"></div>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>98.58% vida útil remanente</span>
+<span class="text-primary-container">Condición: Excelente</span>
+</div>
+</div>
+<!-- Air Assist Pump -->
+<div class="bg-surface-container rounded p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">air</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Bomba Air Assist</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_4px_#22ef7e]"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Caudal activo: 30 L/min regulable</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-metric-md text-metric-md text-tertiary">0.03 MPa</span>
+<p class="font-label-mono text-label-mono text-on-surface-variant uppercase">Solenoid ON</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Preventive Maintenance Log & Alert -->
+<div class="bg-surface-container-low rounded p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_repeat</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Mantenimiento Preventivo</h2>
+</div>
+<span class="bg-secondary-container/15 text-secondary font-label-mono text-label-mono px-2 py-0.5 rounded uppercase">Atención sugerida</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm mb-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">clean_hands</span>
+<span class="font-title-sm text-title-sm text-on-surface">Última Limpieza de Lente Óptica</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Realizada hace <strong class="text-on-surface">6 días</strong> (aprox. 18.5 horas de corte en MDF/Acrílico).
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-mono text-label-mono bg-surface-container-high text-on-surface-variant px-1.5 py-0.5 rounded">Frecuencia: c/ 15-20 h</span>
+<span class="font-label-mono text-label-mono text-secondary">Tizne residual acumulado</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-primary text-on-primary rounded font-title-sm text-title-sm flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.99] transition-all shadow-sm" id="btn-registrar-mantenimiento" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+      Registrar Mantenimiento Completado
+    </button>
+<div class="hidden mt-2 p-space-xs bg-tertiary-container/20 text-tertiary rounded text-center font-label-mono text-label-mono uppercase" id="toast-mantenimiento">
+      Registro guardado: Lente limpia y fecha actualizada.
+    </div>
+</div>
+<!-- Manual Chapters & Interactive Interactive Guides -->
+<div class="bg-surface-container-low rounded p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">menu_book</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Manual de Operaciones</h2>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">V3.4 REV B</span>
+</div>
+<!-- Accordion / Interactive Chapter List -->
+<div class="flex flex-col gap-space-xs" id="manual-chapters">
+<!-- Chapter 1: Calibración de foco y Honeycomb -->
+<div class="bg-surface-container rounded overflow-hidden">
+<button class="manual-toggle w-full p-space-sm flex items-center justify-between text-left hover:bg-surface-container-high transition-colors" data-target="guide-foco" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">grid_4x4</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface">Calibración de Foco y Nivel Honeycomb</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Galga patrón de 20mm y nivelación plana de 4 esquinas</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant chevron-icon transition-transform">expand_more</span>
+</button>
+<div class="hidden px-space-sm pb-space-sm pt-1 bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant" id="guide-foco">
+<ol class="list-decimal list-inside space-y-1.5 mb-2">
+<li>Colocar la base de panal de abejas (<em class="text-on-surface">Honeycomb</em>) perfectamente plana verificando con nivel de burbuja en las 4 esquinas.</li>
+<li>Colocar el material sobre la cama fijado con pines de sujeción para compensar curvaturas.</li>
+<li>Aflojar el tornillo mariposa moleteado lateral del módulo láser Z.</li>
+<li>Bajar el módulo hasta que apoye suavemente sobre el <span class="text-primary-container font-code-param text-code-param">bloque espaciador de 20.00 mm</span>.</li>
+<li>Apretar el tornillo manual sin exceso y retirar el bloque espaciador antes de iniciar el framing.</li>
+</ol>
+<div class="p-2 bg-surface-container-highest rounded text-on-surface flex items-center gap-2 font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-primary-container text-[16px]">info</span>
+            Un error de ±1mm reduce la profundidad de corte hasta un 35% en contrachapado.
+          </div>
+</div>
+</div>
+<!-- Chapter 2: Limpieza de Lente de Cuarzo -->
+<div class="bg-surface-container rounded overflow-hidden">
+<button class="manual-toggle w-full p-space-sm flex items-center justify-between text-left hover:bg-surface-container-high transition-colors" data-target="guide-lente" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">lens_blur</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface">Limpieza de Lente Protectora de Cuarzo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Procedimiento óptico y solvente isopropílico 99%</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant chevron-icon transition-transform">expand_more</span>
+</button>
+<div class="hidden px-space-sm pb-space-sm pt-1 bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant" id="guide-lente">
+<!-- Warning banner -->
+<div class="bg-error-container/40 text-error p-space-xs rounded mb-2 flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-error flex-shrink-0">warning</span>
+<div class="font-body-sm text-body-sm">
+<strong class="font-semibold text-on-error-container">¡ADVERTENCIA CRÍTICA!</strong> Usar ÚNICAMENTE <strong>Alcohol Isopropílico al 99%</strong> con hisopo de microfibra sin pelusa. Nunca usar alcohol etílico comercial ni acetona, ya que destruyen el recubrimiento antirreflejante (AR Coating).
+            </div>
+</div>
+<ol class="list-decimal list-inside space-y-1.5 mb-2">
+<li>Desconectar la alimentación eléctrica del láser y esperar 10 minutos a que enfríe.</li>
+<li>Desenroscar la tobera cónica de latón del Air Assist girando en sentido antihorario.</li>
+<li>Inspeccionar la ventana de cuarzo con luz tangencial para detectar opacidad o resina.</li>
+<li>Humedecer levemente el hisopo y limpiar con movimiento espiral suave desde el centro hacia el borde sin frotar con fuerza.</li>
+<li>Permitir secado al aire 2 minutos antes de reinstalar la tobera con su junta tórica de estanqueidad.</li>
+</ol>
+</div>
+</div>
+<!-- Chapter 3: Tensión de correas y guías lineales -->
+<div class="bg-surface-container rounded overflow-hidden">
+<button class="manual-toggle w-full p-space-sm flex items-center justify-between text-left hover:bg-surface-container-high transition-colors" data-target="guide-correas" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface">Tensión de Correas y Ejes X/Y</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ajuste de tensores GT2 y engrase de guías prismáticas</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant chevron-icon transition-transform">expand_more</span>
+</button>
+<div class="hidden px-space-sm pb-space-sm pt-1 bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant" id="guide-correas">
+<ul class="space-y-1.5 mb-2 list-disc list-inside">
+<li><strong>Frecuencia resonante correas GT2:</strong> Deben vibrar entre 60 Hz y 75 Hz al pulsar con el dedo medio en el tramo central (sonido de cuerda grave).</li>
+<li><strong>Sincronización eje Y (doble motor):</strong> Desplazar el pórtico manualmente hasta los topes finales traseros para comprobar que ambos lados hacen contacto simultáneo.</li>
+<li><strong>Lubricación de guías lineales:</strong> Aplicar 2 gotas de aceite de vaselina pura o grasa de litio sintética NLGI-2 en el carril de bolas recirculantes cada 50 horas de trabajo.</li>
+</ul>
+</div>
+</div>
+<!-- Chapter 4: Solución de problemas comunes -->
+<div class="bg-surface-container rounded overflow-hidden">
+<button class="manual-toggle w-full p-space-sm flex items-center justify-between text-left hover:bg-surface-container-high transition-colors" data-target="guide-troubleshoot" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface">Solución de Problemas de Grabado</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Quemado irregular, bordes carbonizados y pérdida de pasos</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant chevron-icon transition-transform">expand_more</span>
+</button>
+<div class="hidden px-space-sm pb-space-sm pt-1 bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant space-y-2" id="guide-troubleshoot">
+<div class="p-2 bg-surface-container rounded">
+<div class="font-title-sm text-title-sm text-secondary">Líneas quemadas / Bordes con tizne negro</div>
+<p class="mt-0.5">Incrementar el flujo del Air Assist a &gt;25 L/min y aumentar la velocidad de corte a través de múltiples pasadas más veloces en lugar de una lenta y potente.</p>
+</div>
+<div class="p-2 bg-surface-container rounded">
+<div class="font-title-sm text-title-sm text-secondary">Quemado con gradiente o tono irregular</div>
+<p class="mt-0.5">Indica lente de cuarzo empañada con humos grasos o cama desnivelada. Comprobar la perpendicularidad del módulo con una escuadra técnica de taller.</p>
+</div>
+<div class="p-2 bg-surface-container rounded">
+<div class="font-title-sm text-title-sm text-secondary">Círculos que salen ovalados o desfase en capas</div>
+<p class="mt-0.5">Comprobar el tornillo prisionero de la polea dentada en el eje del motor paso a paso. Correas flojas provocan juego mecánico de retorno (backlash).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- GRBL Firmware Parameters & Configuration Console -->
+<div class="bg-surface-container-low rounded p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">terminal</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Configuración GRBL Firmware</h2>
+</div>
+<span class="bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono px-2 py-0.5 rounded uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+        S32 MODE OK
+      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+      Parámetros grabados en la EEPROM de la controladora ESP32 de 32 bits para modulación dinámica PWM.
+    </p>
+<!-- Interactive Terminal Display -->
+<div class="bg-surface-container-lowest rounded p-space-sm font-label-mono text-label-mono space-y-2">
+<div class="flex items-center justify-between p-1.5 bg-surface-container-low rounded">
+<div>
+<span class="text-primary-container font-code-param text-code-param font-bold">$30 = 1000</span>
+<p class="text-on-surface-variant text-[11px]">Régimen máximo de husillo / Valor máximo S-Value (100% PWM)</p>
+</div>
+<span class="text-tertiary">VÁLIDO</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface-container-low rounded">
+<div>
+<span class="text-primary-container font-code-param text-code-param font-bold">$31 = 0</span>
+<p class="text-on-surface-variant text-[11px]">Régimen mínimo del husillo / Punto cero de emisión (0% PWM)</p>
+</div>
+<span class="text-tertiary">VÁLIDO</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface-container-low rounded">
+<div>
+<span class="text-primary-container font-code-param text-code-param font-bold">$32 = 1</span>
+<p class="text-on-surface-variant text-[11px]">Modo Láser Activo (Apaga emisión automática durante G0 rápido)</p>
+</div>
+<span class="text-tertiary">ACTIVADO</span>
+</div>
+<div class="flex items-center justify-between p-1.5 bg-surface-container-low rounded">
+<div>
+<span class="text-on-surface font-code-param text-code-param font-bold">$110 = 12000.000</span>
+<p class="text-on-surface-variant text-[11px]">Velocidad máxima Eje X (mm/min)</p>
+</div>
+<span class="text-on-surface-variant">SYNC</span>
+</div>
+</div>
+<!-- Copy / Verify Action -->
+<div class="flex gap-space-xs mt-space-sm">
+<button class="flex-1 h-10 bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-body-sm text-body-sm flex items-center justify-center gap-1.5 transition-colors" id="btn-copy-grbl" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container">content_copy</span>
+        Copiar Código GRBL
+      </button>
+<button class="h-10 px-space-sm bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-body-sm text-body-sm flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">refresh</span>
+</button>
+</div>
+</div>
+<!-- Manual PDF & Documents Action Card -->
+<div class="bg-surface-container-low rounded p-space-md shadow-md flex flex-col gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded bg-secondary-container/20 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface">Manual Oficial de Taller (PDF Completo)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagramas esquemáticos eléctricos, despiece CNC y tabla de materiales</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-xs">
+<button class="flex-1 h-11 bg-primary text-on-primary rounded font-title-sm text-title-sm flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+        Visualizar en Visor Taller
+      </button>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-body-md text-body-md flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">download</span>
+        Descargar 14.8 MB
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Accordion Logic for Technical Manual Chapters
+  document.querySelectorAll('.manual-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      const content = document.getElementById(targetId);
+      const chevron = button.querySelector('.chevron-icon');
+      
+      const isOpen = !content.classList.contains('hidden');
+      
+      // Close all in container for clean accordions
+      document.querySelectorAll('#manual-chapters > div > div[id^="guide-"]').forEach(el => {
+        el.classList.add('hidden');
+      });
+      document.querySelectorAll('#manual-chapters .chevron-icon').forEach(ch => {
+        ch.classList.remove('rotate-180');
+      });
+
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Maintenance Logger Micro-interaction
+  const maintBtn = document.getElementById('btn-registrar-mantenimiento');
+  const maintToast = document.getElementById('toast-mantenimiento');
+  if (maintBtn && maintToast) {
+    maintBtn.addEventListener('click', () => {
+      maintToast.classList.remove('hidden');
+      maintBtn.classList.replace('bg-primary', 'bg-tertiary-container');
+      maintBtn.classList.replace('text-on-primary', 'text-on-tertiary-container');
+      maintBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span> Mantenimiento Registrado (Hoy)';
+      
+      setTimeout(() => {
+        maintToast.classList.add('hidden');
+      }, 3500);
+    });
+  }
+
+  // GRBL Copy micro-action
+  const copyBtn = document.getElementById('btn-copy-grbl');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const originalHtml = copyBtn.innerHTML;
+      copyBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-tertiary">check</span> ¡Copiado al Portapapeles!';
+      setTimeout(() => {
+        copyBtn.innerHTML = originalHtml;
+      }, 2000);
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="ia-parametros" href="#"><span class="material-symbols-outlined text-[22px]">target</span><span class="font-label-mono text-label-mono uppercase">IA Calc</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="mi-maquina" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-mono text-label-mono uppercase">Máquina</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="test-lab" href="#"><span class="material-symbols-outlined text-[22px]">science</span><span class="font-label-mono text-label-mono uppercase">Test Lab</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="nuevo-test" href="#"><span class="material-symbols-outlined text-[22px]">add_a_photo</span><span class="font-label-mono text-label-mono uppercase">+ Test</span></a></div></nav></body></html>

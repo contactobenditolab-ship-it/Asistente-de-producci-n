@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#00210b", "error": "#ffb4ab", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "tertiary-fixed": "#62ff96", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2b3139", "on-tertiary": "#003918", "surface-container": "#1a2028", "surface-container-high": "#242a33", "background": "#0e141c", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "surface-bright": "#343a42", "on-surface-variant": "#bac9cc", "error-container": "#93000a", "primary-fixed-dim": "#00daf3", "surface-container-highest": "#2f353e", "on-secondary-container": "#562000", "surface-dim": "#0e141c", "on-secondary-fixed-variant": "#7a3000", "primary": "#c3f5ff", "on-tertiary-fixed-variant": "#005226", "on-primary-container": "#00626e", "tertiary-container": "#22ef7e", "surface-container-low": "#161c24", "on-error": "#690005", "on-error-container": "#ffdad6", "outline-variant": "#3b494c", "tertiary": "#b1ffbf", "primary-container": "#00e5ff", "primary-fixed": "#9cf0ff", "inverse-primary": "#006875", "surface-tint": "#00daf3", "secondary-container": "#fd6c00", "secondary-fixed": "#ffdbcb", "on-secondary-fixed": "#341100", "surface": "#0e141c", "on-background": "#dde3ee", "tertiary-fixed-dim": "#00e475", "outline": "#849396", "on-primary": "#00363d", "on-tertiary-container": "#006731", "on-surface": "#dde3ee", "inverse-surface": "#dde3ee", "secondary-fixed-dim": "#ffb692" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "code-param": [ "JetBrains Mono" ], "metric-md": [ "JetBrains Mono" ], "label-mono": [ "JetBrains Mono" ], "metric-xl": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ] }, "fontSize": { "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Bendito Lab" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">BENDITO LAB</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">Suite Láser CNC</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-mono text-label-mono uppercase text-tertiary font-semibold tracking-wider">20W DIODO</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">VEVOR JL3-PRO (30x30cm)</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">CONECTADO</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-sm"><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="calculadora-cotizador" href="#">Calculadora &amp; Cotizador</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="paso-a-paso-usos" href="#">Paso a Paso &amp; Usos</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="asistente-ia-taller" href="#">Asistente IA Taller</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="ficha-maquina" href="#">Ficha Máquina</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-lg"><span class="font-code-param text-code-param text-on-surface-variant">ESTADO:</span><span class="font-metric-md text-metric-md text-primary font-bold">STANDBY</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Banner Alerta Hardware: Taller Bendito Lab Config Específica -->
+<div class="w-full bg-secondary-container/15 px-margin py-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-xl">air</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-secondary font-bold">ESTADO CRÍTICO DE CABEZAL</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-label-mono bg-secondary-container text-on-secondary-container font-bold">AIR ASSIST: DESACTIVADO / PENDIENTE</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Modo compensación de llama activo: Multi-pase rápido + cinta de carrocero obligatoria para minimizar carbonilla profunda en óptica VEVOR JL3-PRO.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-highest/60 px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-secondary text-sm">shield</span>
+<span class="font-label-mono text-label-mono text-secondary uppercase font-semibold">Ventilación Forzada 100% Requerida</span>
+</div>
+</div>
+<!-- Contenedor Principal Tablero de Control -->
+<div class="w-full px-margin py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- COLUMNA IZQUIERDA: Plancha Matriz, Nesting & Desglose (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Panel 1: Plancha Matriz & Nesting Optimizer -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">view_quilt</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Optimizador de Plancha &amp; Merma</h2>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Materia Prima: Leroy Merlin / Bazar</span>
+</div>
+<!-- Presets Rápidos de Plancha Comercial -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase pr-1">Presets Plancha:</span>
+<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-mono text-label-mono transition-colors" onclick="setPresetPlancha(600, 300, 3.50, 'Contrachapado Chopo 3mm (Leroy)')" type="button">
+            Chopo 600×300 (3.50€)
+          </button>
+<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono transition-colors" onclick="setPresetPlancha(500, 400, 2.90, 'MDF 3mm Tablero (Bazar)')" type="button">
+            MDF 500×400 (2.90€)
+          </button>
+<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono transition-colors" onclick="setPresetPlancha(300, 200, 1.45, 'A4 Chopo Manualidades')" type="button">
+            Pack 300×200 (1.45€)
+          </button>
+</div>
+<!-- Grid de Entradas de Dimensión -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Columna Plancha Matriz -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Plancha Matriz Completa
+            </span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Ancho (mm)</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputPlanchaW" oninput="calcularTodo()" type="number" value="600"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Alto (mm)</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputPlanchaH" oninput="calcularTodo()" type="number" value="300"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col mt-1">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Coste Compra Tablero (€)</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-secondary focus:outline-none" id="inputPlanchaPrecio" oninput="calcularTodo()" step="0.05" type="number" value="3.50"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">€ IVA inc.</span>
+</div>
+</div>
+</div>
+<!-- Columna Pieza Target -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Dimensiones de Pieza Cliente
+            </span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Ancho Pieza</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputPiezaW" oninput="calcularTodo()" type="number" value="140"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Alto Pieza</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputPiezaH" oninput="calcularTodo()" type="number" value="95"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Kerf / Separación</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-code-param text-code-param text-on-surface focus:outline-none" id="inputKerf" oninput="calcularTodo()" step="0.5" type="number" value="2.5"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Margen Borde Tablero</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-code-param text-code-param text-on-surface focus:outline-none" id="inputMargen" oninput="calcularTodo()" type="number" value="5"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Render Esquemático SVG de Nesting y Métricas -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col md:flex-row gap-space-md items-center">
+<div class="w-full md:w-5/12 flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Piezas por Plancha:</span>
+<span class="font-metric-xl text-metric-xl text-primary font-bold" id="labelPiezasCabidas">8 uds</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Coste Neto Madera / Pieza:</span>
+<span class="font-metric-md text-metric-md text-tertiary" id="labelCosteMaderaPieza">0.44 €</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Superficie Útil / Merma:</span>
+<span class="font-label-mono text-label-mono text-secondary" id="labelPorcentajeUso">59.2% útil (40.8% merma)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full transition-all duration-300" id="barraAprovechamiento" style="width: 59.2%;"></div>
+</div>
+</div>
+<!-- Mini Plano CAD Ilustrativo SVG -->
+<div class="w-full md:w-7/12 bg-surface-container-high/40 p-2 rounded flex flex-col items-center justify-center">
+<svg class="w-full h-32 text-outline-variant" fill="none" id="svgNesting" viewbox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#161c24" height="146" rx="4" stroke="currentColor" stroke-dasharray="3 3" width="296" x="2" y="2"></rect>
+<!-- Piezas cuadrícula visual generada dinámicamente -->
+<g id="svgPiezasContainer">
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="12" y="12"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="80" y="12"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="148" y="12"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="216" y="12"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="12" y="76"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="80" y="76"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="148" y="76"></rect>
+<rect fill="#00daf3" fill-opacity="0.2" height="58" rx="2" stroke="#00daf3" width="62" x="216" y="76"></rect>
+</g>
+</svg>
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase mt-1">Cama Vevor JL3-PRO: 300×300mm máx. recorrido</span>
+</div>
+</div>
+</div>
+<!-- Panel 2: LightBurn Core 2.1.04 Compatible Layers -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">tune</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Capas LightBurn Core 2.1.04</h2>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-tertiary">GRBL $30=1000 • DIODO 20W</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Estrategias calibradas sin Air Assist: velocidades elevadas con 2 o más pasadas para cortar en frío, disipando calor entre ráfagas y preservando la lente de cuarzo de la Vevor JL3-PRO.
+        </p>
+<!-- Tabla Capas LightBurn -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-label-mono text-label-mono">
+<thead>
+<tr class="text-on-surface-variant bg-surface-container-lowest">
+<th class="py-2 px-3">CAPA</th>
+<th class="py-2 px-3">OPERACIÓN</th>
+<th class="py-2 px-3">VELOCIDAD</th>
+<th class="py-2 px-3">POTENCIA (S-VAL)</th>
+<th class="py-2 px-3">PASADAS</th>
+<th class="py-2 px-3">GALGA Z (FOCO)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/30">
+<!-- Capa C00 Corte -->
+<tr class="bg-surface-container/60 hover:bg-surface-container">
+<td class="py-2.5 px-3 flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#00e5ff]"></span>
+<span class="font-bold text-primary">C00 (Negro/Cyan)</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface">Corte Vectorial (Chopo 3mm)</td>
+<td class="py-2.5 px-3 text-primary font-code-param">520 mm/min</td>
+<td class="py-2.5 px-3 text-secondary font-code-param">75% (S750)</td>
+<td class="py-2.5 px-3 text-on-surface font-code-param">2 Passes</td>
+<td class="py-2.5 px-3 text-on-surface-variant">Galga 2.0mm manual</td>
+</tr>
+<!-- Capa C01 Marcado / Vector Line -->
+<tr class="bg-surface-container/30 hover:bg-surface-container">
+<td class="py-2.5 px-3 flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#fd6c00]"></span>
+<span class="font-bold text-secondary">C01 (Azul/Naranja)</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface">Marcado / Score Perfil</td>
+<td class="py-2.5 px-3 text-primary font-code-param">1800 mm/min</td>
+<td class="py-2.5 px-3 text-secondary font-code-param">28% (S280)</td>
+<td class="py-2.5 px-3 text-on-surface font-code-param">1 Pass</td>
+<td class="py-2.5 px-3 text-on-surface-variant">Foco Superficie 0.0</td>
+</tr>
+<!-- Capa C02 Grabado Raster -->
+<tr class="bg-surface-container/60 hover:bg-surface-container">
+<td class="py-2.5 px-3 flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#22ef7e]"></span>
+<span class="font-bold text-tertiary">C02 (Rojo/Verde)</span>
+</td>
+<td class="py-2.5 px-3 text-on-surface">Grabado Relleno 254 DPI</td>
+<td class="py-2.5 px-3 text-primary font-code-param">3200 mm/min</td>
+<td class="py-2.5 px-3 text-secondary font-code-param">35% (S350)</td>
+<td class="py-2.5 px-3 text-on-surface font-code-param">1 Pass Bidireccional</td>
+<td class="py-2.5 px-3 text-on-surface-variant">Desfase +1.0mm (haz ancho)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-sm text-secondary">info</span>
+<span>Consejo Bendito: Limpiar lente con alcohol isopropílico cada 4 horas de uso sin aire.</span>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-bright text-primary font-label-mono text-label-mono font-semibold rounded flex items-center gap-2 transition-all" id="btnCopiarLB" onclick="copiarParametrosLightBurn()" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copiar Parámetros LightBurn Core 2.1.04</span>
+</button>
+</div>
+</div>
+</div>
+<!-- COLUMNA DERECHA: Cotizador Económico & Taller PVP (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Panel de Tiempos & Operario -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">timer</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Tiempos &amp; Operación Taller</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-tertiary font-label-mono text-label-mono font-bold">18.00 € / HORA BASE</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Minutos Láser Activo (Corte+Grabado)</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputMinutosLaser" oninput="calcularTodo()" step="0.5" type="number" value="4.5"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">min</span>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant mt-1">Amortización máquina + electricidad</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<label class="font-label-mono text-label-mono text-on-surface-variant">Minutos Manipulado &amp; Preparación</label>
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 mt-1">
+<input class="w-full bg-transparent font-metric-md text-metric-md text-on-surface focus:outline-none" id="inputMinutosManipulado" oninput="calcularTodo()" step="0.5" type="number" value="3.0"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">min</span>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant mt-1">Enmascarado con cinta + lijado</span>
+</div>
+</div>
+<!-- Opciones de Margen Comercial -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Canal de Venta &amp; Margen Sugerido:</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex items-center gap-2 bg-surface-container p-space-sm rounded-lg cursor-pointer">
+<input checked="" class="accent-primary" name="tipoMargen" onchange="calcularTodo()" type="radio" value="b2c"/>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary font-semibold">Cliente Final (B2C)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Margen x3.2 (68%)</span>
+</div>
+</label>
+<label class="flex items-center gap-2 bg-surface-container p-space-sm rounded-lg cursor-pointer">
+<input class="accent-secondary" name="tipoMargen" onchange="calcularTodo()" type="radio" value="b2b"/>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Gremio / Mayorista (B2B)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Margen x1.8 (44%)</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Cuadro de Cotización y Desglose Financiero -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight">Escandallo por Pieza Unitaria</h3>
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+</div>
+<!-- Desglose de Costes Reales -->
+<div class="flex flex-col gap-space-xs font-label-mono text-label-mono">
+<div class="flex justify-between py-1 bg-surface-container px-3 rounded">
+<span class="text-on-surface-variant">Coste Material Madera (Inc. Merma):</span>
+<span class="text-on-surface font-bold" id="escandalloMadera">0.44 €</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container px-3 rounded">
+<span class="text-on-surface-variant">Mano de Obra &amp; Enmascarado (18.00 €/h):</span>
+<span class="text-on-surface font-bold" id="escandalloManoObra">0.90 €</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container px-3 rounded">
+<span class="text-on-surface-variant">Láser Diode 20W Run State (0.12 €/min):</span>
+<span class="text-on-surface font-bold" id="escandalloLaser">0.54 €</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container px-3 rounded">
+<span class="text-on-surface-variant">Cinta carrocero anti-humo + consumibles:</span>
+<span class="text-on-surface font-bold">0.15 €</span>
+</div>
+<div class="flex justify-between py-2 bg-surface-container-high px-3 rounded mt-1 font-bold text-sm">
+<span class="text-primary">COSTE REAL DE FÁBRICA (BASE):</span>
+<span class="text-primary font-metric-md" id="costeTotalFabrica">2.03 €</span>
+</div>
+</div>
+<!-- PVP Sugerido Grande -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">PVP Sugerido de Venta:</span>
+<span class="font-display-hero text-display-hero text-tertiary leading-none" id="pvpSugerido">6.50 €</span>
+</div>
+<div class="flex justify-between items-center text-label-mono font-label-mono pt-1">
+<span class="text-on-surface-variant">Beneficio Neto Limpio:</span>
+<span class="text-tertiary-container font-bold text-sm" id="beneficioNeto">+4.47 € / pieza</span>
+</div>
+<div class="flex justify-between items-center text-label-mono font-label-mono">
+<span class="text-on-surface-variant">Rentabilidad por Plancha Llena (<span id="txtPiezasPlancha">8</span> uds):</span>
+<span class="text-primary font-bold text-sm" id="rentabilidadTotalPlancha">+35.76 €</span>
+</div>
+</div>
+<!-- Botonera de Acciones Inmediatas -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<button class="flex-1 py-space-sm px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-colors" onclick="guardarEnHistorial()" type="button">
+<span class="material-symbols-outlined text-base">bookmark_add</span>
+<span>Guardar Plancha</span>
+</button>
+<button class="flex-1 py-space-sm px-space-md bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-md font-bold rounded flex items-center justify-center gap-2 transition-all shadow-md" onclick="generarPresupuestoPDF()" type="button">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Generar Presupuesto PDF</span>
+</button>
+</div>
+</div>
+<!-- Card Estado y Seguridad Taller -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Taller Seguro Bendito Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gafas OD5+ para 455nm obligatorias. Jamás dejar la JL3-PRO desatendida cortando sin soplador neumático instalado.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal / Toast de Notificación -->
+<div class="fixed bottom-12 right-6 hidden bg-surface-container-highest px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm z-50" id="toastNotif">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label-mono text-label-mono text-on-surface" id="toastMsg">Parámetros copiados al portapapeles</span>
+</div>
+<script>
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotif');
+      const text = document.getElementById('toastMsg');
+      text.innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+
+    function setPresetPlancha(w, h, precio, nombre) {
+      document.getElementById('inputPlanchaW').value = w;
+      document.getElementById('inputPlanchaH').value = h;
+      document.getElementById('inputPlanchaPrecio').value = precio.toFixed(2);
+      calcularTodo();
+      showToast('Cargado preset: ' + nombre);
+    }
+
+    function calcularTodo() {
+      // Entradas plancha
+      const pW = parseFloat(document.getElementById('inputPlanchaW').value) || 1;
+      const pH = parseFloat(document.getElementById('inputPlanchaH').value) || 1;
+      const pPrecio = parseFloat(document.getElementById('inputPlanchaPrecio').value) || 0;
+
+      // Entradas pieza
+      const zW = parseFloat(document.getElementById('inputPiezaW').value) || 1;
+      const zH = parseFloat(document.getElementById('inputPiezaH').value) || 1;
+      const kerf = parseFloat(document.getElementById('inputKerf').value) || 0;
+      const margen = parseFloat(document.getElementById('inputMargen').value) || 0;
+
+      // Cálculo de áreas útiles y nesting ortogonal simple
+      const utilW = Math.max(0, pW - (margen * 2));
+      const utilH = Math.max(0, pH - (margen * 2));
+
+      // Orientación normal
+      const nx1 = Math.floor((utilW + kerf) / (zW + kerf));
+      const ny1 = Math.floor((utilH + kerf) / (zH + kerf));
+      const total1 = Math.max(0, nx1 * ny1);
+
+      // Orientación rotada 90 deg
+      const nx2 = Math.floor((utilW + kerf) / (zH + kerf));
+      const ny2 = Math.floor((utilH + kerf) / (zW + kerf));
+      const total2 = Math.max(0, nx2 * ny2);
+
+      const maxPiezas = Math.max(1, Math.max(total1, total2));
+      const piezasFinales = (total1 >= total2) ? maxPiezas : total2;
+
+      // Costes de madera
+      const costeMaderaPieza = (pPrecio / piezasFinales);
+      const areaPlancha = pW * pH;
+      const areaPiezasTotal = piezasFinales * (zW * zH);
+      const porcentajeAprovechamiento = Math.min(100, (areaPiezasTotal / areaPlancha) * 100);
+      const porcentajeMerma = 100 - porcentajeAprovechamiento;
+
+      // Tiempos taller y costes
+      const tLaserMin = parseFloat(document.getElementById('inputMinutosLaser').value) || 0;
+      const tManMin = parseFloat(document.getElementById('inputMinutosManipulado').value) || 0;
+      const costeManoObra = (tManMin / 60) * 18.00; // 18€/h
+      const costeLaser = tLaserMin * 0.12; // amortización + luz + tubo diodo
+      const consumibles = 0.15; // cinta de carrocero obligatoria sin air assist
+
+      const costeFabrica = costeMaderaPieza + costeManoObra + costeLaser + consumibles;
+
+      // Margen
+      const margenB2C = document.querySelector('input[name="tipoMargen"]:checked').value === 'b2c';
+      const multiplicador = margenB2C ? 3.2 : 1.8;
+      const pvp = costeFabrica * multiplicador;
+      const beneficio = pvp - costeFabrica;
+      const beneficioPlancha = beneficio * piezasFinales;
+
+      // Actualizar DOM
+      document.getElementById('labelPiezasCabidas').innerText = piezasFinales + ' uds';
+      document.getElementById('labelCosteMaderaPieza').innerText = costeMaderaPieza.toFixed(2) + ' €';
+      document.getElementById('labelPorcentajeUso').innerText = porcentajeAprovechamiento.toFixed(1) + '% útil (' + porcentajeMerma.toFixed(1) + '% merma)';
+      document.getElementById('barraAprovechamiento').style.width = Math.max(5, porcentajeAprovechamiento) + '%';
+
+      document.getElementById('escandalloMadera').innerText = costeMaderaPieza.toFixed(2) + ' €';
+      document.getElementById('escandalloManoObra').innerText = costeManoObra.toFixed(2) + ' €';
+      document.getElementById('escandalloLaser').innerText = costeLaser.toFixed(2) + ' €';
+      document.getElementById('costeTotalFabrica').innerText = costeFabrica.toFixed(2) + ' €';
+
+      document.getElementById('pvpSugerido').innerText = pvp.toFixed(2) + ' €';
+      document.getElementById('beneficioNeto').innerText = '+' + beneficio.toFixed(2) + ' € / pieza';
+      document.getElementById('txtPiezasPlancha').innerText = piezasFinales;
+      document.getElementById('rentabilidadTotalPlancha').innerText = '+' + beneficioPlancha.toFixed(2) + ' €';
+
+      // Actualizar SVG esquemático
+      dibujarPlano(pW, pH, zW, zH, piezasFinales);
+    }
+
+    function dibujarPlano(pw, ph, zw, zh, count) {
+      const container = document.getElementById('svgPiezasContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const svgW = 296;
+      const svgH = 146;
+      const scaleX = svgW / pw;
+      const scaleY = svgH / ph;
+      const s = Math.min(scaleX, scaleY) * 0.92;
+
+      let cols = Math.floor(pw / zw);
+      let rows = Math.floor(ph / zh);
+      let drawn = 0;
+
+      for (let r = 0; r < rows && drawn < count; r++) {
+        for (let c = 0; c < cols && drawn < count; c++) {
+          const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          rect.setAttribute('x', 6 + (c * (zw * s + 2)));
+          rect.setAttribute('y', 6 + (r * (zh * s + 2)));
+          rect.setAttribute('width', Math.max(2, zw * s));
+          rect.setAttribute('height', Math.max(2, zh * s));
+          rect.setAttribute('rx', '2');
+          rect.setAttribute('fill', '#00daf3');
+          rect.setAttribute('fill-opacity', '0.22');
+          rect.setAttribute('stroke', '#00daf3');
+          rect.setAttribute('stroke-width', '1');
+          container.appendChild(rect);
+          drawn++;
+        }
+      }
+    }
+
+    function copiarParametrosLightBurn() {
+      const params = 
+`; === BENDITO LAB - LIGHTBURN CORE 2.1.04 EXPORT ===
+; MAQUINA: VEVOR JL3-PRO (20W DIODE)
+; CONDICIÓN: SIN AIR ASSIST (MULTI-PASE ANTI-LLAMA)
+; FIRMWARE: GRBL 1.1h ($30=1000)
+
+[LAYER_C00_CORTE_CHOPO_3MM]
+Name=Corte Seguro Sin Aire
+Mode=Vector Cut
+Speed=520 mm/min
+Power_Min=0
+Power_Max=750 (75%)
+Passes=2
+Z_Offset=-1.0 mm (o galga 2mm directa)
+Air_Assist=FALSE
+Line_Interval=0.08 mm
+
+[LAYER_C01_MARCADO_VECTOR]
+Name=Score Perimetral
+Mode=Vector Line
+Speed=1800 mm/min
+Power_Max=280 (28%)
+Passes=1
+Air_Assist=FALSE
+
+[LAYER_C02_GRABADO_RASTER]
+Name=Grabado Relleno
+Mode=Raster Engrave
+Speed=3200 mm/min
+Power_Max=350 (35%)
+DPI=254 (0.100 mm/dot)
+Bidirectional=TRUE
+Air_Assist=FALSE
+`;
+      navigator.clipboard.writeText(params).then(() => {
+        showToast('¡Parámetros copiados para importar en LightBurn 2.1.04!');
+      }).catch(() => {
+        showToast('Error al copiar automáticamente');
+      });
+    }
+
+    function guardarEnHistorial() {
+      showToast('Configuración guardada en historial de producción');
+    }
+
+    function generarPresupuestoPDF() {
+      showToast('Generando Presupuesto Técnico PDF Bendito Lab...');
+    }
+
+    // Inicializar al cargar
+    calcularTodo();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.4)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-mono text-label-mono uppercase"><div class="flex items-center gap-space-sm"><span class="text-tertiary">●</span><span>TELEMETRÍA LOCAL: PUERTO COM3 (115200 BAUD)</span></div><div class="flex items-center gap-space-lg"><span>FIRMWARE GRBL 1.1h</span><span>CALIBRACIÓN DE FOCO: 2.0MM</span><span>© BENDITO LAB PRODUCCIÓN</span></div></div></footer></body></html>

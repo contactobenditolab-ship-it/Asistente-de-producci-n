@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#dde3ee", "on-secondary-container": "#562000", "error": "#ffb4ab", "primary-container": "#00e5ff", "secondary-fixed": "#ffdbcb", "error-container": "#93000a", "surface-container-high": "#242a33", "surface-tint": "#00daf3", "on-tertiary-container": "#006731", "surface": "#0e141c", "inverse-primary": "#006875", "on-tertiary-fixed": "#00210b", "primary": "#c3f5ff", "on-primary-container": "#00626e", "on-secondary-fixed-variant": "#7a3000", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "tertiary-fixed": "#62ff96", "inverse-surface": "#dde3ee", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "secondary-fixed-dim": "#ffb692", "on-error": "#690005", "background": "#0e141c", "outline-variant": "#3b494c", "surface-dim": "#0e141c", "secondary-container": "#fd6c00", "on-background": "#dde3ee", "on-primary": "#00363d", "on-surface-variant": "#bac9cc", "tertiary-container": "#22ef7e", "inverse-on-surface": "#2b3139", "on-error-container": "#ffdad6", "outline": "#849396", "tertiary": "#b1ffbf", "primary-fixed-dim": "#00daf3", "tertiary-fixed-dim": "#00e475", "on-tertiary-fixed-variant": "#005226", "primary-fixed": "#9cf0ff", "surface-container": "#1a2028", "surface-container-low": "#161c24", "surface-variant": "#2f353e", "surface-container-highest": "#2f353e", "on-secondary-fixed": "#341100", "on-primary-fixed": "#001f24", "surface-bright": "#343a42", "on-tertiary": "#003918" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2rem", "space-lg": "1.25rem", "margin": "1.5rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "metric-md": [ "JetBrains Mono" ], "display-hero-mobile": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "metric-xl": [ "JetBrains Mono" ], "code-param": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-mono": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-md px-space-xs"><div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center p-space-xs"><img alt="Bendito Lab" class="w-full h-full object-contain filter invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight font-bold leading-none">BENDITO LAB</span><span class="font-body-sm text-body-sm text-on-surface-variant">Parámetros de Producción</span></div></div><div class="px-space-xs py-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-mono text-label-mono text-tertiary tracking-wider uppercase">Diodo 20W • En Línea | GRBL 1.1f</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calculadora-control" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Calculadora &amp; Control</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ficha-tecnica-jl3-pro" href="#"><span class="material-symbols-outlined text-[20px]">memory</span><span class="font-title-sm text-title-sm">Ficha Técnica JL3-PRO</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnostico-tests" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="font-title-sm text-title-sm">Diagnóstico &amp; Tests</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="asistente-ia-taller" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-title-sm text-title-sm">Asistente IA Taller</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Área Activa</span><span class="font-code-param text-code-param text-on-surface">300 × 300 mm</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Firmware</span><span class="font-code-param text-code-param text-on-surface">v1.1f Custom</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Laser Optic</span><span class="font-code-param text-code-param text-secondary">20.000 mW</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-sm"><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-container">grid_view</span><span class="font-code-param text-code-param text-on-surface">Cama: 300x300mm</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">speed</span><span class="font-code-param text-code-param text-on-surface">Frecuencia: 1kHz</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="font-code-param text-code-param text-tertiary">LightBurn USB OK</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">terminal</span></button><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm leading-tight text-on-surface">Operador CNC</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Bendito Diode Team</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Technical Header / Hero Status Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-64 h-64 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-mono text-label-mono tracking-widest uppercase">HARDWARE DATASHEET REV. 3.4</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">•</span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            ESPECIFICACIÓN DE TALLER OPERATIVA
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+          VEVOR JL3-PRO 20W <span class="text-on-surface-variant font-normal">| Matriz de Ingeniería &amp; Registro Óptico</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Protocolo de calibración milimétrica para banco de trabajo 300×300 mm. Diodo cuadruple comprimido FAC con driver GRBL 1.1f 32-Bit y perfil optimizado para LightBurn DSP.
+        </p>
+</div>
+<!-- Quick Telemetry Badge Deck -->
+<div class="flex items-center gap-space-sm self-stretch md:self-auto">
+<div class="flex-1 md:flex-initial px-space-md py-space-sm rounded-lg bg-surface-container-high shadow-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant block uppercase">POTENCIA NETA</span>
+<span class="font-metric-md text-metric-md text-secondary">20.0W O.P.</span>
+</div>
+<div class="flex-1 md:flex-initial px-space-md py-space-sm rounded-lg bg-surface-container-high shadow-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant block uppercase">SPOT FOCAL</span>
+<span class="font-metric-md text-metric-md text-primary-container">0.08 × 0.06 mm</span>
+</div>
+<div class="flex-1 md:flex-initial px-space-md py-space-sm rounded-lg bg-surface-container-high shadow-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant block uppercase">CAMPO ÚTIL</span>
+<span class="font-metric-md text-metric-md text-tertiary">300 × 300 mm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main 3-Column Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- ==========================================
+         COLUMN 1: HARDWARE & OPTICAL ENGINE
+         ========================================== -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Primary Core Spec Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">fluorescent</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Arquitectura Óptica &amp; Emisión</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">MOD: FAC-4X</span>
+</div>
+<!-- Micro Graphic: Prism Beam Combine Diagram -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md relative overflow-hidden">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Matriz de Confluencia Coherente (4x5W)</span>
+<span class="font-code-param text-code-param text-secondary">450 nm Azul</span>
+</div>
+<svg class="w-full h-24 my-1 text-primary-container" fill="none" viewbox="0 0 340 90">
+<!-- 4 Emitting Emitters -->
+<rect fill="#242a33" height="12" rx="2" stroke="none" width="28" x="15" y="10"></rect>
+<rect fill="#242a33" height="12" rx="2" stroke="none" width="28" x="15" y="28"></rect>
+<rect fill="#242a33" height="12" rx="2" stroke="none" width="28" x="15" y="46"></rect>
+<rect fill="#242a33" height="12" rx="2" stroke="none" width="28" x="15" y="64"></rect>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="7" x="18" y="19">5W LD</text>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="7" x="18" y="37">5W LD</text>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="7" x="18" y="55">5W LD</text>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="7" x="18" y="73">5W LD</text>
+<!-- Cyan Light Beams -->
+<path d="M43 16 L120 45" stroke="#00daf3" stroke-opacity="0.8" stroke-width="1.5"></path>
+<path d="M43 34 L120 45" stroke="#00daf3" stroke-opacity="0.8" stroke-width="1.5"></path>
+<path d="M43 52 L120 45" stroke="#00daf3" stroke-opacity="0.8" stroke-width="1.5"></path>
+<path d="M43 70 L120 45" stroke="#00daf3" stroke-opacity="0.8" stroke-width="1.5"></path>
+<!-- FAC Compression Prisms -->
+<polygon fill="#2f353e" points="120,30 145,45 120,60"></polygon>
+<text fill="#c3f5ff" font-family="JetBrains Mono" font-size="8" x="123" y="48">FAC</text>
+<!-- Compressed Single Ultra Beam -->
+<path d="M145 45 L245 45" stroke="#00e5ff" stroke-linecap="round" stroke-width="3"></path>
+<circle cx="245" cy="45" fill="#00e5ff" r="4"></circle>
+<!-- Objective Lens -->
+<ellipse cx="265" cy="45" fill="#343a42" rx="4" ry="24"></ellipse>
+<!-- Focused Beam Cone -->
+<polygon fill="#fd6c00" fill-opacity="0.4" points="269,35 320,45 269,55"></polygon>
+<circle cx="320" cy="45" fill="#ffb692" r="2.5"></circle>
+<text fill="#bac9cc" font-family="JetBrains Mono" font-size="7" x="280" y="24">0.08x0.06mm</text>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono mt-space-xs">
+<span>4× DIODOS GaN INDIVIDUALES</span>
+<span class="text-tertiary">100% COHERENCIA EN FASE</span>
+</div>
+</div>
+<!-- Spec Data Pairs -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container rounded-lg p-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase block">Potencia Real</span>
+<span class="font-metric-md text-metric-md text-on-surface">20.000 mW</span>
+<span class="font-body-sm text-body-sm text-tertiary block mt-0.5">Óptica Pura (O.P.)</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase block">Alimentación</span>
+<span class="font-metric-md text-metric-md text-on-surface">24V DC / 4A</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">~96W Potencia Total</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase block">Dimensión Spot</span>
+<span class="font-metric-md text-metric-md text-primary-container">0.08 × 0.06</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Elíptico corregido</span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase block">Área de Cama</span>
+<span class="font-metric-md text-metric-md text-on-surface">300 × 300</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-0.5">Milímetros útiles</span>
+</div>
+</div>
+</div>
+<!-- Focal Adjustment & Gauge Protocol Block -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">height</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Protocolo de Enfoque con Galga</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Distancia precisa medida desde el reborde metálico de la tobera de asistencia de aire a la cara superior del sustrato.
+        </p>
+<div class="space-y-space-xs pt-space-xs">
+<!-- Focal Mode 1 -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Grabado Superficial / Raster</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cintura de rayo exactamente sobre la cara</span>
+</div>
+<div class="text-right">
+<span class="font-metric-md text-metric-md text-primary-container">20.0 mm</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant block uppercase">Galga Base</span>
+</div>
+</div>
+<!-- Focal Mode 2 -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Corte Profundo (3 a 5 mm)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cintura sumergida en el núcleo del material</span>
+</div>
+<div class="text-right">
+<span class="font-metric-md text-metric-md text-secondary">18.5 mm</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant block uppercase">Foco -1.5mm</span>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-highest p-space-xs flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0">info</span>
+<span class="font-body-sm text-body-sm">
+            Grosor &gt; 4mm requiere asistencia continua de aire &gt; 25 PSI para evitar micro-carbonización en flanco.
+          </span>
+</div>
+</div>
+<!-- Workshop Assembly Image Context -->
+<div class="relative rounded-xl overflow-hidden shadow-md bg-surface-container-lowest h-40">
+<img class="w-full h-full object-cover" data-alt="Technical macro photography of a 20W optical blue diode laser head mounted on an anodized black aluminum CNC gantry, illuminated by ambient industrial cyan workshop lighting, featuring brass air assist nozzle and calibrated step motor belt drives in deep shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfi-bgdSSkDnrqr-3KazJayg5PfO4yUk3rSANK36RS2eQ3xILRevcuagSMtS-DAhY6EIwlKrJ7IDUMFTXHcJyhO63MpFKWC7c5tcBAHKp2wCemwW4LUpbzAMiF4smVk6aOwVgx4nCus7pTFLghEO9h74cZQyOr-dInxBZSLE-Kr_-N2seHX5pD4uPAPE9_ddSR4ZfRen6wsZw9wnpMW7hZm3Wu5GNrEhJqDs21P67-Q9-6zrcjOw53lQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex items-end p-space-sm">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-wide">
+            VEVOR JL3-PRO • CABEZAL CUÁDRUPLE MOD-20
+          </span>
+</div>
+</div>
+</div>
+<!-- ==========================================
+         COLUMN 2: GRBL 1.1f 32-BIT FIRMWARE DUMP
+         ========================================== -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<!-- Terminal Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">terminal</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Volcado GRBL 1.1f (32-Bit)</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-space-xs py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">EEPROM SYNC</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Parámetros directos de la placa base STM32. Calibración anti-resonancia y mitigación de inercia para ejes dentados GT2.
+        </p>
+<!-- Parameter Table with Code Style -->
+<div class="flex flex-col gap-1.5 font-code-param text-code-param">
+<!-- Row $30 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-primary-container font-semibold">$30=1000</span>
+<span class="text-on-surface-variant">Husillo LightBurn</span>
+</div>
+<span class="text-on-surface font-medium">S-Max 1000 (PWM 1kHz)</span>
+</div>
+<!-- Row $32 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-tertiary font-semibold">$32=1</span>
+<span class="text-on-surface-variant">Modo Láser Activo</span>
+</div>
+<span class="text-tertiary font-medium">M4 Auto-Sync</span>
+</div>
+<!-- Row $110 & $111 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-secondary font-semibold">$110=10000</span>
+<span class="text-on-surface-variant">Vel. Crucero Eje X</span>
+</div>
+<span class="text-on-surface font-medium">10,000 mm/min</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-secondary font-semibold">$111=10000</span>
+<span class="text-on-surface-variant">Vel. Crucero Eje Y</span>
+</div>
+<span class="text-on-surface font-medium">10,000 mm/min</span>
+</div>
+</div>
+<!-- Row $120 & $121 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface font-semibold">$120=1000</span>
+<span class="text-on-surface-variant">Aceleración X</span>
+</div>
+<span class="text-primary-container font-medium">1,000 mm/s²</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface font-semibold">$121=1000</span>
+<span class="text-on-surface-variant">Aceleración Y</span>
+</div>
+<span class="text-primary-container font-medium">1,000 mm/s²</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant/80 pt-0.5">Filtro S-Curve anti-ghosting activo en firmwares 1.1f</span>
+</div>
+<!-- Row $130 & $131 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface font-semibold">$130=300 / $131=300</span>
+</div>
+<span class="text-on-surface font-medium">Límites Hard 300x300</span>
+</div>
+</div>
+<!-- Firmware Action Center -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm font-semibold flex items-center justify-center gap-space-xs shadow-md hover:brightness-110 active:scale-[0.99] transition-all" id="btnDownloadLbdev">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Descargar perfil .lbdev para LightBurn</span>
+</button>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-high text-on-surface font-title-sm text-title-sm font-medium flex items-center justify-center gap-space-xs hover:bg-surface-bright active:scale-[0.99] transition-all" id="btnPushDump">
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+<span>Enviar dump vía USB a JL3-PRO</span>
+</button>
+</div>
+<!-- Interactive Terminal Console Monitor -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant pb-1">
+<span class="font-label-mono text-label-mono uppercase">ESTADO DEL PUERTO COM /dev/ttyUSB0</span>
+<span class="font-label-mono text-label-mono text-tertiary">115200 BAUD</span>
+</div>
+<div class="h-20 overflow-y-auto font-code-param text-code-param text-on-surface-variant flex flex-col gap-0.5" id="terminalLog">
+<div class="text-tertiary">[BENDITO] Conexión establecida con Vevor JL3-PRO.</div>
+<div>&lt;Idle|WPos:0.000,0.000,0.000|FS:0,0|Pn:P|WCO:0.000,0.000,0.000&gt;</div>
+<div class="text-primary-container">&gt;&gt; $$ (Solicitud de configuración volcada)</div>
+<div>[CONFIG OK] $30=1000, $32=1, $110=10000, $111=10000</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==========================================
+         COLUMN 3: RENDIMIENTO VALIDADO & MANTENIMIENTO
+         ========================================== -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Cutting Performance Matrix -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">precision_manufacturing</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Matriz de Rendimiento Validado</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">BANCO LAB OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pruebas a 1 solo pase sin quemaduras perimetrales, asistidas con tobera a 1.8 bar de presión constante.
+        </p>
+<!-- Material 1: Chopo 3mm -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Chopo / Madera Balsa 3.0 mm</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">1 Pase Limpio</span>
+</div>
+<!-- Wattage Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 70%;"></div>
+<div class="bg-secondary-container h-full" style="width: 15%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-param text-code-param">
+<span>Vel: <strong class="text-on-surface">450 mm/min</strong></span>
+<span>Potencia: <strong class="text-secondary">85% (~17.0W)</strong></span>
+<span>Foco: <strong class="text-primary-container">18.5mm</strong></span>
+</div>
+</div>
+<!-- Material 2: MDF 3mm -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">MDF Densidad Media 3.0 mm</span>
+</div>
+<span class="font-label-mono text-label-mono text-secondary uppercase">1 Pase + Aire</span>
+</div>
+<!-- Wattage Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 70%;"></div>
+<div class="bg-secondary-container h-full" style="width: 20%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-param text-code-param">
+<span>Vel: <strong class="text-on-surface">380 mm/min</strong></span>
+<span>Potencia: <strong class="text-secondary">90% (~18.0W)</strong></span>
+<span>Foco: <strong class="text-primary-container">18.5mm</strong></span>
+</div>
+</div>
+<!-- Material 3: Acrílico Negro 3mm -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Acrílico Opaco Negro 3.0 mm</span>
+</div>
+<span class="font-label-mono text-label-mono text-primary-container uppercase">Borde Pulido</span>
+</div>
+<!-- Wattage Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 70%;"></div>
+<div class="bg-secondary-container h-full" style="width: 25%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-param text-code-param">
+<span>Vel: <strong class="text-on-surface">220 mm/min</strong></span>
+<span>Potencia: <strong class="text-secondary">95% (~19.0W)</strong></span>
+<span>Foco: <strong class="text-primary-container">18.5mm</strong></span>
+</div>
+</div>
+<div class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-error font-semibold">ADVERTENCIA:</span> Acrílico transparente o azul es permeable a los 450nm (no absorbe calor).
+        </div>
+</div>
+<!-- Periodic Maintenance Checklist -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">build_circle</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Mantenimiento Periódico de Taller</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">CICLO: 25H</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Step 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[16px]">clean_hands</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Limpieza de Lente Protectora</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Aplicar hisopo de algodón con <strong>alcohol isopropílico 99.9%</strong> sin presión circular. Elimina residuo de resina volátil antes de que degrade el cristal.
+              </span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">expand</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Tensión de Correas GT2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Comprobación de deflexión máxima de 3mm al centro del eje X/Y. Re-apretar tensores Allen de perfil 2020 para prevenir backlash en círculos cerrados.
+              </span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-medium">Lubricación de Guías Lineales</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Aceite fino sintético PTFE en rodamientos de ranura V-Wheel y barras guía cilíndricas. Limpiar pelusa antes de re-aplicar.
+              </span>
+</div>
+</div>
+</div>
+<!-- Diagnostic State Pill -->
+<div class="bg-surface-container-highest p-space-xs rounded-lg flex items-center justify-between text-on-surface font-label-mono text-label-mono mt-space-xs">
+<span>ÚLTIMA INSPECCIÓN: HOY 09:15</span>
+<span class="text-tertiary uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            MECÁNICA ÓPTIMA
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Interactive Footer Tray: Real-time Telemetry Status -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md shadow-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container text-[24px]">developer_board</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Integración LightBurn 1.6+ Certificada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Controlador configurado: Dispositivo GRBL genérico • Coordenadas de origen: Inferior Izquierda (X0 Y0) • Soporte Z: Manual
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="px-space-md py-space-xs bg-surface-container-highest rounded-lg flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Asistencia Neumática</span>
+<span class="font-code-param text-code-param text-tertiary font-bold">M8 Válvula ON</span>
+</div>
+<div class="px-space-md py-space-xs bg-surface-container-highest rounded-lg flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Límite Térmico</span>
+<span class="font-code-param text-code-param text-secondary font-bold">34°C / 65°C Max</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // LightBurn Profile Download Emulation
+  const btnDownloadLbdev = document.getElementById('btnDownloadLbdev');
+  if (btnDownloadLbdev) {
+    btnDownloadLbdev.addEventListener('click', () => {
+      const lbdevConfig = {
+        "DeviceName": "Bendito_Vevor_JL3_Pro_20W",
+        "Firmware": "GRBL 1.1f",
+        "Dimensions": { "Width": 300, "Height": 300 },
+        "BaudRate": 115200,
+        "LaserMode": true,
+        "MaxSValue": 1000,
+        "CruiseSpeed": 10000,
+        "Acceleration": 1000,
+        "AirAssistCommand": "M8",
+        "SpotSize": "0.08x0.06mm"
+      };
+
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lbdevConfig, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "Bendito_JL3Pro_20W.lbdev");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+
+      const log = document.getElementById('terminalLog');
+      if (log) {
+        const item = document.createElement('div');
+        item.className = "text-tertiary";
+        item.innerText = ">> Perfil .lbdev generado y transferido a cliente con éxito.";
+        log.appendChild(item);
+        log.scrollTop = log.scrollHeight;
+      }
+    });
+  }
+
+  // Push Dump to Machine Emulation
+  const btnPushDump = document.getElementById('btnPushDump');
+  if (btnPushDump) {
+    btnPushDump.addEventListener('click', () => {
+      const log = document.getElementById('terminalLog');
+      if (log) {
+        btnPushDump.disabled = true;
+        btnPushDump.classList.add('opacity-50');
+
+        const step1 = document.createElement('div');
+        step1.className = "text-secondary";
+        step1.innerText = ">> Enviando cadena: $30=1000, $32=1, $110=10000, $111=10000...";
+        log.appendChild(step1);
+        log.scrollTop = log.scrollHeight;
+
+        setTimeout(() => {
+          const step2 = document.createElement('div');
+          step2.className = "text-primary-container";
+          step2.innerText = ">> $120=1000, $121=1000, $130=300, $131=300 -> OK";
+          log.appendChild(step2);
+
+          const step3 = document.createElement('div');
+          step3.className = "text-tertiary font-bold";
+          step3.innerText = "[EEPROM 32-BIT ACTUALIZADO EXITOSAMENTE]";
+          log.appendChild(step3);
+          log.scrollTop = log.scrollHeight;
+
+          btnPushDump.disabled = false;
+          btnPushDump.classList.remove('opacity-50');
+        }, 650);
+      }
+    });
+  }
+</script></main></div></body></html>

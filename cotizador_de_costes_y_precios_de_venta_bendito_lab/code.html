@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#22ef7e","error":"#ffb4ab","on-error":"#690005","on-primary-fixed":"#001f24","surface-variant":"#2f353e","primary-fixed":"#9cf0ff","outline-variant":"#3b494c","on-tertiary-container":"#006731","background":"#0e141c","on-secondary-fixed":"#341100","tertiary":"#b1ffbf","on-tertiary-fixed":"#00210b","on-secondary-container":"#562000","on-surface":"#dde3ee","primary":"#c3f5ff","secondary-fixed-dim":"#ffb692","on-primary-fixed-variant":"#004f58","tertiary-fixed":"#62ff96","surface-container-highest":"#2f353e","outline":"#849396","surface-container-low":"#161c24","inverse-on-surface":"#2b3139","on-error-container":"#ffdad6","primary-container":"#00e5ff","on-background":"#dde3ee","on-primary":"#00363d","error-container":"#93000a","tertiary-fixed-dim":"#00e475","surface-bright":"#343a42","surface-tint":"#00daf3","inverse-surface":"#dde3ee","on-secondary":"#562000","on-secondary-fixed-variant":"#7a3000","on-primary-container":"#00626e","surface-container":"#1a2028","surface":"#0e141c","secondary-container":"#fd6c00","on-tertiary-fixed-variant":"#005226","surface-dim":"#0e141c","on-surface-variant":"#bac9cc","surface-container-high":"#242a33","on-tertiary":"#003918","surface-container-lowest":"#090f16","secondary-fixed":"#ffdbcb","inverse-primary":"#006875","primary-fixed-dim":"#00daf3","secondary":"#ffb692"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-mobile":"1rem","space-xl":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"0.75rem","margin":"1.5rem","gutter-mobile":"0.75rem","gutter":"1rem","space-lg":"1.25rem"},fontFamily:{"metric-md":["JetBrains Mono"],"label-mono":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"metric-xl":["JetBrains Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Space Grotesk"],"display-hero":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-md":["Inter"],"title-sm":["Inter"],"code-param":["JetBrains Mono"],"display-hero-mobile":["Space Grotesk"]},fontSize:{"metric-md":["16px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-xl":["24px",{"lineHeight":"28px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"display-hero":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"title-sm":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"code-param":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="w-full h-16 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="p-space-xs bg-surface-container-high rounded flex items-center justify-center"><img alt="Bendito Lab" class="w-8 h-8 rounded object-cover filter invert contrast-125 brightness-150" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">BENDITO LAB</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest mt-0.5">Parámetros de Producción</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded"><span class="material-symbols-outlined text-primary-container text-sm">precision_manufacturing</span><span class="font-code-param text-code-param text-on-surface">Vevor JL3-PRO 20W</span><span class="font-label-mono text-label-mono text-outline px-1.5 py-0.5 bg-surface-container rounded">(30x30cm)</span></div></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-primary-container font-semibold rounded-lg shadow-[0_0_10px_rgba(0,229,255,0.15)]"><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="calculadora-parametros" href="#">Calculadora &amp; Parámetros</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="cotizador-precios-venta" href="#">Cotizador &amp; Precios de Venta</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="asistente-ia-taller" href="#">Asistente IA Taller</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="ficha-tecnica-grbl" href="#">Ficha Técnica GRBL</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-1.5 rounded"><div class="flex items-center gap-1.5"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-fixed"></span></span><span class="font-label-mono text-label-mono text-tertiary-fixed">EN VIVO</span></div><div class="hidden sm:flex items-center gap-2 pl-2"><span class="font-label-mono text-label-mono text-on-surface-variant">POT:</span><span class="font-metric-md text-metric-md text-secondary-container">20W</span><span class="font-label-mono text-label-mono text-on-surface-variant ml-1">ESTADO:</span><span class="font-code-param text-code-param text-primary-container">LISTO</span></div></div><div class="flex items-center gap-space-xs"><button class="hidden lg:flex items-center gap-1 px-space-sm py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono uppercase rounded transition-colors" title="Enmarcar Material (Bounding Box)" type="button"><span class="material-symbols-outlined text-base text-primary-container">crop_free</span>Frame</button><button class="flex items-center gap-1 px-space-md py-1.5 bg-error-container hover:bg-error text-on-error font-label-mono text-label-mono uppercase rounded shadow-[0_0_12px_rgba(255,23,68,0.35)] transition-all" title="Parada de Emergencia Inmediata" type="button"><span class="material-symbols-outlined text-base">emergency</span>E-Stop</button></div><div class="pl-space-xs flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest hidden xl:flex flex-col justify-between py-space-md z-40"><div class="px-space-md flex flex-col gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-mono text-label-mono text-outline uppercase tracking-wider px-space-xs">Telemetría Ejes CNC</span><div class="grid grid-cols-3 gap-space-xs"><div class="bg-surface-container p-space-xs rounded flex flex-col"><span class="font-label-mono text-label-mono text-on-surface-variant">X-POS</span><span class="font-code-param text-code-param text-primary-container">0.00</span></div><div class="bg-surface-container p-space-xs rounded flex flex-col"><span class="font-label-mono text-label-mono text-on-surface-variant">Y-POS</span><span class="font-code-param text-code-param text-primary-container">0.00</span></div><div class="bg-surface-container p-space-xs rounded flex flex-col"><span class="font-label-mono text-label-mono text-on-surface-variant">Z-FOC</span><span class="font-code-param text-code-param text-secondary-container">50.0</span></div></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-mono text-label-mono text-outline uppercase tracking-wider px-space-xs">Flujo de Trabajo</span><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container-high text-primary font-semibold rounded"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="calculadora-parametros" href="#"><span class="material-symbols-outlined text-lg text-primary-container">tune</span><span>Calculadora Matriz</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cotizador-precios-venta" href="#"><span class="material-symbols-outlined text-lg text-secondary">payments</span><span>Cotizador Rápido</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="asistente-ia-taller" href="#"><span class="material-symbols-outlined text-lg text-tertiary">smart_toy</span><span>Asistente Taller</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="ficha-tecnica-grbl" href="#"><span class="material-symbols-outlined text-lg text-on-surface-variant">terminal</span><span>Consola GRBL</span></a></nav></div></div><div class="px-space-md flex flex-col gap-space-xs"><div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1"><div class="flex justify-between items-center"><span class="font-label-mono text-label-mono text-outline">DIODO ACTIVO</span><span class="font-label-mono text-label-mono text-tertiary-fixed">450nm</span></div><div class="flex justify-between items-center"><span class="font-label-mono text-label-mono text-outline">LENTE</span><span class="font-code-param text-code-param text-on-surface">0.08x0.08mm</span></div></div></div></aside><div class="xl:pl-64 min-h-screen flex flex-col"><main class="w-full flex-1 pt-16 bg-background"><div class="flex flex-col w-full">
+<!-- Subheader / Workspace Status Band -->
+<div class="w-full bg-surface-container-low px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-lg">calculate</span>
+<span class="font-headline-md text-title-sm text-on-surface">Cotizador Industrial &amp; Margen Estratégico</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-outline">REF PRODUCTO:</span>
+<span class="font-code-param text-code-param text-primary">BL-PRD-2025-089</span>
+</div>
+<div class="hidden md:flex items-center gap-1.5 px-space-xs py-0.5 bg-surface-container rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">AIR ASSIST: 2.5 BAR ACTIVO</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-outline">HORA OPERADOR:</span>
+<span class="font-metric-md text-metric-md text-on-surface">18.00€/h</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-outline">TARIFA ELÉCTRICA:</span>
+<span class="font-metric-md text-metric-md text-on-surface">0.22€/kWh</span>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 bg-surface-container hover:bg-surface-container-high rounded font-label-mono text-label-mono text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">tune</span> RECALIBRAR BASE
+      </button>
+</div>
+</div>
+<!-- 3-Column Industrial Layout -->
+<div class="w-full p-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- COLUMNA 1: CONFIGURACIÓN & ESCANDALLO DE COSTES (5 cols) -->
+<section class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Top Config Block -->
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-md shadow-md">
+<!-- Job Type Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">01 // TIPO DE OPERACIÓN LÁSER</span>
+<span class="font-label-mono text-label-mono text-primary-container">PERFIL VE陉 JL3-PRO 20W</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-1 p-1 bg-surface-container-lowest rounded">
+<button class="py-1.5 px-2 rounded font-label-mono text-label-mono text-on-surface hover:bg-surface-container text-center transition-colors" id="btn-job-cut" type="button">CORTE</button>
+<button class="py-1.5 px-2 rounded font-label-mono text-label-mono text-on-surface hover:bg-surface-container text-center transition-colors" id="btn-job-vector" type="button">LINEAL</button>
+<button class="py-1.5 px-2 rounded font-label-mono text-label-mono text-on-surface hover:bg-surface-container text-center transition-colors" id="btn-job-raster" type="button">RASTER</button>
+<button class="py-1.5 px-2 rounded bg-surface-container-high font-label-mono text-label-mono text-primary-container font-semibold text-center shadow-sm" id="btn-job-combo" type="button">COMBINADO</button>
+</div>
+</div>
+<!-- Material Base Selector & Stock Info -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-outline uppercase tracking-wider" for="material-select">02 // MATERIAL BASE &amp; ESPESOR</label>
+<div class="relative">
+<select class="w-full bg-surface-container px-space-sm py-2 rounded font-body-md text-body-md text-on-surface focus:bg-surface-container-high focus:text-primary-container outline-none transition-colors appearance-none pr-8 cursor-pointer" id="material-select">
+<option selected="" value="chopo-3">Contrachapado de Chopo 3mm Calibrado Láser (Plancha 600x400mm = 4.20€)</option>
+<option value="chopo-5">Contrachapado de Chopo 5mm Núcleo Limpio (Plancha 600x400mm = 6.10€)</option>
+<option value="mdf-3">DM / MDF Crudo 3mm Especial Grabado (Plancha 600x400mm = 2.90€)</option>
+<option value="acrilico-3">Acrílico Negro Fundición (Cast) 3mm (Plancha 300x300mm = 5.80€)</option>
+<option value="pino-10">Tablilla Maciza de Pino Alistonado 10mm (Unidad = 3.50€)</option>
+<option value="cuero-veg">Piel / Cuero Curtición Vegetal 1.8mm (Pieza 200x300mm = 7.20€)</option>
+<option value="aluminio-anod">Chapa Aluminio Negro Anodizado Marcado (100x150mm = 2.40€)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-on-surface-variant pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Bed Nesting & Dimensions -->
+<div class="bg-surface-container rounded p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">ÁREA DE CORTE (CAMA 300×300 mm)</span>
+<span class="font-code-param text-code-param text-secondary">MERMA TÉCNICA: +10%</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-label-mono text-label-mono text-outline">ANCHO PIEZA</span>
+<div class="flex items-center justify-between">
+<input class="bg-transparent font-metric-md text-metric-md text-primary-container w-20 outline-none" id="input-width" max="300" min="10" type="number" value="150"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-label-mono text-label-mono text-outline">ALTO PIEZA</span>
+<div class="flex items-center justify-between">
+<input class="bg-transparent font-metric-md text-metric-md text-primary-container w-20 outline-none" id="input-height" max="300" min="10" type="number" value="200"/>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm</span>
+</div>
+</div>
+</div>
+<!-- Micro visual of 300x300 bed utilization -->
+<div class="flex items-center gap-space-sm pt-1">
+<div class="w-16 h-16 bg-surface-container-lowest rounded relative flex-shrink-0 p-1 flex items-center justify-center">
+<div class="w-full h-full bg-surface-container-low rounded relative overflow-hidden">
+<!-- 150x200 scaled in 300x300 (50% w, 66% h) -->
+<div class="absolute top-0 left-0 bg-primary-container/30 w-1/2 h-2/3 rounded-sm flex items-center justify-center" id="bed-rect-preview">
+<span class="font-label-mono text-[8px] text-primary-container">PIEZA</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col text-body-sm font-body-sm text-on-surface-variant gap-0.5">
+<div class="flex justify-between gap-space-md">
+<span>Superficie útil:</span>
+<span class="font-code-param text-code-param text-on-surface font-semibold" id="surface-util">300 cm² (33.3% cama)</span>
+</div>
+<div class="flex justify-between gap-space-md">
+<span>Piezas por plancha (600x400):</span>
+<span class="font-code-param text-code-param text-tertiary-fixed font-semibold">8 unidades (Nesting óptimo)</span>
+</div>
+<div class="flex justify-between gap-space-md">
+<span>Coste unitario material + scrap:</span>
+<span class="font-code-param text-code-param text-secondary-container font-semibold" id="cost-material-display">0.58 €</span>
+</div>
+</div>
+</div>
+</div>
+<!-- LightBurn Feed & Speed Times -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">03 // TIEMPO LIGHTBURN ESTIMADO</span>
+<span class="font-label-mono text-label-mono text-secondary-container">POTENCIA 20W DIODO</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container rounded p-space-xs flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono text-outline">TIEMPO CORTE</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">450 mm/m</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<input class="w-12 bg-transparent font-metric-md text-metric-md text-on-surface outline-none" id="input-cut-min" min="0" type="number" value="4"/>
+<span class="font-label-mono text-label-mono text-outline">min</span>
+<input class="w-12 bg-transparent font-metric-md text-metric-md text-on-surface outline-none" id="input-cut-sec" max="59" min="0" type="number" value="30"/>
+<span class="font-label-mono text-label-mono text-outline">seg</span>
+</div>
+</div>
+<div class="bg-surface-container rounded p-space-xs flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono text-outline">TIEMPO RASTER</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">4000 mm/m</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<input class="w-12 bg-transparent font-metric-md text-metric-md text-on-surface outline-none" id="input-raster-min" min="0" type="number" value="10"/>
+<span class="font-label-mono text-label-mono text-outline">min</span>
+<input class="w-12 bg-transparent font-metric-md text-metric-md text-on-surface outline-none" id="input-raster-sec" max="59" min="0" type="number" value="00"/>
+<span class="font-label-mono text-label-mono text-outline">seg</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between px-space-xs py-1 bg-surface-container-lowest rounded">
+<span class="font-label-mono text-label-mono text-outline">CICLO MÁQUINA TOTAL:</span>
+<span class="font-code-param text-code-param text-primary font-bold" id="display-cycle-time">14 min 30 s (0.242 h)</span>
+</div>
+</div>
+<!-- Labor & Hand-Finishing Post-Processing -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">04 // MANIPULADO Y OPERARIO (18€/h)</span>
+<span class="font-label-mono text-label-mono text-tertiary">0.30€ / minuto</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-1.5 rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">design_services</span>
+<span>Prep LightBurn, trazado &amp; enfoque focal</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-10 text-right bg-surface-container-low px-1 rounded font-code-param text-code-param text-on-surface outline-none" id="prep-min" type="number" value="5"/>
+<span class="font-label-mono text-label-mono text-outline">min</span>
+<span class="font-code-param text-code-param text-on-surface font-semibold w-14 text-right" id="prep-cost">1.50 €</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-1.5 rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">carpenter</span>
+<span>Lijado P400, alcohol isopropílico, montaje</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-10 text-right bg-surface-container-low px-1 rounded font-code-param text-code-param text-on-surface outline-none" id="sand-min" type="number" value="4"/>
+<span class="font-label-mono text-label-mono text-outline">min</span>
+<span class="font-code-param text-code-param text-on-surface font-semibold w-14 text-right" id="sand-cost">1.20 €</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container px-space-sm py-1.5 rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">inventory_2</span>
+<span>Packaging Kraft protector + celofán + faja</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-14 text-right bg-surface-container-low px-1 rounded font-code-param text-code-param text-on-surface outline-none" id="pack-cost" step="0.05" type="number" value="0.65"/>
+<span class="font-label-mono text-label-mono text-outline">€ fijo</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- COGS Total Breakdown Display Card -->
+<div class="bg-surface-container-high rounded p-space-md flex flex-col gap-space-sm shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container">receipt_long</span>
+<span class="font-headline-md text-headline-md text-on-surface">Coste Real Fab. (COGS)</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-secondary rounded">ESCANDALLO DIRECTO</span>
+</div>
+<!-- Breakdown lines -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-mono text-[10px] text-outline uppercase">MATERIAL + MERMA</span>
+<span class="font-metric-md text-metric-md text-on-surface" id="cogs-mat">0.58 €</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">13.2% del total</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-mono text-[10px] text-outline uppercase">MÁQUINA + LUZ</span>
+<span class="font-metric-md text-metric-md text-on-surface" id="cogs-mach">0.45 €</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">10.3% (Diodo+KW)</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-mono text-[10px] text-outline uppercase">MANO DE OBRA</span>
+<span class="font-metric-md text-metric-md text-on-surface" id="cogs-labor">2.70 €</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">61.6% (9 min tot)</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-mono text-[10px] text-outline uppercase">PACKAGING</span>
+<span class="font-metric-md text-metric-md text-on-surface" id="cogs-pack">0.65 €</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant">14.8% celofán/kraft</span>
+</div>
+</div>
+<!-- Grand Cost Number -->
+<div class="mt-2 pt-space-xs flex items-baseline justify-between bg-surface-container-lowest px-space-md py-space-sm rounded">
+<span class="font-label-mono text-label-mono text-outline">COSTE TOTAL POR UNIDAD PRODUCIDA:</span>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-xl text-metric-xl text-secondary-container" id="cogs-total">4.38</span>
+<span class="font-headline-md text-title-sm text-secondary-container">€</span>
+</div>
+</div>
+</div>
+</section>
+<!-- COLUMNA 2: MERCADO, BENCHMARK Y DIFERENCIAL (3 cols) -->
+<section class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- Market Benchmark Card -->
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">BENCHMARK DE MERCADO</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">storefront</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Placa Natalicio / Señalética Madera 15x20cm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auditoría Etsy España, Amazon Handmade &amp; Artesanos IG</span>
+</div>
+<!-- Tier 1: Low-end Marketplace -->
+<div class="bg-surface-container rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">GAMA BAJA (Importación / Ali)</span>
+</div>
+<span class="font-metric-md text-metric-md text-error">9.90 €</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Corte carbonizado sin Air Assist, olor a quemado persistente, sin lijado posterior, packaging de sobre burbuja genérico. Margen de taller insuficiente (ruina operativa).
+          </p>
+</div>
+<!-- Tier 2: Mid-tier Local Workshop -->
+<div class="bg-surface-container rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">PROMEDIO ARTESANOS LOCALES</span>
+</div>
+<span class="font-metric-md text-metric-md text-secondary-fixed-dim">16.50 € - 19.90 €</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Grabados limpios estándar, madera contrachapada habitual. Venta por redes sociales y ferias de artesanía. Plazo de entrega de 3 a 5 días laborables.
+          </p>
+</div>
+<!-- Tier 3: Premium Bespoke -->
+<div class="bg-surface-container rounded p-space-sm flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">PREMIUM / BOUTIQUE REGALO</span>
+</div>
+<span class="font-metric-md text-metric-md text-primary-container">24.50 € - 28.00 €</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Madera noble o chopo encerado a mano, caja dura serigrafiada, tipografía caligráfica revisada por diseñador, tarjeta de felicitación personalizada incluida.
+          </p>
+</div>
+<!-- Visual Position Bar in Market -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-mono text-label-mono text-outline uppercase">POSICIONAMIENTO BENDITO LAB</span>
+<div class="w-full bg-surface-container-lowest h-3 rounded-full overflow-hidden relative flex">
+<!-- Low band -->
+<div class="w-[30%] bg-error/40 h-full"></div>
+<!-- Mid band -->
+<div class="w-[40%] bg-secondary-container/40 h-full"></div>
+<!-- High band -->
+<div class="w-[30%] bg-primary-container/40 h-full"></div>
+<!-- Pin pointing to Bendito Lab (Sweet spot ~68%) -->
+<div class="absolute left-[66%] top-0 bottom-0 w-1.5 bg-primary-container shadow-[0_0_8px_#00e5ff]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-label-mono text-outline">
+<span>9.90€ (Low)</span>
+<span class="text-primary font-bold">18.50€ (Bendito Lab)</span>
+<span>28.00€ (High)</span>
+</div>
+</div>
+</div>
+<!-- Value Props / Justification Checklist -->
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">CHECKLIST DE VALOR AÑADIDO</span>
+<span class="font-label-mono text-label-mono text-tertiary">DEFENSA DE PVP</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="flex items-start gap-space-xs cursor-pointer p-1.5 bg-surface-container rounded hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 accent-[#00e5ff] rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Air Assist a 2.5 bar continuo</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Bordes 100% libres de halo amarillo o humo quemado.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs cursor-pointer p-1.5 bg-surface-container rounded hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 accent-[#00e5ff] rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Lijado micrograno P400 + Cera natural</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Tacto sedoso sin astillas ni asperezas industriales.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs cursor-pointer p-1.5 bg-surface-container rounded hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 accent-[#00e5ff] rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Mockup digital vía WhatsApp previo</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Aprobación de tipografía y foto antes de pulsar START.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-xs cursor-pointer p-1.5 bg-surface-container rounded hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 accent-[#00e5ff] rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Producción y envío Express 24/48h</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Despacho desde taller local frente a 12 días de importación.</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- COLUMNA 3: ESTRATEGIA DE MARGEN & COTIZADOR COMERCIAL (4 cols) -->
+<section class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Margin Strategy Selector -->
+<div class="bg-surface-container-low rounded p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">ESTRATEGIA DE MARGEN COMERCIAL</span>
+<span class="material-symbols-outlined text-tertiary text-base">trending_up</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Option A: Standard Workshop 65% -->
+<div class="cursor-pointer bg-surface-container hover:bg-surface-container-high rounded p-space-sm flex items-center justify-between transition-all" id="card-margin-std">
+<div class="flex items-center gap-space-xs">
+<input class="accent-[#00e5ff]" id="rad-std" name="margin-strategy" type="radio" value="65"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Taller Estándar (65%)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Venta equilibrada / Tracción</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-on-surface">14.90 €</span>
+<span class="font-label-mono text-label-mono text-tertiary-fixed">+10.52 € net</span>
+</div>
+</div>
+<!-- Option B: Premium Direct B2C 75% (Selected default) -->
+<div class="cursor-pointer bg-surface-container-high rounded p-space-sm flex items-center justify-between transition-all shadow-[0_0_10px_rgba(0,229,255,0.15)]" id="card-margin-prem">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="accent-[#00e5ff]" id="rad-prem" name="margin-strategy" type="radio" value="75"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-primary font-bold">Premium Directo B2C (75%)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Personalización + Acabado fino</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-primary-container">18.50 €</span>
+<span class="font-label-mono text-label-mono text-tertiary-fixed">+14.12 € net</span>
+</div>
+</div>
+<!-- Option C: B2B Wholesaler 40% -->
+<div class="cursor-pointer bg-surface-container hover:bg-surface-container-high rounded p-space-sm flex items-center justify-between transition-all" id="card-margin-b2b">
+<div class="flex items-center gap-space-xs">
+<input class="accent-[#00e5ff]" id="rad-b2b" name="margin-strategy" type="radio" value="45"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Distribuidor / Tiendas B2B (45%)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Reventa sin empaque final</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-secondary">8.50 €</span>
+<span class="font-label-mono text-label-mono text-secondary-fixed-dim">+4.12 € net</span>
+</div>
+</div>
+</div>
+<!-- Volume Discount Tier Ladder -->
+<div class="flex flex-col gap-space-xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">ESCALA POR VOLUMEN (LOTE)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">APROVECHAMIENTO ANIDADO</span>
+</div>
+<div class="space-y-1 font-body-sm text-body-sm">
+<div class="flex justify-between items-center bg-surface-container px-space-sm py-1.5 rounded">
+<span class="font-label-mono text-label-mono text-on-surface">1 a 4 unidades (Muestras / Unitario)</span>
+<span class="font-code-param text-code-param text-primary font-bold">18.50 €/ud</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container px-space-sm py-1.5 rounded">
+<span class="font-label-mono text-label-mono text-on-surface">5 a 19 unidades (-20% ahorro batch)</span>
+<span class="font-code-param text-code-param text-tertiary">14.80 €/ud</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container px-space-sm py-1.5 rounded">
+<span class="font-label-mono text-label-mono text-on-surface">20 a 49 unidades (-38% nesting continuo)</span>
+<span class="font-code-param text-code-param text-secondary">11.45 €/ud</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container px-space-sm py-1.5 rounded">
+<span class="font-label-mono text-label-mono text-on-surface">50+ unidades (Tirada B2B industrial)</span>
+<span class="font-code-param text-code-param text-secondary-container font-bold">8.90 €/ud</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Commercial Summary & Action Dispatch -->
+<div class="bg-surface-container-high rounded p-space-md flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">RENTABILIDAD CONSOLIDADA</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-tertiary-fixed rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span> ALTA
+          </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-outline">PVP SUGERIDO (IVA INCL.)</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-xl text-metric-xl text-primary-container" id="final-pvp">18.50</span>
+<span class="font-metric-md text-metric-md text-primary-container">€</span>
+</div>
+<span class="font-label-mono text-[10px] text-on-surface-variant">Base: 15.29€ + 21% IVA</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-outline">MARGEN NETO / UNIDAD</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-xl text-metric-xl text-tertiary-fixed" id="final-margin">+14.12</span>
+<span class="font-metric-md text-metric-md text-tertiary-fixed">€</span>
+</div>
+<span class="font-label-mono text-[10px] text-tertiary">76.3% retorno bruto</span>
+</div>
+</div>
+<!-- Metric of Workshop Hourly Yield -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">speed</span>
+<span class="font-body-sm text-body-sm text-on-surface">Rendimiento Taller por Hora:</span>
+</div>
+<span class="font-metric-md text-metric-md text-primary font-bold" id="hourly-yield">42.50 € / h</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full py-2.5 bg-primary-container hover:bg-surface-tint text-on-primary font-headline-md text-title-sm font-bold rounded flex items-center justify-center gap-2 shadow-[0_0_12px_rgba(0,229,255,0.3)] transition-all" id="btn-gen-quote" type="button">
+<span class="material-symbols-outlined text-lg">picture_as_pdf</span>
+            Generar Presupuesto Formal PDF
+          </button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-2 bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-mono text-label-mono uppercase rounded flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-primary">table_chart</span>
+              A Excel / Trello
+            </button>
+<button class="py-2 bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-mono text-label-mono uppercase rounded flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-tertiary">bookmark_add</span>
+              Guardar en Catálogo
+            </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Toast for User Feedback -->
+<div class="fixed bottom-6 right-6 bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded shadow-xl flex items-center gap-space-sm opacity-0 pointer-events-none transition-opacity duration-300 z-50" id="toast-notify">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-msg">Presupuesto guardado correctamente.</span>
+</div>
+</div>
+<script>
+  // Simple reactive computation script for live quote updates
+  document.addEventListener('DOMContentLoaded', () => {
+    const inputWidth = document.getElementById('input-width');
+    const inputHeight = document.getElementById('input-height');
+    const materialSelect = document.getElementById('material-select');
+    const cutMin = document.getElementById('input-cut-min');
+    const cutSec = document.getElementById('input-cut-sec');
+    const rasterMin = document.getElementById('input-raster-min');
+    const rasterSec = document.getElementById('input-raster-sec');
+    const prepMin = document.getElementById('prep-min');
+    const sandMin = document.getElementById('sand-min');
+    const packCostInput = document.getElementById('pack-cost');
+
+    const surfaceUtil = document.getElementById('surface-util');
+    const bedPreview = document.getElementById('bed-rect-preview');
+    const costMatDisplay = document.getElementById('cost-material-display');
+    const cycleTimeDisplay = document.getElementById('display-cycle-time');
+
+    const cogsMat = document.getElementById('cogs-mat');
+    const cogsMach = document.getElementById('cogs-mach');
+    const cogsLabor = document.getElementById('cogs-labor');
+    const cogsPack = document.getElementById('cogs-pack');
+    const cogsTotal = document.getElementById('cogs-total');
+
+    const finalPvp = document.getElementById('final-pvp');
+    const finalMargin = document.getElementById('final-margin');
+    const hourlyYield = document.getElementById('hourly-yield');
+
+    const radStd = document.getElementById('rad-std');
+    const radPrem = document.getElementById('rad-prem');
+    const radB2b = document.getElementById('rad-b2b');
+
+    const cardStd = document.getElementById('card-margin-std');
+    const cardPrem = document.getElementById('card-margin-prem');
+    const cardB2b = document.getElementById('card-margin-b2b');
+
+    const toast = document.getElementById('toast-notify');
+    const toastMsg = document.getElementById('toast-msg');
+    const btnQuote = document.getElementById('btn-gen-quote');
+
+    function calculate() {
+      const w = parseFloat(inputWidth.value) || 150;
+      const h = parseFloat(inputHeight.value) || 200;
+      
+      // Update mini preview box
+      const pctW = Math.min(100, Math.max(10, (w / 300) * 100));
+      const pctH = Math.min(100, Math.max(10, (h / 300) * 100));
+      bedPreview.style.width = pctW + '%';
+      bedPreview.style.height = pctH + '%';
+
+      const areaCm2 = (w * h) / 100;
+      const pctBed = ((areaCm2 / 900) * 100).toFixed(1);
+      surfaceUtil.textContent = `${areaCm2.toFixed(0)} cm² (${pctBed}% cama)`;
+
+      // Material cost estimation: Standard base sheet 600x400 = 2400 cm2 = 4.20€
+      let sheetPrice = 4.20;
+      if (materialSelect.value === 'chopo-5') sheetPrice = 6.10;
+      else if (materialSelect.value === 'mdf-3') sheetPrice = 2.90;
+      else if (materialSelect.value === 'acrilico-3') sheetPrice = 15.00;
+      else if (materialSelect.value === 'pino-10') sheetPrice = 9.00;
+      else if (materialSelect.value === 'cuero-veg') sheetPrice = 18.00;
+      else if (materialSelect.value === 'aluminio-anod') sheetPrice = 12.00;
+
+      const baseMatCost = (areaCm2 / 2400) * sheetPrice;
+      const matWithScrap = baseMatCost * 1.10; // +10% scrap
+      costMatDisplay.textContent = matWithScrap.toFixed(2) + ' €';
+      cogsMat.textContent = matWithScrap.toFixed(2) + ' €';
+
+      // Machine time calculation
+      const totalSec = (parseInt(cutMin.value || 0) * 60) + parseInt(cutSec.value || 0) +
+                       (parseInt(rasterMin.value || 0) * 60) + parseInt(rasterSec.value || 0);
+      const totalHours = totalSec / 3600;
+      const minText = Math.floor(totalSec / 60);
+      const secText = totalSec % 60;
+      cycleTimeDisplay.textContent = `${minText} min ${secText} s (${totalHours.toFixed(3)} h)`;
+
+      // Machine wear (1.80€/h) + electric (136W @ 0.22€/kWh = 0.03€/h) = 1.83€/h
+      const machCost = totalHours * 1.83;
+      cogsMach.textContent = machCost.toFixed(2) + ' €';
+
+      // Labor (18€/h = 0.30€/min)
+      const pMin = parseFloat(prepMin.value) || 0;
+      const sMin = parseFloat(sandMin.value) || 0;
+      const laborCost = (pMin + sMin) * 0.30;
+      cogsLabor.textContent = laborCost.toFixed(2) + ' €';
+
+      // Packaging
+      const pCost = parseFloat(packCostInput.value) || 0.65;
+      cogsPack.textContent = pCost.toFixed(2) + ' €';
+
+      // Total COGS
+      const totalCogs = matWithScrap + machCost + laborCost + pCost;
+      cogsTotal.textContent = totalCogs.toFixed(2);
+
+      // Margin strategy
+      let marginPct = 75;
+      if (radStd.checked) marginPct = 65;
+      if (radB2b.checked) marginPct = 45;
+
+      const pvpCalc = totalCogs / (1 - (marginPct / 100));
+      finalPvp.textContent = pvpCalc.toFixed(2);
+      const netProfit = pvpCalc - totalCogs;
+      finalMargin.textContent = '+' + netProfit.toFixed(2);
+
+      // Hourly yield for workshop
+      const totalJobHours = totalHours + ((pMin + sMin) / 60);
+      const yieldPerHour = totalJobHours > 0 ? (netProfit / totalJobHours) : 40;
+      hourlyYield.textContent = yieldPerHour.toFixed(2) + ' € / h';
+    }
+
+    [inputWidth, inputHeight, materialSelect, cutMin, cutSec, rasterMin, rasterSec, prepMin, sandMin, packCostInput].forEach(el => {
+      el.addEventListener('input', calculate);
+      el.addEventListener('change', calculate);
+    });
+
+    // Strategy switch visual feedback
+    const radios = [radStd, radPrem, radB2b];
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        cardStd.classList.remove('bg-surface-container-high', 'shadow-[0_0_10px_rgba(0,229,255,0.15)]');
+        cardPrem.classList.remove('bg-surface-container-high', 'shadow-[0_0_10px_rgba(0,229,255,0.15)]');
+        cardB2b.classList.remove('bg-surface-container-high', 'shadow-[0_0_10px_rgba(0,229,255,0.15)]');
+
+        if (radStd.checked) cardStd.classList.add('bg-surface-container-high');
+        if (radPrem.checked) cardPrem.classList.add('bg-surface-container-high', 'shadow-[0_0_10px_rgba(0,229,255,0.15)]');
+        if (radB2b.checked) cardB2b.classList.add('bg-surface-container-high');
+        calculate();
+      });
+    });
+
+    // Button actions
+    btnQuote.addEventListener('click', () => {
+      toastMsg.textContent = 'Presupuesto PDF generado con éxito para cliente.';
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 3000);
+    });
+
+    calculate();
+  });
+</script></main></div></body></html>

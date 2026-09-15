@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#dde3ee", "on-secondary-container": "#562000", "error": "#ffb4ab", "primary-container": "#00e5ff", "secondary-fixed": "#ffdbcb", "error-container": "#93000a", "surface-container-high": "#242a33", "surface-tint": "#00daf3", "on-tertiary-container": "#006731", "surface": "#0e141c", "inverse-primary": "#006875", "on-tertiary-fixed": "#00210b", "primary": "#c3f5ff", "on-primary-container": "#00626e", "on-secondary-fixed-variant": "#7a3000", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "tertiary-fixed": "#62ff96", "inverse-surface": "#dde3ee", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "secondary-fixed-dim": "#ffb692", "on-error": "#690005", "background": "#0e141c", "outline-variant": "#3b494c", "surface-dim": "#0e141c", "secondary-container": "#fd6c00", "on-background": "#dde3ee", "on-primary": "#00363d", "on-surface-variant": "#bac9cc", "tertiary-container": "#22ef7e", "inverse-on-surface": "#2b3139", "on-error-container": "#ffdad6", "outline": "#849396", "tertiary": "#b1ffbf", "primary-fixed-dim": "#00daf3", "tertiary-fixed-dim": "#00e475", "on-tertiary-fixed-variant": "#005226", "primary-fixed": "#9cf0ff", "surface-container": "#1a2028", "surface-container-low": "#161c24", "surface-variant": "#2f353e", "surface-container-highest": "#2f353e", "on-secondary-fixed": "#341100", "on-primary-fixed": "#001f24", "surface-bright": "#343a42", "on-tertiary": "#003918" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2rem", "space-lg": "1.25rem", "margin": "1.5rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "metric-md": [ "JetBrains Mono" ], "display-hero-mobile": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "metric-xl": [ "JetBrains Mono" ], "code-param": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-mono": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-md px-space-xs"><div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center p-space-xs"><img alt="Bendito Lab" class="w-full h-full object-contain filter invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight font-bold leading-none">BENDITO LAB</span><span class="font-body-sm text-body-sm text-on-surface-variant">Parámetros de Producción</span></div></div><div class="px-space-xs py-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-mono text-label-mono text-tertiary tracking-wider uppercase">Diodo 20W • En Línea | GRBL 1.1f</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calculadora-control" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Calculadora &amp; Control</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ficha-tecnica-jl3-pro" href="#"><span class="material-symbols-outlined text-[20px]">memory</span><span class="font-title-sm text-title-sm">Ficha Técnica JL3-PRO</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnostico-tests" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="font-title-sm text-title-sm">Diagnóstico &amp; Tests</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-surface-container-highest text-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.15)]" data-path="asistente-ia-taller" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-title-sm text-title-sm">Asistente IA Taller</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Área Activa</span><span class="font-code-param text-code-param text-on-surface">300 × 300 mm</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Firmware</span><span class="font-code-param text-code-param text-on-surface">v1.1f Custom</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Laser Optic</span><span class="font-code-param text-code-param text-secondary">20.000 mW</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-sm"><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-container">grid_view</span><span class="font-code-param text-code-param text-on-surface">Cama: 300x300mm</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">speed</span><span class="font-code-param text-code-param text-on-surface">Frecuencia: 1kHz</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="font-code-param text-code-param text-tertiary">LightBurn USB OK</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">terminal</span></button><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm leading-tight text-on-surface">Operador CNC</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Bendito Diode Team</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<div class="grid grid-cols-12 gap-space-lg w-full items-start">
+<!-- LEFT PANEL: Workshop Diagnostic Chat & Optical Intelligence Engine -->
+<div class="col-span-12 xl:col-span-7 flex flex-col gap-space-md">
+<!-- Top Assistant Header Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Asistente IA de Taller Láser</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/15 text-tertiary font-label-mono text-label-mono">ONLINE v3.4</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibrado específicamente para diodo Vevor JL3-PRO 20W • GRBL 1.1f</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1 text-label-mono font-label-mono" id="clearChatBtn">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>REINICIAR</span>
+</button>
+<button class="px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-primary-container transition-colors flex items-center gap-1 text-label-mono font-label-mono">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>LOG G-CODE</span>
+</button>
+</div>
+</div>
+<!-- Dialogue History Stream -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg flex flex-col gap-space-lg shadow-inner max-h-[720px] overflow-y-auto">
+<!-- Timeline Marker -->
+<div class="flex items-center gap-space-md justify-center">
+<div class="h-px bg-surface-container-highest flex-1"></div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">Hoy • Turno Corte 08:42:19</span>
+<div class="h-px bg-surface-container-highest flex-1"></div>
+</div>
+<!-- User Message -->
+<div class="flex items-start gap-space-md max-w-[85%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex flex-col gap-space-xs items-end">
+<div class="bg-surface-container-high text-on-surface p-space-md rounded-lg shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                Tengo problemas para cortar contraplacado de chopo (4mm). El borde sale carbonizado, con bisel cónico y la cara inferior no siempre se despega limpia. ¿Qué parámetros de LightBurn y altura de enfoque físico me recomiendas para este diodo de 20W sin quemar la resina?
+              </p>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Operador #01 • 08:42 AM</span>
+</div>
+</div>
+<!-- AI Response -->
+<div class="flex items-start gap-space-md max-w-[94%] self-start">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex-shrink-0 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<div class="flex flex-col gap-space-md flex-1">
+<!-- Core Physical Analysis -->
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-wider">Análisis Físico-Óptico &amp; Solución de Corte</span>
+<span class="font-code-param text-code-param text-on-surface-variant">Foco Focal: 50.0mm (Cilindro acoplado)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                El bisel cónico y carbonizado en 4mm ocurre por dos factores: <strong class="text-primary">foco superficial</strong> (cintura del haz disipándose antes de llegar a la base) y <strong class="text-secondary">flujo de aire laminar insuficiente</strong> que permite la pirólisis de la cola fenólica. Para cortes ortogonales limpios en JL3-PRO:
+              </p>
+<!-- Parametric Recipe Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">VELOCIDAD &amp; POTENCIA</span>
+<span class="font-metric-xl text-metric-xl text-primary font-bold">320 <span class="text-body-sm font-normal text-on-surface-variant">mm/min</span></span>
+<span class="font-code-param text-code-param text-secondary">Potencia: 85% (17W)</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">ESTRATEGIA PASADAS</span>
+<span class="font-metric-xl text-metric-xl text-tertiary font-bold">2 <span class="text-body-sm font-normal text-on-surface-variant">Pasadas</span></span>
+<span class="font-code-param text-code-param text-on-surface-variant">Z-Step: -1.0mm/pass</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">AIR ASSIST PRESIÓN</span>
+<span class="font-metric-xl text-metric-xl text-primary-container font-bold">2.4 <span class="text-body-sm font-normal text-on-surface-variant">Bar</span></span>
+<span class="font-code-param text-code-param text-tertiary">Boquilla a 2.5mm</span>
+</div>
+</div>
+<!-- Mechanical Micro-Calibration Step Card -->
+<div class="bg-surface-container-high p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+<span class="font-title-sm text-title-sm">Ajuste de Bloque de Enfoque en Z</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  No apoyes el bloque de aluminio de 50mm directamente sobre la superficie del chopo. Para cortar 4mm, sitúa el foco en el <strong class="text-on-surface">núcleo medio del material (-1.8mm bajo la cara superior)</strong>. Utiliza una galga o suplemento de 48.2mm entre la carcasa del módulo óptico y la tabla. Esto iguala la cintura de haz tanto en cara superior como inferior eliminando el bisel.
+                </p>
+</div>
+<!-- Optical Limitation Card (Acrílico 450nm) -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-title-sm text-title-sm text-secondary">Física Óptica Láser Diodo: Longitud de Onda 450nm</span>
+</div>
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-secondary-container/20 text-secondary">LIMITACIÓN FÍSICA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Recordatorio crítico de taller: El haz azul de <span class="text-on-surface font-code-param">450nm</span> atraviesa el <strong class="text-on-surface">acrílico transparente o espejo sin absorción molecular</strong> (transmitancia óptica &gt;94%), por lo que <span class="text-error font-semibold">no se puede cortar de forma nativa</span> y reflejará radiación dañina a la lente de cuarzo.
+                </p>
+<div class="bg-surface-container-high p-space-sm rounded mt-space-xs flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-primary font-semibold">ALTERNATIVAS TÉCNICAS VIABLES EN BENDITO LAB:</span>
+<ul class="font-body-sm text-body-sm text-on-surface list-disc list-inside space-y-0.5">
+<li><strong class="text-on-surface">Acrílico fundido oscuro/negro:</strong> Absorbe al 98% a 450nm. Velocidad 180 mm/min al 90% en 3mm.</li>
+<li><strong class="text-on-surface">Grabado inverso sobre transparente:</strong> Aplicar capa delgada de témpera negra lavable o aerosol de tiza líquida como absorbedor superficial, luego lavar con agua.</li>
+</ul>
+</div>
+</div>
+<!-- LightBurn Layer Injection Snippet -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-space-xs font-code-param text-code-param">
+<div class="flex items-center justify-between text-on-surface-variant pb-space-xs">
+<span class="font-label-mono text-label-mono uppercase text-on-surface">LightBurn Preset String (Copiar al clipboard)</span>
+<button class="text-primary-container hover:text-primary flex items-center gap-1 font-label-mono text-label-mono" id="copyPresetBtn">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPIAR CAPA C00</span>
+</button>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-primary-fixed overflow-x-auto text-[12px] leading-tight">
+<code>C00: Cut_4mm_Chopo | Speed=320mm/min | PwrMax=85% | PwrMin=20% | Passes=2 | ZOffset=-1.00 | AirAssist=ON | Kerf=0.08mm</code>
+</div>
+</div>
+</div>
+<!-- Bot Actions Contextual -->
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+                Aplicar a LightBurn Live
+              </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-mono text-label-mono flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+                Generar Test Matrix 4mm
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Multimodal Input Command Bar -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-lg flex flex-col gap-space-sm">
+<!-- Active File Badges Attachment Dock -->
+<div class="flex items-center gap-space-xs flex-wrap hidden" id="fileAttachments">
+<div class="bg-surface-container-high px-space-sm py-1 rounded flex items-center gap-2 text-on-surface text-code-param font-code-param">
+<span class="material-symbols-outlined text-[16px] text-primary-container">description</span>
+<span id="attachedFileName">corte_soporte_chopo.lbrn2</span>
+<span class="text-on-surface-variant text-[11px]">(142 KB)</span>
+<button class="text-on-surface-variant hover:text-error flex items-center" id="removeAttachmentBtn">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Input Box Field -->
+<div class="flex items-center gap-space-sm">
+<!-- Attachment Dropdown Trigger -->
+<div class="relative">
+<input accept=".lbrn2,.lbrn,.nc,.gcode,.txt,image/*" class="hidden" id="fileInput" type="file"/>
+<button class="w-10 h-10 rounded bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors shadow-sm" id="attachBtn" title="Adjuntar archivo o imagen macro">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+</div>
+<!-- Prompt Textarea Input -->
+<div class="flex-1 relative">
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 px-space-md py-space-sm rounded font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest transition-colors shadow-inner" id="promptInput" placeholder="Pregunta sobre materiales, compensación de corte (kerf), alarmas GRBL o pega código G..." type="text"/>
+</div>
+<!-- Send Action Button -->
+<button class="px-space-lg py-space-sm rounded bg-primary-container hover:bg-surface-tint text-surface font-title-sm text-title-sm font-bold flex items-center gap-2 shadow-md transition-all" id="sendMessageBtn">
+<span>Consultar</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<!-- Quick Attachment Chips -->
+<div class="flex items-center justify-between text-on-surface-variant pt-space-xs">
+<div class="flex items-center gap-space-sm font-label-mono text-label-mono">
+<span class="text-on-surface-variant/70 uppercase">Formatos soportados:</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-param">.lbrn2</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-param">Dump $$ GRBL</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-code-param">Macro JPG/PNG</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Coprocesador IA Térmico Activo
+          </span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Workshop Quick Reference, JL3-PRO Telemetry & Rapid Macro Actions -->
+<div class="col-span-12 xl:col-span-5 flex flex-col gap-space-md">
+<!-- Real-Time Hardware Diagnostic Card (Vevor JL3-PRO 20W) -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">router</span>
+<span class="font-headline-md text-headline-md text-on-surface">Vevor JL3-PRO 20W</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/20 text-tertiary font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            GRBL 1.1F OK
+          </span>
+</div>
+<!-- Machine Hardware Metrics Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-mono text-label-mono uppercase">ÁREA EFECTIVA</span>
+<span class="material-symbols-outlined text-[14px]">aspect_ratio</span>
+</div>
+<span class="font-metric-md text-metric-md text-on-surface">300 × 300 mm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Límites por sensor óptico</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-mono text-label-mono uppercase">SPOT COMPRIMIDO</span>
+<span class="material-symbols-outlined text-[14px] text-primary-container">lens</span>
+</div>
+<span class="font-metric-md text-metric-md text-primary-container">0.08 × 0.06 mm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">FAC Dual Beam Diode</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-mono text-label-mono uppercase">PWM BASE ($30)</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">waves</span>
+</div>
+<span class="font-metric-md text-metric-md text-secondary">1.0 kHz | 1000 max</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Linealidad S-Value 0-1000</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-mono text-label-mono uppercase">AIR ASSIST FLOW</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">air</span>
+</div>
+<span class="font-metric-md text-metric-md text-tertiary">2.6 Bar • Activo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Válvula solenoide M8/M9</span>
+</div>
+</div>
+<!-- Laser Wattage Distribution & Thermal Budget Bar -->
+<div class="bg-surface-container-lowest p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface-variant uppercase">Potencia Lumínica Real Estimada</span>
+<span class="text-primary font-bold">20.200 mW / 20W</span>
+</div>
+<!-- 20-segment visual gauge -->
+<div class="grid grid-cols-20 gap-1 h-2.5 w-full bg-surface-container-high rounded overflow-hidden p-0.5">
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-primary-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant/60 text-[10px] mt-0.5">
+<span>0W</span>
+<span>Seguro continuo (14W)</span>
+<span class="text-secondary">Pico 90% (18W)</span>
+<span>20W</span>
+</div>
+</div>
+</div>
+<!-- Workshop Visual Material Inspection Card -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Inspección de Corte en Taller</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">REFERENCIA VISUAL</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Placeholder 1: Micro charring test comparison -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-highest aspect-[4/3] group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Close-up macro industrial photograph of clean laser cut 4mm birch plywood edges side by side with a charred edge under harsh workshop directional light, showing fine carbon-free kerf cut with high pressure air assist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf8gJ-n_RhUYwTB6STRpxDWYkTvyBslo8-_hxQ5BJddHf59VTk0GLhWDlca45c0Cg5mYrZfmJQldhcWA0K6oZvL3xHZ5q78K4iIyj6Y9kVqGku-TcBriYTDQJ3ehZEHbFG2GWgLI3HtyM5LoOIgK0Fne-y-ST5lw5oXevw-Px6ozQidEytMOAwwZzl2L7g2NR0pFNcB2Uz4wMb71vhdq9yfhWU5tsTd-TVYwUPywxvWhHOcbaBRtpPYw"/>
+<div class="absolute bottom-0 inset-x-0 p-space-xs bg-surface-container-lowest/90 backdrop-blur-sm">
+<span class="font-label-mono text-label-mono text-tertiary block">CORTE ÓPTIMO 2.4 BAR</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin carbonizado lateral</span>
+</div>
+</div>
+<!-- Placeholder 2: Acrylic reaction with 450nm -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-highest aspect-[4/3] group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Technical laboratory close-up photo of a 450nm blue laser diode beam passing completely through clear acrylic sheet without cutting, contrasted with a dense black matte acrylic sheet absorbing the beam precisely with clean vapor plume." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIe_HHS2lM5cHaS5BNLZLAt96PQLwr56X7XmVVjfLj3J3iIXyZ3J_GW0eIbKcPSDkD9iRDOXGhIOKyMO-gByhHfMb4-cq7N39iPowNJ3xZOAxE83wQbOxc7yO6DKFJJrT8zdgfp03WqUQjAoK0ZAX9rUcGg-8FxB32Mfl1cHijR6BAAn3NXRUxPX87y989cr3KV4DJnioY5pdP1aWutB28f0LCkXg140ZN35ZBx79yCR4clBCoH5ZRsg"/>
+<div class="absolute bottom-0 inset-x-0 p-space-xs bg-surface-container-lowest/90 backdrop-blur-sm">
+<span class="font-label-mono text-label-mono text-secondary block">ÓPTICA 450NM DIODO</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acrílico negro vs claro</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick-Load Workshop FAQ Queries -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">bolt</span>
+<span class="font-title-sm text-title-sm text-on-surface">Consultas Rápidas de Operador</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">CLIC PARA CARGAR</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<button class="faq-btn text-left p-space-sm rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" data-query="¿Por qué se quema el contrachapado de chopo o MDF de 3mm y cómo lo soluciono?">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">local_fire_department</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Chopo / MDF se quema o carboniza</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
+</button>
+<button class="faq-btn text-left p-space-sm rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" data-query="¿A qué altura coloco el bloque de foco para cortar madera de 5mm con 20W?">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-primary-container group-hover:scale-110 transition-transform">vertical_align_bottom</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Calibrar foco en Z para corte 5mm</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
+</button>
+<button class="faq-btn text-left p-space-sm rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" data-query="Se activa Alarma 2 o Alarma 1 (Hard Limit) en GRBL durante el framing o inicio de corte. ¿Cómo desbloqueo?">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-error group-hover:scale-110 transition-transform">warning</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Alarma GRBL límite (Hard Limit / Alarm 2)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
+</button>
+<button class="faq-btn text-left p-space-sm rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" data-query="¿Puedo grabar o cortar acrílico espejo o transparente con este láser azul de 450nm?">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary group-hover:scale-110 transition-transform">layers</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Acrílico espejo / transparente y soluciones</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
+</button>
+</div>
+</div>
+<!-- One-Click LightBurn Command Strings & GRBL Macros -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">terminal</span>
+<span class="font-title-sm text-title-sm text-on-surface">Comandos Rápidos &amp; Macros GRBL</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary">PORT: COM4 @ 115200</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Macro 1: Desbloqueo $X -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-code-param text-code-param text-on-surface font-bold">$X (Kill Alarm Lock)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Desbloquea parada tras trigger de fin de carrera</span>
+</div>
+<button class="macro-copy-btn px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary-container font-label-mono text-label-mono flex items-center gap-1 transition-colors" data-copy="$X">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPIAR</span>
+</button>
+</div>
+<!-- Macro 2: Test Fire Low Power -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-code-param text-code-param text-secondary font-bold">M3 S10 (Test Fire 1%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enciende haz visible tenue para centrado de pieza</span>
+</div>
+<button class="macro-copy-btn px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-mono text-label-mono flex items-center gap-1 transition-colors" data-copy="M3 S10">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPIAR</span>
+</button>
+</div>
+<!-- Macro 3: Homing Cycle -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-code-param text-code-param text-tertiary font-bold">$H (Ciclo Auto-Homing)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibración a coordenadas mecánicas [0,0]</span>
+</div>
+<button class="macro-copy-btn px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-tertiary font-label-mono text-label-mono flex items-center gap-1 transition-colors" data-copy="$H">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPIAR</span>
+</button>
+</div>
+<!-- Macro 4: Air Assist ON M8 -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-code-param text-code-param text-primary font-bold">M8 / M9 (Solenoide Aire)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">M8: Inicia flujo | M9: Cierra corte aire</span>
+</div>
+<button class="macro-copy-btn px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-mono text-label-mono flex items-center gap-1 transition-colors" data-copy="M8">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPIAR</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast for Copied Items -->
+<div class="fixed bottom-6 right-6 bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg shadow-xl font-label-mono text-label-mono flex items-center gap-2 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span id="toastMessage">Comando copiado al portapapeles</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Toast Notification helper
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const text = document.getElementById('toastMessage');
+      if (!toast || !text) return;
+      text.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    // Macro Copy Handlers
+    document.querySelectorAll('.macro-copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const text = button.getAttribute('data-copy');
+        if (text) {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast(`Copiado: ${text}`);
+          }).catch(() => {
+            showToast(`Copiado al búfer: ${text}`);
+          });
+        }
+      });
+    });
+
+    // Preset String Copy Handler
+    const copyPresetBtn = document.getElementById('copyPresetBtn');
+    if (copyPresetBtn) {
+      copyPresetBtn.addEventListener('click', () => {
+        const codeText = "C00: Cut_4mm_Chopo | Speed=320mm/min | PwrMax=85% | PwrMin=20% | Passes=2 | ZOffset=-1.00 | AirAssist=ON | Kerf=0.08mm";
+        navigator.clipboard.writeText(codeText).then(() => {
+          showToast('Configuración LightBurn C00 copiada');
+        });
+      });
+    }
+
+    // FAQ Button click to auto-populate input
+    const promptInput = document.getElementById('promptInput');
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const query = btn.getAttribute('data-query');
+        if (promptInput && query) {
+          promptInput.value = query;
+          promptInput.focus();
+        }
+      });
+    });
+
+    // Multimodal Mock File Upload
+    const attachBtn = document.getElementById('attachBtn');
+    const fileInput = document.getElementById('fileInput');
+    const fileAttachments = document.getElementById('fileAttachments');
+    const attachedFileName = document.getElementById('attachedFileName');
+    const removeAttachmentBtn = document.getElementById('removeAttachmentBtn');
+
+    if (attachBtn && fileInput) {
+      attachBtn.addEventListener('click', () => {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          const file = e.target.files[0];
+          attachedFileName.textContent = file.name;
+          fileAttachments.classList.remove('hidden');
+          showToast(`Archivo adjunto: ${file.name}`);
+        }
+      });
+    }
+
+    if (removeAttachmentBtn && fileAttachments) {
+      removeAttachmentBtn.addEventListener('click', () => {
+        fileAttachments.classList.add('hidden');
+        if (fileInput) fileInput.value = '';
+        showToast('Adjunto removido');
+      });
+    }
+
+    // Clear chat simulation
+    const clearChatBtn = document.getElementById('clearChatBtn');
+    if (clearChatBtn) {
+      clearChatBtn.addEventListener('click', () => {
+        showToast('Memoria de sesión re-inicializada');
+      });
+    }
+
+    // Send action simulation
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
+    if (sendMessageBtn && promptInput) {
+      const handleSend = () => {
+        const val = promptInput.value.trim();
+        if (val) {
+          showToast('Procesando consulta con parámetros JL3-PRO...');
+          promptInput.value = '';
+          if (fileAttachments) fileAttachments.classList.add('hidden');
+        }
+      };
+
+      sendMessageBtn.addEventListener('click', handleSend);
+      promptInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          handleSend();
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

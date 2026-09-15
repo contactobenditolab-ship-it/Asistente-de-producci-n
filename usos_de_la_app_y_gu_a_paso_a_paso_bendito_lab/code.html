@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#00210b", "error": "#ffb4ab", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "tertiary-fixed": "#62ff96", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2b3139", "on-tertiary": "#003918", "surface-container": "#1a2028", "surface-container-high": "#242a33", "background": "#0e141c", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "surface-bright": "#343a42", "on-surface-variant": "#bac9cc", "error-container": "#93000a", "primary-fixed-dim": "#00daf3", "surface-container-highest": "#2f353e", "on-secondary-container": "#562000", "surface-dim": "#0e141c", "on-secondary-fixed-variant": "#7a3000", "primary": "#c3f5ff", "on-tertiary-fixed-variant": "#005226", "on-primary-container": "#00626e", "tertiary-container": "#22ef7e", "surface-container-low": "#161c24", "on-error": "#690005", "on-error-container": "#ffdad6", "outline-variant": "#3b494c", "tertiary": "#b1ffbf", "primary-container": "#00e5ff", "primary-fixed": "#9cf0ff", "inverse-primary": "#006875", "surface-tint": "#00daf3", "secondary-container": "#fd6c00", "secondary-fixed": "#ffdbcb", "on-secondary-fixed": "#341100", "surface": "#0e141c", "on-background": "#dde3ee", "tertiary-fixed-dim": "#00e475", "outline": "#849396", "on-primary": "#00363d", "on-tertiary-container": "#006731", "on-surface": "#dde3ee", "inverse-surface": "#dde3ee", "secondary-fixed-dim": "#ffb692" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "code-param": [ "JetBrains Mono" ], "metric-md": [ "JetBrains Mono" ], "label-mono": [ "JetBrains Mono" ], "metric-xl": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ] }, "fontSize": { "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Bendito Lab" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">BENDITO LAB</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">Suite Láser CNC</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-mono text-label-mono uppercase text-tertiary font-semibold tracking-wider">20W DIODO</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">VEVOR JL3-PRO (30x30cm)</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">CONECTADO</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-sm"><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="calculadora-cotizador" href="#">Calculadora &amp; Cotizador</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="paso-a-paso-usos" href="#">Paso a Paso &amp; Usos</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="asistente-ia-taller" href="#">Asistente IA Taller</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="ficha-maquina" href="#">Ficha Máquina</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-lg"><span class="font-code-param text-code-param text-on-surface-variant">ESTADO:</span><span class="font-metric-md text-metric-md text-primary font-bold">STANDBY</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-xl max-w-7xl mx-auto">
+<!-- CABECERA DE LA GUÍA -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg bg-surface-container-low p-space-xl rounded-xl relative overflow-hidden shadow-lg">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm max-w-3xl z-10">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-high text-primary font-label-mono text-label-mono uppercase tracking-wider">
+            Protocolo CNC // VEVOR JL3-PRO 20W
+          </span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-container animate-ping"></span>
+            Revisión Operativa v2.4
+          </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+          Flujo de Trabajo y Usos de Bendito Lab
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Cómo pasar de una idea o archivo vectorial a una pieza premium vendible con el máximo margen comercial, tolerancias mecánicas submilimétricas y cero desperdicio de material.
+        </p>
+</div>
+<div class="flex flex-wrap md:flex-col items-start md:items-end gap-space-sm z-10 shrink-0">
+<div class="bg-surface-container px-space-md py-space-sm rounded-lg flex items-center gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-primary">precision_manufacturing</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Área Operativa</span>
+<span class="font-metric-md text-metric-md text-on-surface">300 × 300 mm</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-lg flex items-center gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-secondary-container">bolt</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Módulo Láser</span>
+<span class="font-metric-md text-metric-md text-on-surface">20W Ópticos (450nm)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 USOS PRINCIPALES DE LA APP -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-widest">[ 01. CAPACIDADES DEL SOFTWARE ]</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• 4 Módulos Integrados</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Clic para explorar caso</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Tarjeta 1 -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined">calculate</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Módulo 01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Cotización Rápida y Rentabilidad</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Calcula el escandallo de coste exacto en segundos incluyendo amortización del tubo diodo, consumo de kW/h, horas de vectorizado y asegura márgenes brutos del <span class="text-tertiary font-semibold font-code-param">45% al 75%</span>.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary font-semibold uppercase">Calcular Tarifa</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Tarjeta 2 -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined">tune</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Módulo 02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Ajuste Sin Probar a Ciegas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Obtén la velocidad lineal de avance, porcentaje PWM y número de pasadas exactas para tu cabezal de 20W. Corta contrachapado de 5mm o graba cuero sin carbonilla ni ensayos destructivos.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-secondary-container font-semibold uppercase">Matriz de Potencia</span>
+<span class="material-symbols-outlined text-secondary-container group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Tarjeta 3 -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Módulo 03</span>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Diagnóstico IA y Ajuste Z</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Sube una foto microscópica o describe si el canto sale cónico, con rebaba o quemado. El motor de visión computacional diagnostica desalineación de foco o caudal bajo en la boquilla.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary font-semibold uppercase">Diagnosticar Corte</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Tarjeta 4 -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary-container group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-colors">
+<span class="material-symbols-outlined">sync_alt</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Módulo 04</span>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Sincronización LightBurn</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Exporta perfiles de corte y grabado en formato compatible <span class="font-code-param text-code-param text-on-surface">.clb</span> y librerías de materiales. Evita teclear parámetros a mano y elimina desajustes de capas por error humano.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-tertiary font-semibold uppercase">Generar .CLB</span>
+<span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GUÍA INTERACTIVA: FLUJO COMPLETO PASO A PASO (1 A 5) -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-secondary-container uppercase font-bold tracking-widest">[ 02. PROTOCOLO DE PRODUCCIÓN EN MESA ]</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Flujo Paso a Paso de Taller (1 a 5)</h2>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs rounded-xl">
+<button class="px-space-md py-space-xs rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface transition-colors" id="btn-step-all" onclick="showAllSteps()">Ver Todos</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-primary-container text-on-primary font-semibold transition-colors" id="btn-step-guided" onclick="toggleInteractiveFocus(1)">Modo Guiado Activo</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-lg">
+<!-- PASO 1 -->
+<article class="step-card bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-md transition-all" id="step-card-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center font-bold">01</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">PREPARACIÓN FÍSICA</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Medir Material y Altura Focal Z (30×30 cm)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                El diodo de 20W tiene una cintura de haz extremadamente condensada (spot de 0.08×0.06mm). Si el eje Z no se calibra con la galga exacta según el espesor real medido con calibre digital, la densidad de energía cae un 40%.
+              </p>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Galga Grabado Superficial</span>
+<span class="font-metric-md text-metric-md text-primary">20.0 mm</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Galga Corte Pasante (Interior)</span>
+<span class="font-metric-md text-metric-md text-tertiary">18.5 mm</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col md:flex-row gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<!-- Visual interactivo de la galga y cama -->
+<div class="w-full md:w-1/2 flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant">SIMULADOR GALGA Z</span>
+<span class="font-label-mono text-label-mono text-primary font-semibold" id="z-readout">Modo: CORTE PASANTE (18.5mm)</span>
+</div>
+<!-- Gráfico esquemático SVG -->
+<div class="w-full h-44 bg-surface-container rounded-lg p-space-md flex flex-col justify-end items-center relative overflow-hidden">
+<div class="absolute top-2 left-3 font-label-mono text-label-mono text-outline">VEVOR JL3-PRO Z-AXIS</div>
+<!-- Boquilla Láser -->
+<div class="w-16 h-12 bg-surface-variant rounded-t flex flex-col items-center justify-end pb-1 shadow">
+<div class="w-6 h-3 bg-secondary-container rounded-b"></div>
+</div>
+<!-- Haz Láser -->
+<div class="w-1 h-12 bg-primary-container shadow-[0_0_12px_rgba(0,229,255,0.8)] relative">
+<span class="absolute -left-12 top-3 font-label-mono text-label-mono text-primary">Haz 450nm</span>
+</div>
+<!-- Material -->
+<div class="w-full h-6 bg-surface-container-highest rounded flex items-center justify-between px-3 text-on-surface-variant font-label-mono text-label-mono">
+<span>MDF 3.0mm</span>
+<span>X:0 Y:0 Origen</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="p-space-sm bg-surface-container hover:bg-surface-container-high rounded text-left transition-colors" onclick="setZPreset('engrave')">
+<div class="font-label-mono text-label-mono text-primary font-bold">GRABADO</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Foco en superficie (20mm)</div>
+</button>
+<button class="p-space-sm bg-surface-container hover:bg-surface-container-high rounded text-left transition-colors" onclick="setZPreset('cut')">
+<div class="font-label-mono text-label-mono text-tertiary font-bold">CORTE</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Foco en centro (-1.5mm)</div>
+</button>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Checklist de Cero Máquina</span>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">check_circle</span>
+                      Medir espesor con calibre (variación real ±0.4mm).
+                    </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">check_circle</span>
+                      Fijar pieza con pines cónicos a panel de nido de abeja.
+                    </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">check_circle</span>
+                      Asegurar recorrido libre de manguera de Air Assist.
+                    </li>
+</ul>
+</div>
+<!-- Tooltip contextual -->
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-base">warning</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    Nunca utilices el tope mecánico manual sin aflojar completamente la perilla de arrastre para no descalibrar las correas GT2.
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- PASO 2 -->
+<article class="step-card bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-md transition-all" id="step-card-2">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary font-headline-md text-headline-md flex items-center justify-center font-bold">02</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-secondary-container font-semibold">CÁLCULO &amp; PARÁMETROS</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Introducir en la Calculadora de Taller</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Selecciona la referencia de materia prima. La suite extrapola de forma no lineal la energía de corte requerida y activa los requisitos neumáticos (Air Assist obligatorio en cortes mayores a 2mm).
+              </p>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm font-label-mono text-label-mono">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>PRESIÓN AIR ASSIST RECOMENDADA</span>
+<span class="text-primary font-bold">2.5 BAR</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded overflow-hidden">
+<div class="bg-primary-container h-full w-3/4"></div>
+</div>
+<span class="text-body-sm text-body-sm text-on-surface-variant">Caudal constante para evacuar resinas gasificadas.</span>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<!-- Selector interactivo de material -->
+<div class="flex flex-wrap gap-space-sm items-center">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase mr-2">Material Activo:</span>
+<button class="mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container-high text-primary font-semibold" id="btn-plywood3" onclick="selectMaterialPreset('plywood3')">Chopo 3.0mm</button>
+<button class="mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container text-on-surface-variant hover:text-on-surface" id="btn-mdf3" onclick="selectMaterialPreset('mdf3')">MDF 3.0mm</button>
+<button class="mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container text-on-surface-variant hover:text-on-surface" id="btn-acrylic" onclick="selectMaterialPreset('acrylicDark')">Metacrilato Negro 3mm</button>
+<button class="mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container text-on-surface-variant hover:text-on-surface" id="btn-leather" onclick="selectMaterialPreset('leather')">Cuero Vaqueta 1.8mm</button>
+</div>
+<!-- Matriz de parámetros en vivo -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md bg-surface-container p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">VELOCIDAD CORTE</span>
+<span class="font-metric-xl text-metric-xl text-primary" id="param-speed">320 mm/min</span>
+<span class="font-body-sm text-body-sm text-outline">F320 en código G</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">POTENCIA LÁSER</span>
+<span class="font-metric-xl text-metric-xl text-secondary" id="param-power">85% (17W)</span>
+<span class="font-body-sm text-body-sm text-outline">S850 ($30=1000)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">PASADAS</span>
+<span class="font-metric-xl text-metric-xl text-tertiary" id="param-passes">1 Pase</span>
+<span class="font-body-sm text-body-sm text-outline">Z-Step: 0.0mm</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">AIR ASSIST</span>
+<span class="font-metric-xl text-metric-xl text-primary font-bold" id="param-air">ALTO (2.5B)</span>
+<span class="font-body-sm text-body-sm text-outline">Válvula M7/M8 ON</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono text-label-mono text-on-surface-variant">¿Grabado rasterizado en el mismo trabajo?</span>
+<span class="font-code-param text-code-param text-on-surface">5000 mm/min @ 20% Potencia | Intervalo de línea: 0.075 mm</span>
+</div>
+</div>
+</div>
+</article>
+<!-- PASO 3 -->
+<article class="step-card bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-md transition-all" id="step-card-3">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-headline-md text-headline-md flex items-center justify-center font-bold">03</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">PREPROCESAMIENTO CAM</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Cargar a LightBurn y Ejecutar Enmarcado (Frame)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Configura los parámetros calculados en la capa correspondiente (C00 corte, C01 marcado). Ejecuta el comando <span class="text-primary font-bold">Frame (Encuadre)</span> con el cabezal iluminando a baja potencia (0.5%) para validar colisiones mecánicas dentro de los 300×300mm.
+              </p>
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg font-code-param text-code-param">
+<span class="text-on-surface-variant font-label-mono text-label-mono uppercase">Verificación GRBL en Consola:</span>
+<div class="text-primary">$30 = 1000 <span class="text-outline">(Rango PWM max)</span></div>
+<div class="text-tertiary">$32 = 1 <span class="text-outline">(Laser Mode Habilitado)</span></div>
+<div class="text-on-surface">$100=80.00 / $101=80.00 <span class="text-outline">(Pasos/mm)</span></div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<!-- Visual de consola y simulación de frame -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface-variant">SIMULADOR DE FRAME (VENTANA DE CORTE)</span>
+<span class="text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                    BOUNDS OK: X:25 Y:25 / W:250 H:250
+                  </span>
+</div>
+<div class="w-full h-44 bg-surface-container-lowest rounded-lg p-space-md relative flex items-center justify-center overflow-hidden">
+<!-- Cuadrícula técnica de fondo -->
+<div class="absolute inset-0 bg-[radial-gradient(#1a2028_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+<!-- Límites de cama 30x30 -->
+<div class="w-56 h-36 border border-outline-variant/40 rounded relative flex items-center justify-center">
+<span class="absolute top-1 left-2 font-label-mono text-label-mono text-outline">LÍMITE 300x300mm</span>
+<!-- Área de trabajo enmarcada -->
+<div class="w-40 h-24 border-2 border-primary-container/80 rounded bg-primary-container/10 flex items-center justify-center shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+<span class="font-label-mono text-label-mono text-primary font-semibold">TRAYECTORIA DE VECTOR</span>
+<div class="absolute -top-2 -left-2 w-4 h-4 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary font-label-mono text-[9px] font-bold">0</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant">1. ORIGEN</span>
+<span class="font-body-sm text-body-sm text-on-surface">Seleccionar 'Current Position' o 'User Origin' en esquina inferior izq.</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant">2. TEST FRAME</span>
+<span class="font-body-sm text-body-sm text-on-surface">Presionar SHIFT + FRAME en LightBurn para contorno circular o rectangular.</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant">3. GOGGLES ON</span>
+<span class="font-body-sm text-body-sm text-tertiary">Gafas OD6+ certificadas para longitud 400-450nm antes de iniciar.</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- PASO 4 -->
+<article class="step-card bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-md transition-all" id="step-card-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest text-tertiary font-headline-md text-headline-md flex items-center justify-center font-bold">04</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-tertiary font-semibold">EJECUCIÓN &amp; QA</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Corte Limpio y Control de Calidad Post-Mecanizado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Durante la emisión mantén la tapa o extractor de humos en activo continuo. Una vez completado el G-Code, espera 15 segundos para la evacuación total de partículas antes de levantar la sujeción.
+              </p>
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Criterio de Aceptación (Pieza Premium):</span>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="text-tertiary font-bold">✓</span> Cero velado de humo alrededor del corte.
+                </div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="text-tertiary font-bold">✓</span> La pieza se desprende sin necesidad de empuje forzado.
+                </div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="text-tertiary font-bold">✓</span> Canto con tinte caramelo uniforme, no carbón cenizo.
+                </div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col md:flex-row gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<!-- Comparativa de Calidad -->
+<div class="w-full md:w-1/2 p-space-md bg-surface-container rounded-lg flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-error uppercase font-bold">RECHAZO DE TALLER</span>
+<span class="material-symbols-outlined text-error">cancel</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Borde Sobrecalentado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Causa: Exceso de potencia (&gt;90%) a baja velocidad sin Air Assist o lente sucia. Provoca tiznado que mancha las manos del cliente al manipular el producto.
+                  </p>
+</div>
+<div class="p-space-sm bg-error-container/20 rounded font-code-param text-code-param text-error">
+                  ACCIÓN: Limpiar lente + subir velocidad 15%
+                </div>
+</div>
+<div class="w-full md:w-1/2 p-space-md bg-surface-container rounded-lg flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-bold">ESTÁNDAR BENDITO LAB</span>
+<span class="material-symbols-outlined text-tertiary">verified</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">Corte de Precisión Frío</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Causa: Foco Z a 18.5mm, Air Assist a 2.5 bar constante, avance calculado. Kerf recto de 0.12mm y cantos sellados listos para entrega directa.
+                  </p>
+</div>
+<div class="p-space-sm bg-tertiary-container/20 rounded font-code-param text-code-param text-tertiary">
+                  RESULTADO: Cero trabajo extra de lijado manual
+                </div>
+</div>
+</div>
+</div>
+</article>
+<!-- PASO 5 -->
+<article class="step-card bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-md transition-all" id="step-card-5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-headline-md flex items-center justify-center font-bold">05</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">COMERCIAL &amp; ENTREGA</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Cotizar y Defender el Valor Frente al Cliente</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Cómo responder cuando un cliente dice "¿Por qué cuesta 18,50€ si en Aliexpress o grandes superficies está a 9,90€?". La app genera el desglose de valor artesanal automatizado para adjuntar a la propuesta comercial.
+              </p>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Ecuación de Rentabilidad:</span>
+<div class="font-metric-xl text-metric-xl text-primary font-bold">PVP 18.50 €</div>
+<div class="font-code-param text-code-param text-on-surface-variant">
+                  Coste Directo: 3.40€ | Tiempo Máquina: 6 min | Margen Neto: <span class="text-tertiary font-bold">68.2%</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase font-bold">Tabla de Diferenciación Competitiva</span>
+<span class="font-label-mono text-label-mono text-primary">Argumentario de Venta</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Columna Aliexpress -->
+<div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-sm opacity-70">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">Importación Masiva</span>
+<span class="font-metric-md text-metric-md text-on-surface-variant">9.90 €</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="text-error font-bold">✕</span> Madera laminada barata que deforma con humedad.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-error font-bold">✕</span> Olor persistente a carbonilla quemada y manchas.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-error font-bold">✕</span> Plazo de entrega de 10 a 20 días sin personalización real.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-error font-bold">✕</span> Embalaje en bolsa de plástico fina sin presencia de regalo.
+                    </li>
+</ul>
+</div>
+<!-- Columna Bendito Lab -->
+<div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-sm shadow">
+<div class="flex justify-between items-center">
+<span class="font-label-mono text-label-mono uppercase text-primary font-bold">Taller Local Bendito Lab</span>
+<span class="font-metric-md text-metric-md text-tertiary font-bold">18.50 €</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="text-tertiary font-bold">✓</span> Contrachapado de abedul o chopo calibrado de 1ª selección.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-tertiary font-bold">✓</span> Acabado con micro-lijado de grano 320 y sin halos de humo.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-tertiary font-bold">✓</span> Despacho o recogida en 24/48 horas con tipografía validada.
+                    </li>
+<li class="flex items-start gap-space-xs">
+<span class="text-tertiary font-bold">✓</span> Packaging kraft ecológico con viruta y sello de taller artesano.
+                    </li>
+</ul>
+</div>
+</div>
+<!-- Cita de cierre comercial -->
+<div class="p-space-sm bg-surface-container rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">
+                  "El cliente no paga por los 6 minutos de rayo láser; paga por la tranquilidad de un regalo perfecto y a tiempo."
+                </span>
+<span class="font-label-mono text-label-mono text-primary font-semibold shrink-0 ml-4">MÉTODO BENDITO LAB</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- CONSEJOS RÁPIDOS Y ATAJOS CRÍTICOS DE TALLER -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold tracking-widest">[ 03. SEGURIDAD &amp; PROTOCOLOS DE MANTENIMIENTO ]</span>
+<span class="text-on-surface-variant font-label-mono text-label-mono">• 3 Reglas Inquebrantables</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Consejo 1: Acrílico transparente -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">block</span>
+</span>
+<span class="font-label-mono text-label-mono text-error uppercase font-bold">FÍSICA ÓPTICA</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Metacrilato Transparente vs Láser 450nm</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              El diodo azul atraviesa el acrílico transparente sin absorber energía. Intentar cortarlo quemará la mesa nido de abeja o rebotará el rayo de forma peligrosa. Usa exclusivamente acrílico tintado u oscuro (negro, rojo opaco, ámbar denso).
+            </p>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded font-code-param text-code-param text-on-surface-variant">
+            Solución: Marcar antes con rotulador negro o usar CO2.
+          </div>
+</div>
+<!-- Consejo 2: Limpieza de Lente -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined">cleaning_services</span>
+</span>
+<span class="font-label-mono text-label-mono text-secondary-container uppercase font-bold">CADA 8 HORAS DE USO</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Limpieza Óptica con Alcohol Isopropílico 99%</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              El humo de madera deposita resina en el cristal protector. Una lente sucia absorbe calor del propio láser hasta fracturarse térmicamente y reduce la potencia de salida un 30%. Limpia con bastoncillo de algodón sin ejercer presión.
+            </p>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded font-code-param text-code-param text-on-surface-variant">
+            Comprobar: Desatornillar cono de Air Assist cada semana.
+          </div>
+</div>
+<!-- Consejo 3: Air Assist Constante -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">air</span>
+</span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-bold">REGLA FUNDAMENTAL</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Air Assist Activo en Todo Corte Pasante</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              El soplado no solo evita que la madera prenda fuego: empuja el punto de ignición hacia el fondo de la ranura, permitiendo cortar MDF de 4mm de una sola pasada donde sin aire requerirías 3 pasadas carbonizadas.
+            </p>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded font-code-param text-code-param text-on-surface-variant">
+            Revisar manómetro: Mínimo 30 PSI (aprox 2.0 - 2.5 bar).
+          </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Presets de materiales interactivos para el Paso 2
+  const presets = {
+    plywood3: { speed: "320 mm/min", power: "85% (17W)", passes: "1 Pase", air: "ALTO (2.5B)" },
+    mdf3: { speed: "260 mm/min", power: "90% (18W)", passes: "1 Pase", air: "MÁXIMO (2.8B)" },
+    acrylicDark: { speed: "180 mm/min", power: "80% (16W)", passes: "2 Pases", air: "SUAVE (1.0B)" },
+    leather: { speed: "600 mm/min", power: "45% (9W)", passes: "1 Pase", air: "MEDIO (1.8B)" }
+  };
+
+  function selectMaterialPreset(key) {
+    const data = presets[key];
+    if (!data) return;
+
+    // Actualizar datos en pantalla
+    document.getElementById("param-speed").innerText = data.speed;
+    document.getElementById("param-power").innerText = data.power;
+    document.getElementById("param-passes").innerText = data.passes;
+    document.getElementById("param-air").innerText = data.air;
+
+    // Modificar clases de botones
+    const buttons = document.querySelectorAll(".mat-btn");
+    buttons.forEach(btn => {
+      btn.className = "mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container text-on-surface-variant hover:text-on-surface";
+    });
+
+    const activeBtn = document.getElementById("btn-" + key.replace("acrylicDark", "acrylic"));
+    if (activeBtn) {
+      activeBtn.className = "mat-btn px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container-high text-primary font-semibold";
+    }
+  }
+
+  // Presets de ajuste Z para el Paso 1
+  function setZPreset(type) {
+    const readout = document.getElementById("z-readout");
+    if (type === 'cut') {
+      readout.innerText = "Modo: CORTE PASANTE (18.5mm - Foco interno)";
+      readout.className = "font-label-mono text-label-mono text-tertiary font-semibold";
+    } else {
+      readout.innerText = "Modo: GRABADO SUPERFICIAL (20.0mm - Foco en cara)";
+      readout.className = "font-label-mono text-label-mono text-primary font-semibold";
+    }
+  }
+
+  // Navegación enfocada en los pasos
+  function toggleInteractiveFocus(stepNumber) {
+    const cards = document.querySelectorAll(".step-card");
+    cards.forEach((card, index) => {
+      if (index === stepNumber - 1) {
+        card.classList.remove("opacity-50");
+        card.classList.add("shadow-xl", "bg-surface-container-high");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        card.classList.add("opacity-50");
+        card.classList.remove("shadow-xl", "bg-surface-container-high");
+      }
+    });
+
+    document.getElementById("btn-step-guided").className = "px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-primary text-on-primary font-semibold";
+    document.getElementById("btn-step-all").className = "px-space-md py-space-xs rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface";
+  }
+
+  function showAllSteps() {
+    const cards = document.querySelectorAll(".step-card");
+    cards.forEach(card => {
+      card.classList.remove("opacity-50", "bg-surface-container-high");
+    });
+    document.getElementById("btn-step-all").className = "px-space-md py-space-xs rounded-lg font-label-mono text-label-mono bg-surface-container-high text-primary font-semibold";
+    document.getElementById("btn-step-guided").className = "px-space-md py-space-xs rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface";
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.4)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-mono text-label-mono uppercase"><div class="flex items-center gap-space-sm"><span class="text-tertiary">●</span><span>TELEMETRÍA LOCAL: PUERTO COM3 (115200 BAUD)</span></div><div class="flex items-center gap-space-lg"><span>FIRMWARE GRBL 1.1h</span><span>CALIBRACIÓN DE FOCO: 2.0MM</span><span>© BENDITO LAB PRODUCCIÓN</span></div></div></footer></body></html>

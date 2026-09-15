@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#00210b", "error": "#ffb4ab", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "tertiary-fixed": "#62ff96", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2b3139", "on-tertiary": "#003918", "surface-container": "#1a2028", "surface-container-high": "#242a33", "background": "#0e141c", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "surface-bright": "#343a42", "on-surface-variant": "#bac9cc", "error-container": "#93000a", "primary-fixed-dim": "#00daf3", "surface-container-highest": "#2f353e", "on-secondary-container": "#562000", "surface-dim": "#0e141c", "on-secondary-fixed-variant": "#7a3000", "primary": "#c3f5ff", "on-tertiary-fixed-variant": "#005226", "on-primary-container": "#00626e", "tertiary-container": "#22ef7e", "surface-container-low": "#161c24", "on-error": "#690005", "on-error-container": "#ffdad6", "outline-variant": "#3b494c", "tertiary": "#b1ffbf", "primary-container": "#00e5ff", "primary-fixed": "#9cf0ff", "inverse-primary": "#006875", "surface-tint": "#00daf3", "secondary-container": "#fd6c00", "secondary-fixed": "#ffdbcb", "on-secondary-fixed": "#341100", "surface": "#0e141c", "on-background": "#dde3ee", "tertiary-fixed-dim": "#00e475", "outline": "#849396", "on-primary": "#00363d", "on-tertiary-container": "#006731", "on-surface": "#dde3ee", "inverse-surface": "#dde3ee", "secondary-fixed-dim": "#ffb692" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "code-param": [ "JetBrains Mono" ], "metric-md": [ "JetBrains Mono" ], "label-mono": [ "JetBrains Mono" ], "metric-xl": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ] }, "fontSize": { "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Bendito Lab" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">BENDITO LAB</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">Suite Láser CNC</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-mono text-label-mono uppercase text-tertiary font-semibold tracking-wider">20W DIODO</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">VEVOR JL3-PRO (30x30cm)</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">CONECTADO</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-sm"><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="calculadora-cotizador" href="#">Calculadora &amp; Cotizador</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="paso-a-paso-usos" href="#">Paso a Paso &amp; Usos</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="asistente-ia-taller" href="#">Asistente IA Taller</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="ficha-maquina" href="#">Ficha Máquina</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-lg"><span class="font-code-param text-code-param text-on-surface-variant">ESTADO:</span><span class="font-metric-md text-metric-md text-primary font-bold">STANDBY</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Telemetry Bar & Session Identifier -->
+<section class="w-full bg-surface-container-low px-margin py-space-sm shadow-sm">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-xs font-label-mono text-label-mono text-primary uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">biotech</span>
+          ENGINE IA MÓDULO // CALIBRACIÓN ÓPTICA
+        </span>
+<span class="text-outline-variant font-label-mono text-label-mono">/</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">
+          LIGHTBURN 2.1.04 COMPATIBLE
+        </span>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-mono text-label-mono text-secondary uppercase font-semibold">AIR-ASSIST: DESACTIVADO (MODO TALLER ARTESANAL)</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+          FOCAL LENGTH: 20W DIODE (50MM FL)
+        </div>
+</div>
+</div>
+</section>
+<div class="w-full max-w-[1440px] mx-auto px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- Header Hero Grid (Editorial Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-lg bg-surface-container-high text-primary font-label-mono text-label-mono uppercase tracking-wider">
+            Protocolo Certificado v3.2
+          </span>
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">
+            #BL-OPT-489
+          </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
+          Protocolo Fotográfico <span class="text-primary-container">&amp; Diagnóstico IA</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Estandarización micrométrica de capturas ópticas. Alimenta al modelo de visión por computador con muestras normalizadas para calcular el delta exacto de kerf, cono de corte y penetración real en LightBurn.
+        </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-xs bg-surface-container p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-mono text-label-mono uppercase">TOLERANCIA KERF ESPERADA</span>
+<span class="font-metric-md text-metric-md text-primary font-bold">±0.04 mm</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[88%]"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Red de inferencia entrenada sobre 1,420 probetas en contrachapado de abedul y chopo de 3 a 5mm.
+        </span>
+</div>
+</div>
+<!-- SECCIÓN 1: LAS 3 TOMAS CLAVE (BENTO GRID CON FOTOGRAFIAS) -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest block">PASO 01 // METROLOGÍA VISUAL</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Las 3 Tomas Clave Obligatorias</h2>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono uppercase">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+          REQUERIDO: ILUMINACIÓN DIFUSA (CRI &gt; 90)
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- TOMA 1: CENITAL 90° -->
+<article class="flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg group">
+<div class="relative w-full h-64 bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Overhead flat lay 90 degree close up photograph of laser cut birch plywood with high precision millimetric metal steel ruler aligned beside the cut line, soft diffuse workshop studio lighting without harsh specular highlights, technical industrial laboratory inspection framing, sharp crisp focus on kerf gap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD8zj3mbxOXKruChmx5MlRsFErUSfjJSs770aF6ekQJDdM9Euhtxh1Iexot46-FJxkht65u8s8Cs1XkW_2v-mU1BaNTbgnkwOgBaIpryGTQMj9p-MGjMMJgJ0Su8mmwR7ReIBO2NIEL2Th-jvkfCGYeEFQAW-vRpF3jOLWYUl5lGuIsd7dTyHvTI2qhWGOYurYtdUrx3WP_geeaZoPw21xL-ulEeptX16D7XLwliunaRbR1KWqVJUirQ"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary font-bold">TOMA 01</span>
+<span class="font-label-mono text-label-mono text-outline">•</span>
+<span class="font-label-mono text-label-mono text-on-surface">CENITAL 90°</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono text-label-mono text-tertiary">
+              CALIBRACIÓN KERF
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center justify-between">
+                Perpendicular Absoluta
+                <span class="material-symbols-outlined text-primary text-[20px]">center_focus_strong</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Enfoque directo al plano superior a 90°. Es mandatorio incluir una regla milimétrica o moneda de 1€ en el mismo plano focal para fijar píxeles por milímetro.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">wb_twilight</span>
+<span>Iluminación Difusa Indirecta</span>
+</div>
+<span class="text-on-surface-variant">Sin flash directo ni sombras oblicuas que falseen el ancho de la ranura de quemado.</span>
+</div>
+</div>
+</article>
+<!-- TOMA 2: CANTO / SECCIÓN TRANSVERSAL -->
+<article class="flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg group">
+<div class="relative w-full h-64 bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography edge cut cross section of 4mm plywood placed horizontally against dark matte architectural background, extreme close-up showing laser cut vertical bevel taper angle and charred carbonized edge soot gradients, clear industrial inspection lighting, razor sharp depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf2e95toKqmJelD0O5Ssboq9LDYhbzyHlh6mQW628db4bHu6v1ANAXLX0xF02H6d3L9vWNd1SrUISn7x_tFINtRo68xZ0YqATrSHT1K2HH5E583Af79XAUzhBmrHKREGxbnIPtPEJNVPsmjyhqea_3f3YQX3w2UMfZPT_MOomOKYZ1VyZdXeqeCLzt-dVCciudxWWfu56ajInh4zKG4N2uGKHHTKISiIC6x5h_dC-G1460JokFYN68Rw"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary font-bold">TOMA 02</span>
+<span class="font-label-mono text-label-mono text-outline">•</span>
+<span class="font-label-mono text-label-mono text-on-surface">CANTO / MICRO-BISEL</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono text-label-mono text-secondary">
+              ÁNGULO DE CONO Z
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center justify-between">
+                Sección Transversal
+                <span class="material-symbols-outlined text-primary text-[20px]">straighten</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Pieza apoyada sobre fondo plano oscuro mate. La cámara a ras del canto midiendo la conicidad natural del rayo láser diodo y la profundidad de carbonilla.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">lens_blur</span>
+<span>Medición de Hollín y Bisel</span>
+</div>
+<span class="text-on-surface-variant">Permite a la IA recalcular la altura de foco (offset Z) para centrar la cintura del haz a mitad de material.</span>
+</div>
+</div>
+</article>
+<!-- TOMA 3: CARA INFERIOR -->
+<article class="flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg group">
+<div class="relative w-full h-64 bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Technical macro shot of the bottom exit side of laser cut plywood, showing wood grain backplate with partial pierce marks and burned adhesive resin accumulation, technical laboratory testing, neutral cold LED studio lighting, pristine clean focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBPJ8fp6GDkI6NoGp_6Jf8KJrgfmjMzdgltYxI13QzVWn2uFJ842JyM1VWBs74LAlRGkbzig8FdIIGsBrqnj337fLiQWnrMaNLPch3C-HjDsDMtOygqYbx8cUOOtmo7suPmKgI5PX0qQFumZ5a1cup3tCr58uPIiAAfCrlDblRX8EA5wrXdw88z_sRnX0eio2dnKakiY8j4k8vdyxyPsZ1rHBPZ8ntaLw0ljvBqp_Rw1tmuB4gkKW9gg"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-space-xs rounded-lg flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary font-bold">TOMA 03</span>
+<span class="font-label-mono text-label-mono text-outline">•</span>
+<span class="font-label-mono text-label-mono text-on-surface">CARA TRASERA (SALIDA)</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono text-label-mono text-tertiary">
+              VERIFICACIÓN 100% PASANTE
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center justify-between">
+                Salida del Rayo
+                <span class="material-symbols-outlined text-primary text-[20px]">flip_camera_android</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Voltea la pieza para auditar la base. Revela si el haz emergió limpiamente o si quedó retenido por colas fenólicas y recondensación de vapor de resina.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-error font-semibold">
+<span class="material-symbols-outlined text-[16px]">emergency</span>
+<span>Detección de Adherencia</span>
+</div>
+<span class="text-on-surface-variant">Comprueba si la pieza se desprende por gravedad o si requiere cutter manual (señal de infradosis).</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECCIÓN 2: DETECTOR DE SÍNTOMAS TÍPICOS 'SIN AIR ASSIST' -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest block">ANÁLISIS DE PATOLOGÍAS // MATERIALES CRÍTICOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Maderas Económicas: Leroy Merlin vs Bazar Chino</h2>
+</div>
+<span class="px-space-md py-space-xs bg-secondary-container/15 text-secondary rounded-lg font-label-mono text-label-mono font-semibold uppercase flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">air_purifier</span>
+          DIAGNÓSTICO ESPECÍFICO SIN CHORRO NEUMÁTICO
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- PROBLEMA A -->
+<div class="bg-surface-container-high rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">local_fire_department</span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase">PATOLOGÍA 01 // COMBUSTIÓN LENTA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Borde Carbonizado / Halo de Tiznado Severo</h3>
+</div>
+</div>
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-error-container text-on-error-container">GRAVE</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">CAUSA FÍSICA DIRECTA</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                En ausencia de Air Assist, los gases y humos de pirólisis se estancan en la trinchera del corte, sobrecalentando el perímetro exterior y depositando alquitrán graso.
+              </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-tertiary uppercase">COMPORTAMIENTO EN LEROY / CHINO</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Las maderas de okume o chopo de grandes superficies tienen chapa exterior de escaso micraje que se quema antes de que el núcleo ceda térmicamente.
+              </p>
+</div>
+</div>
+<!-- Corrección Técnica Box -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[20px]">build_circle</span>
+<span>Prescripción Paramétrica de Corrección:</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check</span>
+<span><strong>Enmascarado con cinta de carrocero/pintor de papel:</strong> Absorbe el vapor de resina antes de tocar la madera limpia.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check</span>
+<span><strong>Acelerar velocidad y multiplicar pasadas:</strong> Pasar de <code class="font-code-param text-code-param bg-surface-container-lowest px-1 rounded text-primary">300 mm/min (1 pase @ 85%)</code> a <code class="font-code-param text-code-param bg-surface-container-lowest px-1 rounded text-primary">750 mm/min (3 pases @ 70%)</code> reduciendo el dwell-time térmico.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- PROBLEMA B -->
+<div class="bg-surface-container-high rounded-xl p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">layers_clear</span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase">PATOLOGÍA 02 // HETEROGENEIDAD INTERIOR</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Islas No Traspasadas y Nudos Ciegos</h3>
+</div>
+</div>
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-surface-container text-primary">RECURRENTE</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">CAUSA FÍSICA DIRECTA</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Colas de urea-formaldehído de alta densidad acumuladas en bolsillos interiores y empalmes de capas internas no visibles desde el exterior.
+              </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-mono text-label-mono text-secondary uppercase">CONTRAPLACADO ECONÓMICO</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                El rayo láser de diodo azul 450nm es refractado y atenuado bruscamente por la concentración de aglutinante sintético fósil.
+              </p>
+</div>
+</div>
+<!-- Corrección Técnica Box -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-[20px]">build_circle</span>
+<span>Prescripción Paramétrica de Corrección:</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check</span>
+<span><strong>Ajuste Z Focal Subsuperficial:</strong> Calibrar el foco Z en <code class="font-code-param text-code-param bg-surface-container-lowest px-1 rounded text-primary">-1.5 mm</code> respecto a la superficie para ubicar la mayor densidad de energía en el núcleo problemático.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check</span>
+<span><strong>Adición de Pase de Seguridad (+1 Pase Delta):</strong> Sumar un pase suplementario con reducción del 15% de potencia para no engordar el corte pero cortar fibras rebeldes.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: SIMULADOR DE CARGA Y DIAGNÓSTICO LIGHTBURN CORE 2.1.04 -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest block">INTERFAZ DE PROCESAMIENTO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Pipeline LightBurn Core 2.1.04</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">ESTADO DE COMUNICACIÓN:</span>
+<span class="font-label-mono text-label-mono text-tertiary font-bold bg-surface-container px-space-sm py-1 rounded">GRBL V1.1 READY</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- PANEL IZQUIERDO: DROP ZONE DE FOTOS Y ARCHIVO LBRN2 -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Drop Area Fotos -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md cursor-pointer hover:bg-surface-container-high transition-colors" id="dropzone-photos">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary uppercase font-semibold">1. SUBIDA DE LAS 3 FOTOGRAFÍAS</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">JPG / PNG / HEIC</span>
+</div>
+<div class="w-full bg-surface-container-lowest p-space-lg rounded-xl flex flex-col items-center justify-center gap-space-sm text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">add_photo_alternate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Arrastra las 3 capturas simultáneas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">O captura directamente con el móvil del taller</span>
+</div>
+<button class="mt-space-xs px-space-md py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm hover:bg-surface-container-high transition-colors" type="button">
+                Examinar Archivos Locales
+              </button>
+</div>
+<!-- Previsualización de miniaturas subidas -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-xs rounded-lg flex flex-col gap-1">
+<div class="h-12 w-full bg-surface-container rounded overflow-hidden relative">
+<div class="absolute inset-0 bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant truncate">Cenital.jpg</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded-lg flex flex-col gap-1">
+<div class="h-12 w-full bg-surface-container rounded overflow-hidden relative">
+<div class="absolute inset-0 bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant truncate">Canto_Bisel.png</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded-lg flex flex-col gap-1">
+<div class="h-12 w-full bg-surface-container rounded overflow-hidden relative">
+<div class="absolute inset-0 bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant truncate">Salida_Base.jpg</span>
+</div>
+</div>
+</div>
+<!-- Carga Archivo LightBurn .lbrn2 -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary uppercase font-semibold">2. VINCULAR ARCHIVO LIGHTBURN .LBRN2</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-container font-label-mono text-label-mono">v2.1.04</span>
+</div>
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[32px]">folder_code</span>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Corte_Bandeja_Chopo_3mm.lbrn2</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Capas detectadas: C00 (Corte Vectorial)</span>
+</div>
+<button class="p-space-xs text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>PARÁMETROS EXTRAÍDOS DEL PROYECTO:</span>
+<span class="text-primary font-bold">CAPA C00 (BLACK)</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">VELOCIDAD</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">320 <span class="text-body-sm font-normal text-outline">mm/min</span></span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">POTENCIA</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">85 <span class="text-body-sm font-normal text-outline">%</span></span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant">PASES</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">1 <span class="text-body-sm font-normal text-outline">x</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PANEL DERECHO: VISOR DE COMPARATIVA MATEMÁTICA Y ACCIÓN -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container rounded-xl p-space-lg gap-space-lg shadow-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">analytics</span>
+<div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">DIAGNÓSTICO EN TIEMPO REAL</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Comparativa: Obtenido vs Corrección Óptima</h3>
+</div>
+</div>
+<span class="px-space-md py-space-xs bg-tertiary-container/15 text-tertiary rounded-full font-label-mono text-label-mono font-bold uppercase">
+              CONFIANZA IA: 98.4%
+            </span>
+</div>
+<!-- Matriz Visual Comparativa -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Tarjeta: Estado Detectado en Fotos -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-semibold">LECTURA DE TOMA ÓPTICA</span>
+<span class="font-label-mono text-label-mono text-error font-bold">FALLO DETECTADO</span>
+</div>
+<!-- SVG Visualizer: Kerf & Conicidad Obtenida -->
+<div class="h-32 w-full bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>CANTO REAL REGISTRADO</span>
+<span class="text-error font-bold">BISEL 7.2°</span>
+</div>
+<!-- Mini Cross Section Vector Diagram -->
+<div class="w-full flex justify-center items-center py-2">
+<svg class="w-48 h-12 text-secondary fill-current" viewbox="0 0 200 40">
+<!-- Laser Taper Trap / Charred profile -->
+<polygon fill="rgba(253, 108, 0, 0.2)" points="40,2 160,2 145,38 55,38" stroke="currentColor" stroke-width="2"></polygon>
+<line stroke="#3b494c" stroke-dasharray="2 2" x1="40" x2="40" y1="2" y2="38"></line>
+<line stroke="#3b494c" stroke-dasharray="2 2" x1="160" x2="160" y1="2" y2="38"></line>
+</svg>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-outline">
+<span>ANCHO SUP: 0.38mm</span>
+<span>ANCHO INF: 0.12mm (INCOMPLETO)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">Diagnóstico Algorítmico:</span>
+<span>Sobre-quemado superior por dwell-time prolongado + falta de corte pasante en capas de pegamento basal.</span>
+</div>
+</div>
+<!-- Tarjeta: Ajuste Recomendado LightBurn -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary uppercase font-semibold">PREDICCIÓN MATEMÁTICA ÓPTIMA</span>
+<span class="font-label-mono text-label-mono text-tertiary font-bold">100% PASANTE LIMPIO</span>
+</div>
+<!-- SVG Visualizer: Kerf Paralelo Ideal -->
+<div class="h-32 w-full bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>CANTO COMPENSADO</span>
+<span class="text-primary font-bold">BISEL 1.1° (RECTO)</span>
+</div>
+<!-- Mini Ideal Slot -->
+<div class="w-full flex justify-center items-center py-2">
+<svg class="w-48 h-12 text-primary-container fill-current" viewbox="0 0 200 40">
+<polygon fill="rgba(0, 229, 255, 0.2)" points="50,2 150,2 148,38 52,38" stroke="currentColor" stroke-width="2"></polygon>
+<line stroke="#3b494c" stroke-dasharray="2 2" x1="50" x2="50" y1="2" y2="38"></line>
+<line stroke="#3b494c" stroke-dasharray="2 2" x1="150" x2="150" y1="2" y2="38"></line>
+</svg>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-outline">
+<span>KERF NETO: 0.16mm</span>
+<span>OFFSET FOCO Z: -1.20mm</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">Estrategia Dinámica:</span>
+<span>Dividir energía en 2 pases rápidos eliminando la zona de pirolisis acumulada y vaporizando la resina de fondo.</span>
+</div>
+</div>
+</div>
+<!-- Delta de Corrección en Barras Numéricas -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">
+              DELTA VECTORIAL DE CORRECCIÓN (VARIACIÓN RESPECTO A ARCHIVO ORIGINAL)
+            </span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Velocidad Delta -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-label-mono">
+<span class="text-on-surface">VELOCIDAD</span>
+<span class="text-tertiary font-bold">+280 mm/min</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-md text-metric-md text-on-surface-variant line-through">320</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-metric-xl text-metric-xl text-primary font-bold">600</span>
+<span class="font-label-mono text-label-mono text-outline">mm/min</span>
+</div>
+</div>
+<!-- Potencia Delta -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-label-mono">
+<span class="text-on-surface">POTENCIA DIODO</span>
+<span class="text-secondary font-bold">-10% POT</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-md text-metric-md text-on-surface-variant line-through">85%</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-metric-xl text-metric-xl text-secondary font-bold">75%</span>
+<span class="font-label-mono text-label-mono text-outline">(15W real)</span>
+</div>
+</div>
+<!-- Pases Delta -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-label-mono">
+<span class="text-on-surface">PASES</span>
+<span class="text-tertiary font-bold">+1 PASE</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-md text-metric-md text-on-surface-variant line-through">1 pase</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-metric-xl text-metric-xl text-tertiary font-bold">2 pases</span>
+<span class="font-label-mono text-label-mono text-outline">Z-step 0.7mm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Botón de Acción Principal & Modos de Descarga -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Listo para inyectar en <code class="font-code-param text-code-param text-on-surface">LightBurn 2.1.04</code></span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-lg py-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright font-headline-md text-headline-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Exportar .clb</span>
+</button>
+<button class="flex-1 sm:flex-none px-space-xl py-space-md rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary-container/20 flex items-center justify-center gap-space-sm" id="apply-button" type="button">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+<span>Aplicar Corrección para Corte Sin Air Assist</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Checklist Rápido de Calidad Fotográfica (Footer de Inspección) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-wrap items-center justify-between gap-space-md shadow-inner">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary font-label-mono text-label-mono font-bold">
+          i
+        </span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Consejo de Taller Bendito Lab</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Limpia el cristal de la lente del módulo de 20W con alcohol isopropílico 99% si observas que la Toma 2 muestra un bisel asimétrico hacia la derecha.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg font-label-mono text-label-mono text-on-surface-variant">
+<span>TASA DE ÉXITO CON PROTOCOLO: 99.1%</span>
+<span>LATENCIA DE INFERENCIA: 180ms</span>
+</div>
+</div>
+</div>
+<!-- Micro-interacción: Feedback de aplicación de parámetros -->
+<script>
+    const applyBtn = document.getElementById('apply-button');
+    if (applyBtn) {
+      applyBtn.addEventListener('click', () => {
+        const originalText = applyBtn.innerHTML;
+        applyBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[22px]">autorenew</span><span>Inyectando Capa C00 en LightBurn...</span>';
+        applyBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        setTimeout(() => {
+          applyBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">done_all</span><span>¡Capa LightBurn 2.1.04 Actualizada!</span>';
+          setTimeout(() => {
+            applyBtn.innerHTML = originalText;
+            applyBtn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+          }, 2500);
+        }, 1200);
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.4)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-mono text-label-mono uppercase"><div class="flex items-center gap-space-sm"><span class="text-tertiary">●</span><span>TELEMETRÍA LOCAL: PUERTO COM3 (115200 BAUD)</span></div><div class="flex items-center gap-space-lg"><span>FIRMWARE GRBL 1.1h</span><span>CALIBRACIÓN DE FOCO: 2.0MM</span><span>© BENDITO LAB PRODUCCIÓN</span></div></div></footer></body></html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#006731", "on-tertiary": "#003918", "primary": "#c3f5ff", "secondary-container": "#fd6c00", "error": "#ffb4ab", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "on-tertiary-fixed-variant": "#005226", "secondary": "#ffb692", "secondary-fixed-dim": "#ffb692", "on-secondary-fixed-variant": "#7a3000", "on-background": "#dde3ee", "surface-container-highest": "#2f353e", "on-error": "#690005", "error-container": "#93000a", "surface-container-lowest": "#090f16", "surface-bright": "#343a42", "inverse-primary": "#006875", "tertiary-fixed": "#62ff96", "primary-container": "#00e5ff", "on-primary-fixed-variant": "#004f58", "surface-container-high": "#242a33", "on-tertiary-fixed": "#00210b", "on-surface": "#dde3ee", "primary-fixed-dim": "#00daf3", "background": "#0e141c", "primary-fixed": "#9cf0ff", "on-secondary": "#562000", "surface": "#0e141c", "on-secondary-fixed": "#341100", "secondary-fixed": "#ffdbcb", "tertiary-container": "#22ef7e", "inverse-surface": "#dde3ee", "surface-tint": "#00daf3", "surface-container-low": "#161c24", "on-error-container": "#ffdad6", "inverse-on-surface": "#2b3139", "surface-container": "#1a2028", "tertiary": "#b1ffbf", "on-primary": "#00363d", "tertiary-fixed-dim": "#00e475", "surface-dim": "#0e141c", "on-secondary-container": "#562000", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "on-primary-container": "#00626e", "outline": "#849396" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin-mobile": "1rem", "margin": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-md": ["Inter"], "metric-md": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "code-param": ["JetBrains Mono"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-sm": ["Inter"], "headline-md": ["Space Grotesk"], "metric-xl": ["JetBrains Mono"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "metric-md": ["16px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-param": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "title-sm": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }], "metric-xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.03em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,229,255,0.2)]"><span class="material-symbols-outlined text-[20px]">blur_on</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">OpticCut</span><span class="font-metric-md text-code-param text-primary-container leading-none">20W</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#22ef7e]"></span><span class="font-label-mono text-label-mono text-tertiary uppercase">Diodo 20W • Listo</span></div></div></div><div class="flex items-center gap-space-sm"><button aria-label="Estado de conexión máquina" class="h-11 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded flex items-center gap-1.5 transition-colors" type="button"><span class="material-symbols-outlined text-primary-container text-[18px]">link</span><span class="font-label-mono text-label-mono text-on-surface uppercase hidden sm:inline">Conectado</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg pb-12">
+<!-- Cabecera de Módulo -->
+<section class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary font-label-mono text-label-mono uppercase tracking-wider">Módulo Óptico • IA v2.4</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_8px_#22ef7e]"></span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Registrar Nuevo Test de Material</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Alimenta el modelo de IA local con tus métricas de corte y grabado reales para afinar la predicción del diodo 20W.</p>
+</section>
+<!-- Escáner Asistido por IA (Visor de Retícula) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_center_focus</span>
+        Visor de Mapeo Óptico
+      </label>
+<span class="font-label-mono text-label-mono text-tertiary bg-surface-container-high px-2 py-0.5 rounded">Red Neuronal Lista</span>
+</div>
+<!-- Contenedor del visor -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest overflow-hidden shadow-2xl flex flex-col items-center justify-center min-h-[280px]">
+<!-- Fondo decorativo con rejilla técnica de ingeniería -->
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#00e5ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Retícula animada SVG interactiva -->
+<div class="absolute inset-4 pointer-events-none flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div class="w-6 h-6 border-l-2 border-t-2 border-primary-container/80 rounded-tl-sm"></div>
+<div class="text-right">
+<span class="font-label-mono text-label-mono text-primary/70 bg-surface-container-lowest/80 px-1 rounded">CAL_XY: ±0.02mm</span>
+</div>
+<div class="w-6 h-6 border-r-2 border-t-2 border-primary-container/80 rounded-tr-sm"></div>
+</div>
+<!-- Escaneo láser animado horizontal -->
+<div class="relative w-full h-0.5 bg-gradient-to-r from-transparent via-primary-container to-transparent shadow-[0_0_12px_#00e5ff] animate-pulse"></div>
+<div class="flex justify-between items-end">
+<div class="w-6 h-6 border-l-2 border-b-2 border-primary-container/80 rounded-bl-sm"></div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-mono text-label-mono text-secondary">KERF DETECT: ON</span>
+</div>
+<div class="w-6 h-6 border-r-2 border-b-2 border-primary-container/80 rounded-br-sm"></div>
+</div>
+</div>
+<!-- Imagen Placeholder de la muestra escaneada -->
+<div class="w-full h-48 sm:h-56 relative opacity-85 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Macro close-up shot of a 20W diode laser matrix test on 4mm birch plywood, showing precise grid of cut and engraved squares with varying burn intensity, laser kerf edge clarity, glowing cyan analysis crosshairs overlaying the test piece in an industrial fabrication lab with cool tone lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyQ2D3UYxM7yYzY-1dmEjxiYnQPx9UJTvdCgI738TmSZVYHwzsCsSG1JxP2dk6u1ezE2TzbtRJa4Yl_2O1NislktsjKB9LjrMXOZkjYBbAfLQttOH5-7ldWC4KHm8aWSEoWuhmivSAkggZo3IF824PnrTl1TUGpq45mFnUTraD3lu8o5bbSXRf6LaGiHPtTymUoedHWRgHSfEUSkPayXnF85qyCNrP-R3hLfWhLhDim0memwUkAfK76A"/>
+<!-- Overlay oscuro gradual para contraste de controles -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+</div>
+<!-- Tarjeta flotante de captura interactiva -->
+<div class="relative z-10 w-full px-space-md pb-space-md pt-2 flex flex-col gap-space-xs items-center text-center">
+<p class="font-body-sm text-body-sm text-on-surface">Toma una foto nítida de la matriz cortada para que la IA compute automáticamente el mejor vector y profundidad.</p>
+<div class="flex items-center gap-space-sm w-full mt-1">
+<button class="flex-1 h-11 bg-primary-container text-on-primary font-title-sm text-title-sm font-semibold rounded flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(0,229,255,0.3)] active:scale-[0.98] transition-transform" id="btn-camera" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+            Capturar Matriz
+          </button>
+<button aria-label="Cargar desde galería" class="h-11 w-11 bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest text-on-surface rounded flex items-center justify-center transition-colors" id="btn-gallery" type="button">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Formulario de Configuración del Test -->
+<form class="flex flex-col gap-space-lg" id="material-test-form" onsubmit="event.preventDefault();">
+<!-- Bloque 1: Especificaciones del Sustrato -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">category</span>
+          Sustrato de Trabajo
+        </h2>
+<span class="font-label-mono text-label-mono text-outline">Paso 01/03</span>
+</div>
+<!-- Nombre del Material con Sugerencias Rápidas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase" for="material-name">Material y Composición</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3 bg-surface-container-highest text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-bright transition-colors" id="material-name" list="preset-materials" placeholder="p. ej. Pino macizo, Acrílico colado..." type="text" value="MDF / DM Estándar"/>
+<datalist id="preset-materials">
+<option value="MDF / DM 3mm">
+</option><option value="Contrachapado Abedul 4mm">
+</option><option value="Acrílico Negro Colado 3mm">
+</option><option value="Cuero Curtido Vegetal 2mm">
+</option><option value="Pino Alistonado 10mm">
+</option></datalist>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">search</span>
+</div>
+<!-- Chips rápidos -->
+<div class="flex flex-wrap gap-1.5 mt-1">
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono hover:bg-surface-container-high transition-colors" onclick="document.getElementById('material-name').value='DM / MDF 4mm'" type="button">+ MDF 4mm</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono hover:bg-surface-container-high transition-colors" onclick="document.getElementById('material-name').value='Pino Macizo 10mm'" type="button">+ Pino 10mm</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono hover:bg-surface-container-high transition-colors" onclick="document.getElementById('material-name').value='Acrílico Colado 3mm'" type="button">+ Acrílico 3mm</button>
+</div>
+</div>
+<!-- Espesor / Grosor con control numérico -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase" for="thickness-input">Espesor Medido (Calibre)</label>
+<div class="flex items-center gap-2">
+<div class="flex-1 flex items-center bg-surface-container-highest rounded overflow-hidden h-11 px-3">
+<button class="h-8 w-8 rounded bg-surface-container flex items-center justify-center text-primary active:bg-surface-container-lowest" id="btn-dec-thick" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<input class="w-full text-center bg-transparent font-metric-md text-metric-md text-primary focus:outline-none" id="thickness-input" max="25.0" min="0.1" step="0.1" type="number" value="3.0"/>
+<button class="h-8 w-8 rounded bg-surface-container flex items-center justify-center text-primary active:bg-surface-container-lowest" id="btn-inc-thick" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="h-11 px-3 bg-surface-container-high rounded flex items-center justify-center font-metric-md text-code-param text-on-surface">
+            mm
+          </div>
+</div>
+</div>
+</div>
+<!-- Bloque 2: Tipo de Proceso y Rango de Pruebas -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+          Parámetros de la Matriz
+        </h2>
+<span class="font-label-mono text-label-mono text-outline">Paso 02/03</span>
+</div>
+<!-- Selector de Proceso (Segmented Controls) -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Tipo de Proceso Óptico</span>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-lowest p-1 rounded-lg" id="process-selector">
+<button class="process-btn h-10 rounded font-label-mono text-label-mono uppercase transition-all bg-surface-container-high text-primary-container shadow-sm flex items-center justify-center gap-1" data-mode="corte" type="button">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+            Corte
+          </button>
+<button class="process-btn h-10 rounded font-label-mono text-label-mono uppercase transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" data-mode="vector" type="button">
+<span class="material-symbols-outlined text-[16px]">polyline</span>
+            Grab. Vect
+          </button>
+<button class="process-btn h-10 rounded font-label-mono text-label-mono uppercase transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" data-mode="raster" type="button">
+<span class="material-symbols-outlined text-[16px]">gradient</span>
+            Raster
+          </button>
+</div>
+</div>
+<!-- Rango de Potencia con Barra de Nivel Segmentada -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Rango Potencia Diodo</label>
+<span class="font-metric-md text-code-param text-secondary-container" id="power-range-label">10% — 100%</span>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-full accent-primary-container h-1.5 bg-surface-container-highest rounded cursor-pointer" id="power-min" max="100" min="10" step="5" type="range" value="20"/>
+<span class="font-label-mono text-label-mono text-outline">a</span>
+<input class="w-full accent-secondary-container h-1.5 bg-surface-container-highest rounded cursor-pointer" id="power-max" max="100" min="10" step="5" type="range" value="95"/>
+</div>
+<!-- Medidor segmentado visual de 20W -->
+<div class="grid grid-cols-10 gap-1 h-1.5 w-full bg-surface-container-lowest p-0.5 rounded">
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-primary-container rounded-xs"></div>
+<div class="bg-secondary-container rounded-xs"></div>
+<div class="bg-secondary-container rounded-xs"></div>
+<div class="bg-secondary-container rounded-xs"></div>
+<div class="bg-error rounded-xs"></div>
+</div>
+</div>
+<!-- Rango de Velocidad -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Rango de Avance (Feed Rate)</label>
+<span class="font-metric-md text-code-param text-primary" id="speed-range-label">150 — 2400 mm/min</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center bg-surface-container-highest rounded px-3 h-10">
+<span class="font-label-mono text-label-mono text-outline mr-2">MIN</span>
+<input class="w-full bg-transparent font-metric-md text-code-param text-on-surface focus:outline-none" id="speed-min" step="50" type="number" value="150"/>
+</div>
+<div class="flex items-center bg-surface-container-highest rounded px-3 h-10">
+<span class="font-label-mono text-label-mono text-outline mr-2">MAX</span>
+<input class="w-full bg-transparent font-metric-md text-code-param text-on-surface focus:outline-none" id="speed-max" step="50" type="number" value="2400"/>
+</div>
+</div>
+</div>
+<!-- Asistencia de Aire (Air Assist) Interruptor PSI -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-highest/60 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">air</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Asistencia de Aire (Air Assist)</span>
+<span class="font-label-mono text-label-mono text-tertiary" id="air-assist-status">Activado • 25 PSI continuo</span>
+</div>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors cursor-pointer" id="air-toggle" type="button">
+<span class="w-5 h-5 rounded-full bg-on-tertiary shadow-md transform transition-transform"></span>
+</button>
+</div>
+</div>
+<!-- Bloque 3: Evaluación de Calidad y Selección del Ganador -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+          Evaluación y Parámetro Ganador
+        </h2>
+<span class="font-label-mono text-label-mono text-outline">Paso 03/03</span>
+</div>
+<!-- Selector táctil de calidad de corte -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Veredicto Físico de la Muestra</span>
+<div class="grid grid-cols-2 gap-2" id="verdict-group">
+<button class="verdict-btn p-2.5 rounded-lg bg-surface-container-high text-left flex flex-col gap-1 transition-all shadow-sm" data-verdict="clean" type="button">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-mono text-label-mono text-tertiary font-bold">100% OK</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Corte Limpio</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Borde nítido, sin rebarba</span>
+</button>
+<button class="verdict-btn p-2.5 rounded-lg bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" data-verdict="light-burn" type="button">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span>
+<span class="font-label-mono text-label-mono text-secondary">LEVE</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Poco Quemado</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Hollín perimetral mínimo</span>
+</button>
+<button class="verdict-btn p-2.5 rounded-lg bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" data-verdict="no-cut" type="button">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[18px]">block</span>
+<span class="font-label-mono text-label-mono text-outline">FALLO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">No Atravesó</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Penetración incompleta</span>
+</button>
+<button class="verdict-btn p-2.5 rounded-lg bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" data-verdict="carbonized" type="button">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+<span class="font-label-mono text-label-mono text-error">CRÍTICO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Carbonizado</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Sobrecalentamiento grave</span>
+</button>
+</div>
+</div>
+<!-- Cuadrado Ganador Asignado -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-inner">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-outline uppercase">Parámetro Ganador Elegido</span>
+<span class="font-metric-md text-metric-md text-primary font-bold" id="winner-summary">380 mm/min @ 90% Pot.</span>
+</div>
+</div>
+<button class="h-8 px-2.5 bg-surface-container-high rounded text-on-surface hover:bg-surface-bright font-label-mono text-label-mono transition-colors" id="btn-edit-winner" type="button">
+          Modificar
+        </button>
+</div>
+<!-- Notas Técnicas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center justify-between" for="tech-notes">
+<span>Observaciones Técnicas del Operador</span>
+<span class="text-outline">Opcional</span>
+</label>
+<textarea class="w-full p-3 bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:bg-surface-bright resize-none transition-colors" id="tech-notes" placeholder="p. ej. Requiere pasar dos veces cinta de carrocero para mitigar humo de resina. Foco a ras de material." rows="3"></textarea>
+</div>
+</div>
+<!-- Acciones de Envío / Guardado con Efecto Emisivo -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="relative group w-full h-14 rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm font-bold flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(0,229,255,0.4)] active:scale-[0.99] transition-all overflow-hidden" id="btn-save-test" type="submit">
+<!-- Destello brillante -->
+<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+        Guardar Prueba y Calibrar IA
+      </button>
+<p class="text-center font-label-mono text-label-mono text-outline">
+        Actualiza el grafo de regresión del módulo diodo 20W • KERF calc.
+      </p>
+</div>
+</form>
+</div>
+<script>
+  // Micro-interacciones de la pantalla
+  (function() {
+    // Stepper de espesor
+    const thickInput = document.getElementById('thickness-input');
+    const decBtn = document.getElementById('btn-dec-thick');
+    const incBtn = document.getElementById('btn-inc-thick');
+
+    if (decBtn && thickInput) {
+      decBtn.addEventListener('click', () => {
+        let val = parseFloat(thickInput.value) || 3.0;
+        if (val > 0.2) thickInput.value = (val - 0.1).toFixed(1);
+      });
+    }
+
+    if (incBtn && thickInput) {
+      incBtn.addEventListener('click', () => {
+        let val = parseFloat(thickInput.value) || 3.0;
+        thickInput.value = (val + 0.1).toFixed(1);
+      });
+    }
+
+    // Selector de Proceso
+    const processBtns = document.querySelectorAll('.process-btn');
+    processBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        processBtns.forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'text-primary-container', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-high', 'text-primary-container', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Toggle Asistencia de Aire
+    const airToggle = document.getElementById('air-toggle');
+    const airLabel = document.getElementById('air-assist-status');
+    let airActive = true;
+    if (airToggle && airLabel) {
+      airToggle.addEventListener('click', () => {
+        airActive = !airActive;
+        airToggle.setAttribute('aria-pressed', airActive);
+        if (airActive) {
+          airToggle.className = "w-12 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors cursor-pointer";
+          airLabel.textContent = "Activado • 25 PSI continuo";
+          airLabel.className = "font-label-mono text-label-mono text-tertiary";
+        } else {
+          airToggle.className = "w-12 h-6 rounded-full bg-surface-container-highest p-0.5 flex items-center justify-start transition-colors cursor-pointer";
+          airLabel.textContent = "Desactivado (Grabado tenue)";
+          airLabel.className = "font-label-mono text-label-mono text-outline";
+        }
+      });
+    }
+
+    // Selector de Veredicto de Calidad
+    const verdictBtns = document.querySelectorAll('.verdict-btn');
+    verdictBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        verdictBtns.forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'shadow-sm');
+          b.classList.add('bg-surface-container');
+        });
+        btn.classList.remove('bg-surface-container');
+        btn.classList.add('bg-surface-container-high', 'shadow-sm');
+      });
+    });
+
+    // Rango Dinámico de Potencia
+    const pMin = document.getElementById('power-min');
+    const pMax = document.getElementById('power-max');
+    const pLabel = document.getElementById('power-range-label');
+    const updatePower = () => {
+      if (pMin && pMax && pLabel) {
+        let min = parseInt(pMin.value);
+        let max = parseInt(pMax.value);
+        if (min > max) { let t = min; min = max; max = t; }
+        pLabel.textContent = `${min}% — ${max}%`;
+      }
+    };
+    if (pMin && pMax) {
+      pMin.addEventListener('input', updatePower);
+      pMax.addEventListener('input', updatePower);
+    }
+
+    // Rango Dinámico de Velocidad
+    const sMin = document.getElementById('speed-min');
+    const sMax = document.getElementById('speed-max');
+    const sLabel = document.getElementById('speed-range-label');
+    const updateSpeed = () => {
+      if (sMin && sMax && sLabel) {
+        sLabel.textContent = `${sMin.value} — ${sMax.value} mm/min`;
+      }
+    };
+    if (sMin && sMax) {
+      sMin.addEventListener('input', updateSpeed);
+      sMax.addEventListener('input', updateSpeed);
+    }
+
+    // Botón Guardar Micro-feedback
+    const saveBtn = document.getElementById('btn-save-test');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalContent = saveBtn.innerHTML;
+        saveBtn.disabled = true;
+        saveBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-spin">refresh</span>
+          Optimizando Matriz Neuronal...
+        `;
+        setTimeout(() => {
+          saveBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            ¡Calibración Guardada!
+          `;
+          saveBtn.classList.replace('bg-primary-container', 'bg-tertiary-container');
+          setTimeout(() => {
+            saveBtn.innerHTML = originalContent;
+            saveBtn.disabled = false;
+            saveBtn.classList.replace('bg-tertiary-container', 'bg-primary-container');
+          }, 2400);
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="ia-parametros" href="#"><span class="material-symbols-outlined text-[22px]">target</span><span class="font-label-mono text-label-mono uppercase">IA Calc</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="mi-maquina" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-mono text-label-mono uppercase">Máquina</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="test-lab" href="#"><span class="material-symbols-outlined text-[22px]">science</span><span class="font-label-mono text-label-mono uppercase">Test Lab</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 transition-colors text-primary-container" data-path="nuevo-test" href="#"><span class="material-symbols-outlined text-[22px]">add_a_photo</span><span class="font-label-mono text-label-mono uppercase">+ Test</span></a></div></nav></body></html>

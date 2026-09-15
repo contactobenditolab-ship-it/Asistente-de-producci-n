@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#006731", "on-tertiary": "#003918", "primary": "#c3f5ff", "secondary-container": "#fd6c00", "error": "#ffb4ab", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "on-tertiary-fixed-variant": "#005226", "secondary": "#ffb692", "secondary-fixed-dim": "#ffb692", "on-secondary-fixed-variant": "#7a3000", "on-background": "#dde3ee", "surface-container-highest": "#2f353e", "on-error": "#690005", "error-container": "#93000a", "surface-container-lowest": "#090f16", "surface-bright": "#343a42", "inverse-primary": "#006875", "tertiary-fixed": "#62ff96", "primary-container": "#00e5ff", "on-primary-fixed-variant": "#004f58", "surface-container-high": "#242a33", "on-tertiary-fixed": "#00210b", "on-surface": "#dde3ee", "primary-fixed-dim": "#00daf3", "background": "#0e141c", "primary-fixed": "#9cf0ff", "on-secondary": "#562000", "surface": "#0e141c", "on-secondary-fixed": "#341100", "secondary-fixed": "#ffdbcb", "tertiary-container": "#22ef7e", "inverse-surface": "#dde3ee", "surface-tint": "#00daf3", "surface-container-low": "#161c24", "on-error-container": "#ffdad6", "inverse-on-surface": "#2b3139", "surface-container": "#1a2028", "tertiary": "#b1ffbf", "on-primary": "#00363d", "tertiary-fixed-dim": "#00e475", "surface-dim": "#0e141c", "on-secondary-container": "#562000", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "on-primary-container": "#00626e", "outline": "#849396" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin-mobile": "1rem", "margin": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-md": ["Inter"], "metric-md": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "code-param": ["JetBrains Mono"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-sm": ["Inter"], "headline-md": ["Space Grotesk"], "metric-xl": ["JetBrains Mono"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "metric-md": ["16px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-param": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "title-sm": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }], "metric-xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.03em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,229,255,0.2)]"><span class="material-symbols-outlined text-[20px]">blur_on</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">OpticCut</span><span class="font-metric-md text-code-param text-primary-container leading-none">20W</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#22ef7e]"></span><span class="font-label-mono text-label-mono text-tertiary uppercase">Diodo 20W • Listo</span></div></div></div><div class="flex items-center gap-space-sm"><button aria-label="Estado de conexión máquina" class="h-11 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded flex items-center gap-1.5 transition-colors" type="button"><span class="material-symbols-outlined text-primary-container text-[18px]">link</span><span class="font-label-mono text-label-mono text-on-surface uppercase hidden sm:inline">Conectado</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full gap-space-md">
+<!-- Search and Material Filter Bar -->
+<section class="flex flex-col gap-space-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-11 pl-9 pr-9 bg-surface-container-low rounded-lg text-on-surface font-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container transition-colors" id="materialSearchInput" placeholder="Buscar material, grosor o matriz..." type="text"/>
+<button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-outline hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Category Chips Horizontal Scroll -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5" id="categoryFilterContainer">
+<button class="category-btn h-7 px-3 rounded-full bg-primary-container text-on-primary font-label-mono text-label-mono uppercase shadow-sm flex items-center gap-1 transition-all" data-cat="all" type="button">
+<span>Todos</span>
+<span class="text-[10px] opacity-80">(28)</span>
+</button>
+<button class="category-btn h-7 px-3 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono uppercase flex items-center gap-1 transition-all" data-cat="wood" type="button">
+<span>Maderas</span>
+<span class="text-[10px] opacity-60">(14)</span>
+</button>
+<button class="category-btn h-7 px-3 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono uppercase flex items-center gap-1 transition-all" data-cat="acrylic" type="button">
+<span>Acrílicos</span>
+<span class="text-[10px] opacity-60">(6)</span>
+</button>
+<button class="category-btn h-7 px-3 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono uppercase flex items-center gap-1 transition-all" data-cat="leather" type="button">
+<span>Cuero</span>
+<span class="text-[10px] opacity-60">(5)</span>
+</button>
+<button class="category-btn h-7 px-3 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono uppercase flex items-center gap-1 transition-all" data-cat="mineral" type="button">
+<span>Pizarra/Metal</span>
+<span class="text-[10px] opacity-60">(3)</span>
+</button>
+</div>
+</section>
+<!-- Telemetry Calibration Summary Banner -->
+<section class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[22px]">auto_graph</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold leading-tight">Test Lab</span>
+<span class="h-4 px-1.5 rounded bg-surface-container-highest text-primary-container font-label-mono text-label-mono uppercase tracking-wider">v2.4 Diode</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant truncate mt-0.5">
+          28 Matrices registradas • 12 Calibrados 20W
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest px-2 py-1 rounded shrink-0">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-metric-md text-code-param text-tertiary">99.4%</span>
+</div>
+</section>
+<!-- Action CTA: Fast G-Code Matrix Generator -->
+<section class="relative overflow-hidden bg-gradient-to-r from-surface-container to-surface-container-high rounded-xl p-space-md shadow-lg">
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex flex-col gap-1 max-w-[70%]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">bolt</span>
+<span class="font-headline-md text-title-sm text-secondary">Autogenerador G-Code</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Matriz cuadrícula Speed vs Power (5x5) optimizada para foco de diodo 20W con aire asistido.
+        </p>
+</div>
+<button class="h-10 px-space-sm bg-secondary-container hover:bg-secondary active:scale-95 text-on-secondary font-label-mono text-label-mono uppercase rounded-lg font-bold flex items-center justify-center gap-1.5 shadow-md transition-all shrink-0" id="btnNewGCode" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Crear G-Code</span>
+</button>
+</div>
+</section>
+<!-- Section Title: Matrix Library -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">grid_view</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Historial de Calibraciones</h2>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">Actualizado Hoy</span>
+</div>
+<!-- Cards List of Test Matrices -->
+<div class="flex flex-col gap-space-md" id="matrixListContainer">
+<!-- Card 1: Contrachapado Abedul 3mm -->
+<article class="matrix-card bg-surface-container rounded-xl overflow-hidden shadow-md transition-all" data-category="wood">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<h3 class="font-title-sm text-title-sm text-on-surface truncate">Contrachapado Abedul 3.0mm</h3>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase">Matriz #28-AB • 100-600 mm/min</span>
+</div>
+<span class="h-6 px-2 rounded-full bg-tertiary-container/15 text-tertiary font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Óptimo Verificado
+          </span>
+</div>
+<!-- Visual Matrix Micro Thumbnail & Interactive Inspector -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg items-center">
+<div class="col-span-1 h-20 rounded overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Macro extreme close-up of a 5x5 laser test matrix cut into Baltic Birch plywood sheet, showing varying degrees of dark charred kerf lines, clean cuts through the veneer, and etched test speed numbers in crisp industrial diode workshop lighting with cool cyan rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoG6SkUPiH1l1xfxVzVzfJcuUmDOfpY1IAsqefu0RVDJpXASKyaVGW870WpAbo9DYKM1KMhOB_MgO8XjCX_ojprPfIcE0jBZ_nfsuCOT7Ulg6HzeS0lJaGLHFyOQ2D_0MW_OVllff34o-q1APUYmAWnFxpH3WPIS05Fc-05cS_Eq3GaJzGAVXH_CKD-2Q6PQwdEpltoTxVeVlPmsGEfTiG86Z7jfwqjrfEQfgYhxEy31x7KrFtaCGzPQ"/>
+<div class="absolute inset-0 bg-primary-container/10 flex items-end p-1">
+<span class="font-label-mono text-[9px] bg-surface-container-lowest/80 text-primary-fixed px-1 rounded">5x5 Grid</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col justify-between h-20 py-0.5 px-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline">Punto Dulce</span>
+<span class="font-metric-md text-code-param text-primary font-bold">450 mm/m</span>
+</div>
+<!-- Tactile 20W Segmented Power Bar (85% => 17 of 20 segments) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>Potencia Diódica: 85%</span>
+<span class="text-secondary">17.0W eff</span>
+</div>
+<div class="flex gap-0.5 h-2 w-full bg-surface-container-high rounded-sm p-0.5">
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Pases: <strong class="text-on-surface">2 Pases</strong></span>
+<span>Air Assist: <strong class="text-tertiary">2.5 Bar</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Corte perfecto sin carbonización residual ni humo.
+          </p>
+<button class="select-compare-btn text-primary hover:text-primary-container text-[12px] font-label-mono uppercase flex items-center gap-0.5 shrink-0 ml-2" data-sample="abedul-3mm" type="button">
+<span>Comparar</span>
+<span class="material-symbols-outlined text-[16px]">compare</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Acrílico Negro Opaco 3mm -->
+<article class="matrix-card bg-surface-container rounded-xl overflow-hidden shadow-md transition-all" data-category="acrylic">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<h3 class="font-title-sm text-title-sm text-on-surface truncate">Acrílico Negro Opaco (PMMA) 3mm</h3>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase">Matriz #24-ACR • 150-450 mm/min</span>
+</div>
+<span class="h-6 px-2 rounded-full bg-primary-container/15 text-primary-container font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+            Corte Pulido
+          </span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg items-center">
+<div class="col-span-1 h-20 rounded overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Extreme macro photographic detail of glossy jet black cast acrylic plastic cut by 20 watt blue diode laser beam showing perfectly smooth glassy melted flame-polished edge with no slag or recast burrs on clean dark anodized metal ruler." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD00VmkMYG0-qANM_-W680r0On_jHpQdA4Q2rGoP2d2EYby2fY_ZccA9bPSaF5KYlVmiTk1M3Xmj7J5gfnyqQR1MTjgDfHRO0tWUFow_fTN4iiYlCuf_yUSFdWBex8WSMkVnNDtD1xAfgqq7Ob-3EFwdqBeWlMZCo1YxPjBbQVuFy89nEuPdANFckVGyjak--7DmCjoiCNSnrXbhahfo3s2Qw2udL0HyLRiSdIFLOQ4s9OQPM2YFoNgiA"/>
+<div class="absolute inset-0 bg-primary-container/10 flex items-end p-1">
+<span class="font-label-mono text-[9px] bg-surface-container-lowest/80 text-primary-fixed px-1 rounded">Vapor Edge</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col justify-between h-20 py-0.5 px-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline">Punto Dulce</span>
+<span class="font-metric-md text-code-param text-primary font-bold">280 mm/m</span>
+</div>
+<!-- Tactile Segmented Power Bar (90% => 18 segments) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>Potencia: 90%</span>
+<span class="text-secondary-container">18.0W eff</span>
+</div>
+<div class="flex gap-0.5 h-2 w-full bg-surface-container-high rounded-sm p-0.5">
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-secondary-container rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Pases: <strong class="text-on-surface">1 Pase</strong></span>
+<span>Air Assist: <strong class="text-outline">Off (Bajo)</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-primary-container text-[16px]">flare</span>
+            Corte espejo al canto sin rebabas ni soldadura posterior.
+          </p>
+<button class="select-compare-btn text-primary hover:text-primary-container text-[12px] font-label-mono uppercase flex items-center gap-0.5 shrink-0 ml-2" data-sample="acrilico-3mm" type="button">
+<span>Comparar</span>
+<span class="material-symbols-outlined text-[16px]">compare</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Cuero Curtido Vegetal 2mm -->
+<article class="matrix-card bg-surface-container rounded-xl overflow-hidden shadow-md transition-all" data-category="leather">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<h3 class="font-title-sm text-title-sm text-on-surface truncate">Cuero Curtido Vegetal 2.0mm</h3>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase">Matriz #19-LEA • Raster + Vector</span>
+</div>
+<span class="h-6 px-2 rounded-full bg-secondary-container/15 text-secondary-container font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">brush</span>
+            Grabado Sepia
+          </span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg items-center">
+<div class="col-span-1 h-20 rounded overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Macro top-down photography of natural tan vegetable tanned leather engraved with laser raster gradient test chart, displaying rich carmelized brown tones, sharp fine lettering, and uniform crosshatch fill patterns in a clean workshop setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx2hZ76n_-_bM-8V6EfHx2O1VcPkFZUzp1zJmia1CYDZixUJoUTXAS011IUsiChgmD12JQagqQ8J86kqwORV9TRi_1ocf3NM2LXr569-Ol7KVHMYYbqzDVuDRqEdHqLcuY8ppwi_LnAK7oWaiIvNuHbzyJOiYVyKPmzOsRi9c2uGiaszU9GXxVhSRHb2s8qsxYXQJaEkMTzEV62qz3UgMW_ltkJMBUNYwGeijBH8ThWL45dOjuX1UTTQ"/>
+<div class="absolute inset-0 bg-secondary/10 flex items-end p-1">
+<span class="font-label-mono text-[9px] bg-surface-container-lowest/80 text-secondary-fixed px-1 rounded">318 DPI</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col justify-between h-20 py-0.5 px-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline">Punto Grabado</span>
+<span class="font-metric-md text-code-param text-secondary font-bold">3500 mm/m</span>
+</div>
+<!-- Tactile Segmented Power Bar (22% => 4 segments) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>Potencia: 22%</span>
+<span class="text-primary-container">4.4W eff</span>
+</div>
+<div class="flex gap-0.5 h-2 w-full bg-surface-container-high rounded-sm p-0.5">
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Resolución: <strong class="text-on-surface">318 DPI</strong></span>
+<span>Línea: <strong class="text-tertiary">0.08mm</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">palette</span>
+            Tono sepia profundo sin quemar la flor del cuero.
+          </p>
+<button class="select-compare-btn text-primary hover:text-primary-container text-[12px] font-label-mono uppercase flex items-center gap-0.5 shrink-0 ml-2" data-sample="cuero-2mm" type="button">
+<span>Comparar</span>
+<span class="material-symbols-outlined text-[16px]">compare</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Pizarra Natural -->
+<article class="matrix-card bg-surface-container rounded-xl overflow-hidden shadow-md transition-all" data-category="mineral">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h3 class="font-title-sm text-title-sm text-on-surface truncate">Pizarra Natural Gris Oscura</h3>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase">Matriz #11-SLT • Fractura Térmica</span>
+</div>
+<span class="h-6 px-2 rounded-full bg-surface-container-highest text-primary font-label-mono text-label-mono uppercase tracking-wider flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">contrast</span>
+            Contraste Blanco
+          </span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg items-center">
+<div class="col-span-1 h-20 rounded overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="Micro texture photograph of natural dark rugged slate stone surface laser engraved with pure white frosty mineral micro fractures forming high precision typography and vector filigree under sharp industrial side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy7H5Ros0LskM0DE2TKM2XCTw0sxOS3SWTlxyCv05jZxUU_I2IU9MkdXjAznhd8GWhiK2BRicAZSy7Ho4MVkVMx3E570Bybxmt303jMXSvK7B8KbydpwOHNZNSloKEPlgHbNbBMlqGLFWaWaTluVf3dX7inSO2exU9g6T6-kzrHZI2i75UtdrMph2xYj6XIvmjvtsDF9JGvOtcalFOj_M5jJw3bOXsuwuweDiTPXskDLKnc7uzvYJj2w"/>
+<div class="absolute inset-0 bg-primary/10 flex items-end p-1">
+<span class="font-label-mono text-[9px] bg-surface-container-lowest/80 text-primary px-1 rounded">Fracture</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col justify-between h-20 py-0.5 px-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline">Punto Grabado</span>
+<span class="font-metric-md text-code-param text-primary font-bold">2500 mm/m</span>
+</div>
+<!-- Tactile Segmented Power Bar (40% => 8 segments) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>Potencia: 40%</span>
+<span class="text-primary-container">8.0W eff</span>
+</div>
+<div class="flex gap-0.5 h-2 w-full bg-surface-container-high rounded-sm p-0.5">
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-primary-container rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+<div class="flex-1 bg-surface-variant rounded-xs"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Pases: <strong class="text-on-surface">1 Pase</strong></span>
+<span>Enfoque: <strong class="text-primary-container">+0.5mm Desfoc</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-primary text-[16px]">wb_sunny</span>
+            Blanco tiza puro por microfractura térmica sin grabado profundo.
+          </p>
+<button class="select-compare-btn text-primary hover:text-primary-container text-[12px] font-label-mono uppercase flex items-center gap-0.5 shrink-0 ml-2" data-sample="pizarra-nat" type="button">
+<span>Comparar</span>
+<span class="material-symbols-outlined text-[16px]">compare</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Visual Sample Comparator (Dual Macro Kerf & Bevel Inspection Module) -->
+<section class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-xl mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">flip_camera_ios</span>
+<div>
+<h3 class="font-headline-md text-title-sm text-on-surface">Comparador Óptico de Bisel y Kerf</h3>
+<p class="font-label-mono text-label-mono text-outline uppercase">Análisis macro de carbonización (50x)</p>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1 text-[11px] font-label-mono uppercase flex items-center gap-0.5" id="resetComparatorBtn" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+        Reiniciar
+      </button>
+</div>
+<!-- Comparative Split Card View -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Sample Left -->
+<div class="bg-surface-container rounded-lg p-2 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="h-4 px-1.5 rounded bg-surface-container-highest font-label-mono text-[9px] text-primary uppercase">Muestra A</span>
+<span class="font-label-mono text-[10px] text-tertiary">Bisel: 89.2°</span>
+</div>
+<div class="relative h-24 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Microscopic laboratory view of cross section laser cut through plywood edge showing wood grain fibers, minimal heat affected zone, razor clean vertical cut profile with measurement micrometric grid overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuHxj_nvdjv-ghTyH0eWnj9W61qoZ8jAqRjs2OVvK7f40gZYqX2rAgPvQzgY0_xECGsH6Rp0EtfEKXW9BZUjTII9eSrlca7ACyl9sVaDiOs5iSfx5Tss8l_wLd8ITlWGoF15XZfzh1d7bWIZ1Ipj5O6cMOtY3l3Iqqk4pzELAUYFsfipuAjdxMPFkyD9DEuTsmj68cnAGiJw6ktLkA8h8zF_rPZ6eAc9oWBDPRmqfio6RIiHMKnRBPBg"/>
+<div class="absolute top-1 left-1 bg-surface-container-lowest/80 backdrop-blur-sm px-1 rounded font-label-mono text-[9px] text-on-surface">
+            Abedul 450mm/m
+          </div>
+</div>
+<div class="flex flex-col gap-0.5 font-label-mono text-[10px]">
+<div class="flex justify-between text-outline">
+<span>Carbonización:</span>
+<span class="text-tertiary font-semibold">Mínima (0.04mm)</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Conicidad (Kerf):</span>
+<span class="text-on-surface">0.11 mm</span>
+</div>
+</div>
+</div>
+<!-- Sample Right -->
+<div class="bg-surface-container rounded-lg p-2 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="h-4 px-1.5 rounded bg-surface-container-highest font-label-mono text-[9px] text-secondary-container uppercase">Muestra B</span>
+<span class="font-label-mono text-[10px] text-secondary">Bisel: 87.8°</span>
+</div>
+<div class="relative h-24 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High magnification inspection of blackened edge on wood cut too slowly by diode laser, revealing severe charring, soot deposits, and flared kerf taper under optical inspection microscope." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZG6yxLI6XQo1q06Ns1ifCufxF18bgK2bpYCyQE81XIz-SobIdTv76zqRUSEGbT2aaTCBbvLnXokKl7A-VBXIY4YWyo5VRjyejLYnnSgXUsPNR-0YC0Yc2pgpG5sHXYVm4mDKz7IH2Yo5aO6UllFP4bZ3HU2vN0p_T651psmLsbf7-wA41C-21oZoRnMu5ThigEWgSSzhyFBry6EcVtCqEhMUKkfTyA51ivEdSmjr7szCDkt7Pm8v8Fw"/>
+<div class="absolute top-1 left-1 bg-surface-container-lowest/80 backdrop-blur-sm px-1 rounded font-label-mono text-[9px] text-on-surface">
+            Abedul 300mm/m
+          </div>
+</div>
+<div class="flex flex-col gap-0.5 font-label-mono text-[10px]">
+<div class="flex justify-between text-outline">
+<span>Carbonización:</span>
+<span class="text-error font-semibold">Excesiva (0.28mm)</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Conicidad (Kerf):</span>
+<span class="text-on-surface">0.24 mm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Comparative Quick Insight Bar -->
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-label-mono text-label-mono">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">psychology</span>
+<span>Veredicto IA Lab: Muestra A reduce tiempo de corte en 33% sin quemaduras</span>
+</div>
+</div>
+</section>
+<!-- Interactive G-Code Matrix Modal / Bottom Sheet Drawer (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4" id="gcodeModal">
+<div class="bg-surface-container w-full max-w-lg rounded-t-2xl sm:rounded-xl p-space-lg flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-secondary-container/20 text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">Generar Matriz G-Code</h4>
+<span class="font-label-mono text-label-mono text-outline">OpticCut 20W GRBL Engine</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm font-label-mono text-body-sm text-on-surface-variant">
+<label class="flex flex-col gap-1">
+<span class="text-label-mono uppercase text-outline">Tipo de Matriz</span>
+<select class="h-10 px-3 bg-surface-container-low rounded text-on-surface focus:outline-none">
+<option>Matriz de Corte 5x5 (Velocidad vs Potencia)</option>
+<option>Matriz de Grabado Raster 7x7 (DPI vs Potencia)</option>
+<option>Test de Foco Z (+/- 3mm dinámico)</option>
+</select>
+</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex flex-col gap-1">
+<span class="text-label-mono uppercase text-outline">Rango Vel (mm/min)</span>
+<input class="h-10 px-3 bg-surface-container-low rounded text-on-surface focus:outline-none font-code-param" type="text" value="200 - 800"/>
+</label>
+<label class="flex flex-col gap-1">
+<span class="text-label-mono uppercase text-outline">Rango Potencia (%)</span>
+<input class="h-10 px-3 bg-surface-container-low rounded text-on-surface focus:outline-none font-code-param" type="text" value="40% - 95%"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-11 bg-primary-container text-on-primary font-label-mono text-label-mono uppercase font-bold rounded flex items-center justify-center gap-1.5 shadow-md" id="btnSendMachine" type="button">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Enviar a Máquina</span>
+</button>
+<button class="h-11 px-space-md bg-surface-container-high text-on-surface font-label-mono text-label-mono uppercase rounded flex items-center justify-center gap-1" id="btnDownloadGCode" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>.NC</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Category Filtering Logic
+  const filterButtons = document.querySelectorAll('.category-btn');
+  const matrixCards = document.querySelectorAll('.matrix-card');
+  const searchInput = document.getElementById('materialSearchInput');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+      const cat = btn.getAttribute('data-cat');
+      matrixCards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Material Search Filter
+  searchInput.addEventListener('input', (e) => {
+    const val = e.target.value.toLowerCase().trim();
+    matrixCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(val)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  // Modal G-Code Controls
+  const gcodeModal = document.getElementById('gcodeModal');
+  const btnNewGCode = document.getElementById('btnNewGCode');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const btnSendMachine = document.getElementById('btnSendMachine');
+
+  btnNewGCode.addEventListener('click', () => {
+    gcodeModal.classList.remove('hidden');
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    gcodeModal.classList.add('hidden');
+  });
+
+  btnSendMachine.addEventListener('click', () => {
+    btnSendMachine.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Transmitiendo...</span>`;
+    setTimeout(() => {
+      btnSendMachine.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span><span>G-Code En Cola</span>`;
+      setTimeout(() => {
+        gcodeModal.classList.add('hidden');
+        btnSendMachine.innerHTML = `<span class="material-symbols-outlined text-[18px]">send_to_mobile</span><span>Enviar a Máquina</span>`;
+      }, 1000);
+    }, 1200);
+  });
+
+  // Interactive sample selector for optical comparator
+  const compareButtons = document.querySelectorAll('.select-compare-btn');
+  compareButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const currentText = btn.querySelector('span:first-child');
+      const prev = currentText.textContent;
+      currentText.textContent = 'Enfocado en Lab';
+      btn.classList.add('text-tertiary');
+      setTimeout(() => {
+        currentText.textContent = prev;
+        btn.classList.remove('text-tertiary');
+      }, 1500);
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="ia-parametros" href="#"><span class="material-symbols-outlined text-[22px]">target</span><span class="font-label-mono text-label-mono uppercase">IA Calc</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="mi-maquina" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-mono text-label-mono uppercase">Máquina</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 transition-colors text-primary-container" data-path="test-lab" href="#"><span class="material-symbols-outlined text-[22px]">science</span><span class="font-label-mono text-label-mono uppercase">Test Lab</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="nuevo-test" href="#"><span class="material-symbols-outlined text-[22px]">add_a_photo</span><span class="font-label-mono text-label-mono uppercase">+ Test</span></a></div></nav></body></html>

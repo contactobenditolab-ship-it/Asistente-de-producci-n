@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#00210b", "error": "#ffb4ab", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "tertiary-fixed": "#62ff96", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "inverse-on-surface": "#2b3139", "on-tertiary": "#003918", "surface-container": "#1a2028", "surface-container-high": "#242a33", "background": "#0e141c", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "surface-bright": "#343a42", "on-surface-variant": "#bac9cc", "error-container": "#93000a", "primary-fixed-dim": "#00daf3", "surface-container-highest": "#2f353e", "on-secondary-container": "#562000", "surface-dim": "#0e141c", "on-secondary-fixed-variant": "#7a3000", "primary": "#c3f5ff", "on-tertiary-fixed-variant": "#005226", "on-primary-container": "#00626e", "tertiary-container": "#22ef7e", "surface-container-low": "#161c24", "on-error": "#690005", "on-error-container": "#ffdad6", "outline-variant": "#3b494c", "tertiary": "#b1ffbf", "primary-container": "#00e5ff", "primary-fixed": "#9cf0ff", "inverse-primary": "#006875", "surface-tint": "#00daf3", "secondary-container": "#fd6c00", "secondary-fixed": "#ffdbcb", "on-secondary-fixed": "#341100", "surface": "#0e141c", "on-background": "#dde3ee", "tertiary-fixed-dim": "#00e475", "outline": "#849396", "on-primary": "#00363d", "on-tertiary-container": "#006731", "on-surface": "#dde3ee", "inverse-surface": "#dde3ee", "secondary-fixed-dim": "#ffb692" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "code-param": [ "JetBrains Mono" ], "metric-md": [ "JetBrains Mono" ], "label-mono": [ "JetBrains Mono" ], "metric-xl": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "display-hero-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ] }, "fontSize": { "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Bendito Lab" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">BENDITO LAB</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">Suite Láser CNC</span></div></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-mono text-label-mono uppercase text-tertiary font-semibold tracking-wider">20W DIODO</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">VEVOR JL3-PRO (30x30cm)</span><span class="text-outline-variant font-label-mono text-label-mono">•</span><span class="font-label-mono text-label-mono text-tertiary uppercase tracking-wider">CONECTADO</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-primary font-semibold shadow-sm"><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="calculadora-cotizador" href="#">Calculadora &amp; Cotizador</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="paso-a-paso-usos" href="#">Paso a Paso &amp; Usos</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="asistente-ia-taller" href="#">Asistente IA Taller</a><a class="px-space-md py-space-sm rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="ficha-maquina" href="#">Ficha Máquina</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-lg"><span class="font-code-param text-code-param text-on-surface-variant">ESTADO:</span><span class="font-metric-md text-metric-md text-primary font-bold">STANDBY</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Top Telemetry & Global Connection Status -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-highest rounded-lg">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary-fixed-dim"></span>
+</span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-semibold tracking-wider">CONECTADO: SUPABASE EU-CENTRAL-1 (FRANKFURT)</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary text-metric-md">speed</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">LATENCIA:</span>
+<span class="font-metric-md text-metric-md text-primary font-bold" id="pingValue">24 ms</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-metric-md">security</span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-medium">RLS ROW POLICIES: 18 ACTIVAS</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end lg:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-mono text-label-mono uppercase transition-colors" id="btnPingTest">
+<span class="material-symbols-outlined text-primary text-body-md animate-none" id="pingIcon">sync</span>
+<span>Test de Conexión</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-primary-container hover:brightness-110 text-on-primary-fixed font-title-sm text-body-sm font-semibold rounded-lg shadow-sm transition-all" id="btnSyncAll">
+<span class="material-symbols-outlined text-body-md">cloud_sync</span>
+<span>Sincronizar Todo Ahora</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Cards Stack -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Postgres DB -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">DATABASE ENGINE</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs">PostgreSQL 15.6</span>
+</div>
+<span class="p-space-xs bg-surface-container rounded-lg text-primary">
+<span class="material-symbols-outlined">database</span>
+</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface-variant">REGISTROS TOTALES:</span>
+<span class="text-tertiary font-bold">142 ROWS EN 5 TABLAS</span>
+</div>
+</div>
+<!-- Card 2: Cloud Storage -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">STORAGE POOL</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-space-xs">1.2 GB <span class="text-body-sm font-normal text-on-surface-variant">/ 5.0 GB</span></span>
+</div>
+<span class="p-space-xs bg-surface-container rounded-lg text-secondary">
+<span class="material-symbols-outlined">hard_drive</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 24%;"></div>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>USO DE BUCKETS</span>
+<span class="text-secondary font-semibold">24% ASIGNADO</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Offline Mode & Buffer -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">MODO TALLER CNC</span>
+<span class="font-headline-md text-headline-md text-tertiary mt-space-xs">Offline-First</span>
+</div>
+<span class="p-space-xs bg-surface-container rounded-lg text-tertiary">
+<span class="material-symbols-outlined">cloud_off</span>
+</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface-variant">COLA EN LOCAL (IDB):</span>
+<span class="text-on-surface font-semibold" id="offlineQueueBadge">0 PENDIENTES</span>
+</div>
+</div>
+<!-- Card 4: WebSocket Realtime -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">REALTIME STREAM</span>
+<span class="font-headline-md text-headline-md text-primary mt-space-xs">Canal Activo</span>
+</div>
+<span class="p-space-xs bg-surface-container rounded-lg text-primary">
+<span class="material-symbols-outlined">cell_tower</span>
+</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface-variant">BROADCAST GRBL:</span>
+<span class="text-primary font-bold">115.2k BAUD SYNC</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Split: Credentials & Schemas -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Credentials & Environment (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Environment Selector -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface-variant">ENTORNO DE EJECUCIÓN</span>
+<span class="px-space-xs py-0.5 bg-secondary-container/20 text-secondary font-label-mono text-label-mono uppercase rounded">LIVE</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<button class="py-space-xs px-space-sm rounded font-body-sm font-medium bg-surface-container-high text-primary shadow-sm flex items-center justify-center gap-space-xs" id="envProd">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Taller Local (Prod)</span>
+</button>
+<button class="py-space-xs px-space-sm rounded font-body-sm font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-space-xs" id="envStaging">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>Pruebas (Staging)</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            El entorno de producción apunta al clúster dedicado con réplica local SQLite en la PC de control del Vevor JL3-PRO.
+          </p>
+</div>
+<!-- Connection Parameters Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-metric-md">key</span>
+<span class="font-title-sm text-title-sm text-on-surface">Credenciales del Proyecto</span>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase">AES-256 GCM</span>
+</div>
+<!-- URL Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center justify-between">
+<span>PROJECT URL</span>
+<span class="text-tertiary">TLS 1.3</span>
+</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs focus-within:ring-1 focus-within:ring-primary">
+<input class="bg-transparent font-code-param text-code-param text-on-surface w-full outline-none select-all" id="inputUrl" readonly="" type="text" value="https://bendito-laser-prod.supabase.co"/>
+<button class="text-on-surface-variant hover:text-primary transition-colors ml-space-xs" onclick="copyField('inputUrl')" title="Copiar URL">
+<span class="material-symbols-outlined text-body-md">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Anon Key Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center justify-between">
+<span>API ANON KEY (PUBLIC)</span>
+<span class="text-primary font-normal">Acceso Frontend</span>
+</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs focus-within:ring-1 focus-within:ring-primary">
+<input class="bg-transparent font-code-param text-code-param text-on-surface w-full outline-none select-all" id="inputAnon" readonly="" type="password" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJlbmRpdG8tcHJvZCIsInJvbGUiOiJhbm9uIn0.k9z94Fv_JL3PRO_LaserDiode_98"/>
+<button class="text-on-surface-variant hover:text-on-surface mr-space-xs" onclick="toggleVisibility('inputAnon', this)">
+<span class="material-symbols-outlined text-body-md">visibility</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors" onclick="copyField('inputAnon')" title="Copiar Key">
+<span class="material-symbols-outlined text-body-md">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Service Role Key Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-secondary uppercase flex items-center justify-between">
+<span>SERVICE_ROLE KEY (SECRET)</span>
+<span class="text-error font-semibold">IndexedDB Local</span>
+</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-space-md py-space-xs focus-within:ring-1 focus-within:ring-secondary">
+<input class="bg-transparent font-code-param text-code-param text-secondary w-full outline-none select-all" id="inputService" readonly="" type="password" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJlbmRpdG8tcHJvZCIsInJvbGUiOiJzZXJ2aWNlX3JvbGUifQ.X991aF8Vevor20wMasterKey_SecureLocal"/>
+<button class="text-on-surface-variant hover:text-on-surface mr-space-xs" onclick="toggleVisibility('inputService', this)">
+<span class="material-symbols-outlined text-body-md">visibility</span>
+</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors" onclick="copyField('inputService')" title="Copiar Key">
+<span class="material-symbols-outlined text-body-md">content_copy</span>
+</button>
+</div>
+<span class="font-label-mono text-label-mono text-outline-variant mt-space-xs">
+              * Guardada en baúl encriptado del navegador. Usada únicamente por scripts de cálculo de coste y mermas sin CORS.
+            </span>
+</div>
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<button class="w-full py-space-xs px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-mono text-label-mono uppercase flex items-center justify-center gap-space-xs transition-colors" id="btnExportDDL">
+<span class="material-symbols-outlined text-body-md text-primary">terminal</span>
+<span>Generar DDL Migration Script</span>
+</button>
+<button class="w-full py-space-xs px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-mono text-label-mono uppercase flex items-center justify-center gap-space-xs transition-colors" id="btnExportSQL">
+<span class="material-symbols-outlined text-body-md text-secondary">file_download</span>
+<span>Exportar Dump SQL Completo</span>
+</button>
+</div>
+</div>
+<!-- Hardware Station Visual Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">NODO TALLER ASOCIADO</span>
+<span class="font-label-mono text-label-mono text-tertiary">ONLINE</span>
+</div>
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover opacity-60" data-alt="A modern industrial digital fabrication workshop featuring a Vevor JL3-PRO 20W diode laser cutting machine with blue optical laser head, acrylic enclosure, and precision CNC aluminum rail guides bathed in cyan ambient lighting and deep carbon shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIdIiHrucSt0frFblqy9bN1zEjqo-vE5yORnDFXQ48rIVqygOmB5wxrcTDCxZY6a_RCxRcaW5djkAZ5DcwHhd9xQNbx7d6s80Ikyi5LJCFvjWXYpJroLUA2Zj00maV4F08GPTxA8R-f_Hy6NB4zi1NVSkLBfU8F0piZsMc59BdRA9EsMViSts6L1rCIZHORk70aD6iFiEkyrw77y5DjwDG8sZ4XXjRg3zy02RbAa9B9eF73ZaUIcDa0A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent flex flex-col justify-end p-space-sm">
+<span class="font-metric-md text-metric-md text-primary font-bold">VEVOR JL3-PRO • 20W DIODO</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">CAMA 300x300 MM | Z=18.5MM FOCO</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Database Schemas & Storage Buckets (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- PostgreSQL Tables Staging -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-metric-md">table_view</span>
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Esquema Relacional PostgreSQL</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 Tablas nucleares sincronizadas para operaciones de taller y corte láser.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-mono text-label-mono text-tertiary bg-surface-container-lowest px-space-sm py-space-xs rounded-lg">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>SYNC EN TIEMPO REAL ACTIVA</span>
+</div>
+</div>
+<!-- Table Items Grid -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: materials_pricing -->
+<div class="bg-surface-container rounded-lg p-space-md hover:bg-surface-container-high transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="p-space-xs bg-surface-container-lowest text-primary rounded-lg">
+<span class="material-symbols-outlined text-metric-xl">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-title-sm text-primary font-mono font-semibold">materials_pricing</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono">38 ROWS</span>
+<span class="px-space-xs py-0.5 bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono uppercase">SYNC: HACE 2 MIN</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                    Precios de plancha (Leroy Merlin, Bazar Chino, Bricomart), mermas (%) y coste/cm² para contrachapado, DM y acrílicos.
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 justify-between md:justify-end">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleSyncRow(this, 'materials_pricing')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-checked:bg-primary-container rounded-full relative transition-colors after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"></div>
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">AUTO</span>
+</label>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface rounded font-label-mono text-label-mono uppercase flex items-center gap-space-xs transition-colors">
+<span>DataGrid</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 2: production_presets_20w -->
+<div class="bg-surface-container rounded-lg p-space-md hover:bg-surface-container-high transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="p-space-xs bg-surface-container-lowest text-secondary rounded-lg">
+<span class="material-symbols-outlined text-metric-xl">tune</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-title-sm text-secondary font-mono font-semibold">production_presets_20w</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono">46 ROWS</span>
+<span class="px-space-xs py-0.5 bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono uppercase">SYNC: HACE 5 MIN</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                    Matrices validadas JL3-PRO: velocidades (mm/min), potencia ($30=1000), pases, galga Z=18.5mm, compensación kerf sin aire.
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 justify-between md:justify-end">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleSyncRow(this, 'production_presets_20w')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-checked:bg-primary-container rounded-full relative transition-colors after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"></div>
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">AUTO</span>
+</label>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface rounded font-label-mono text-label-mono uppercase flex items-center gap-space-xs transition-colors">
+<span>DataGrid</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 3: lightburn_files -->
+<div class="bg-surface-container rounded-lg p-space-md hover:bg-surface-container-high transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="p-space-xs bg-surface-container-lowest text-tertiary rounded-lg">
+<span class="material-symbols-outlined text-metric-xl">layers</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-title-sm text-tertiary font-mono font-semibold">lightburn_files</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono">22 ROWS</span>
+<span class="px-space-xs py-0.5 bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono uppercase">SYNC: OK</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                    Proyectos .lbrn2 vinculados, desglose de capas de grabado/corte (C00 corte rojo, C01 grabado negro, C02 marcado azul).
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 justify-between md:justify-end">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleSyncRow(this, 'lightburn_files')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-checked:bg-primary-container rounded-full relative transition-colors after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"></div>
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">AUTO</span>
+</label>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface rounded font-label-mono text-label-mono uppercase flex items-center gap-space-xs transition-colors">
+<span>DataGrid</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 4: diagnostic_tests -->
+<div class="bg-surface-container rounded-lg p-space-md hover:bg-surface-container-high transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="p-space-xs bg-surface-container-lowest text-primary rounded-lg">
+<span class="material-symbols-outlined text-metric-xl">biotech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-title-sm text-primary font-mono font-semibold">diagnostic_tests</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono">19 ROWS</span>
+<span class="px-space-xs py-0.5 bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono uppercase">SYNC: OK</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                    Lecturas macroscópicas (Toma 01 cenital, Toma 02 canto quemado, Toma 03 reverso), medición delta kerf y dictamen IA.
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 justify-between md:justify-end">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleSyncRow(this, 'diagnostic_tests')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-checked:bg-primary-container rounded-full relative transition-colors after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"></div>
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">AUTO</span>
+</label>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface rounded font-label-mono text-label-mono uppercase flex items-center gap-space-xs transition-colors">
+<span>DataGrid</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Item 5: quotes_orders -->
+<div class="bg-surface-container rounded-lg p-space-md hover:bg-surface-container-high transition-colors flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="p-space-xs bg-surface-container-lowest text-on-surface rounded-lg">
+<span class="material-symbols-outlined text-metric-xl">request_quote</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-title-sm text-on-surface font-mono font-semibold">quotes_orders</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono">17 ROWS</span>
+<span class="px-space-xs py-0.5 bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono uppercase">SYNC: OK</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+                    Presupuestos expedidos, desglose de PVP, coste COGS (luz, desgaste diodo 20W, amortización) y token de pago Stripe.
+                  </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0 justify-between md:justify-end">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="sr-only peer" onchange="toggleSyncRow(this, 'quotes_orders')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-checked:bg-primary-container rounded-full relative transition-colors after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:after:translate-x-4"></div>
+<span class="font-label-mono text-label-mono uppercase text-on-surface-variant">AUTO</span>
+</label>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-surface-bright text-on-surface rounded font-label-mono text-label-mono uppercase flex items-center gap-space-xs transition-colors">
+<span>DataGrid</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Storage Buckets Pool Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-metric-md">inventory_2</span>
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Supabase Storage Buckets</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Archivos binarios, capturas ópticas y documentos de exportación.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-mono text-label-mono text-on-surface-variant">
+<span>COMPRESIÓN WEBP AUTOMÁTICA (85% Q):</span>
+<span class="text-tertiary font-bold">ACTIVA</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Bucket 1: photo-diagnostics -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-primary uppercase">BUCKET PUBLIC</span>
+<span class="font-title-sm text-title-sm text-on-surface font-mono mt-0.5">photo-diagnostics</span>
+</div>
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tomas macroscópicas de calibración de corte y bisel cónico del láser de 20W.
+              </p>
+<div class="pt-space-xs">
+<div class="flex items-center justify-between font-label-mono text-label-mono mb-1">
+<span class="text-on-surface-variant">880 MB</span>
+<span class="text-on-surface">312 ARCHIVOS</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 44%;"></div>
+</div>
+</div>
+</div>
+<!-- Bucket 2: lightburn-projects -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-secondary uppercase">BUCKET RESTRICTED</span>
+<span class="font-title-sm text-title-sm text-on-surface font-mono mt-0.5">lightburn-projects</span>
+</div>
+<span class="material-symbols-outlined text-secondary">folder_zip</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Archivos .lbrn2 versionados y librerías de materiales .clb para LightBurn 2.1.04.
+              </p>
+<div class="pt-space-xs">
+<div class="flex items-center justify-between font-label-mono text-label-mono mb-1">
+<span class="text-on-surface-variant">240 MB</span>
+<span class="text-on-surface">64 ARCHIVOS</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 12%;"></div>
+</div>
+</div>
+</div>
+<!-- Bucket 3: pdf-quotes -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-tertiary uppercase">BUCKET PUBLIC</span>
+<span class="font-title-sm text-title-sm text-on-surface font-mono mt-0.5">pdf-quotes</span>
+</div>
+<span class="material-symbols-outlined text-tertiary">picture_as_pdf</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Presupuestos generados con marca de agua y hoja de ruta de producción de Bendito Lab.
+              </p>
+<div class="pt-space-xs">
+<div class="flex items-center justify-between font-label-mono text-label-mono mb-1">
+<span class="text-on-surface-variant">110 MB</span>
+<span class="text-on-surface">95 ARCHIVOS</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 6%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Event Terminal / Offline Fallback Stream -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-metric-md">terminal</span>
+<span class="font-title-sm text-title-sm text-on-surface">Supabase Realtime Stream &amp; Local Fallback Log</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface uppercase" onclick="clearTerminal()">LIMPIAR</button>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">● STREAM ACTIVO</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-md font-code-param text-code-param text-on-surface-variant flex flex-col gap-1 max-h-48 overflow-y-auto" id="terminalBody">
+<div class="text-outline-variant">[14:22:04.102] [WEBSOCKET] Conectado exitosamente con canal realtime:public:*</div>
+<div class="text-tertiary">[14:23:10.840] [INSERT] materials_pricing :: id 38 (Acrílico Negro Opaco 3mm - Bazar Central) ok</div>
+<div class="text-primary">[14:24:02.112] [BROADCAST] laser_controller :: Status: STANDBY | GRBL $30=1000 comprobado</div>
+<div class="text-on-surface">[14:25:30.415] [UPDATE] production_presets_20w :: id 12 (DM 3mm Corte 380mm/min 90% 1 Pase) sync</div>
+<div class="text-secondary">[14:27:00.002] [STORAGE] upload :: photo-diagnostics/macro_toma02_kerf_test_dm.webp (142 KB)</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant font-label-mono pt-1">
+<span>MOTOR DE RECUPERACIÓN OFFLINE: SQLITE LOCAL → AUTO-FLUSH TRAS RECONEXIÓN</span>
+<span class="text-primary font-bold">FALLBACK ENGINE READY</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleVisibility(inputId, btn) {
+    const input = document.getElementById(inputId);
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function copyField(inputId) {
+    const input = document.getElementById(inputId);
+    navigator.clipboard.writeText(input.value).then(() => {
+      const orig = input.value;
+      input.select();
+      const term = document.getElementById('terminalBody');
+      if (term) {
+        const row = document.createElement('div');
+        row.className = 'text-primary';
+        row.textContent = `[${new Date().toLocaleTimeString()}] [LOCAL] Credencial copiada al portapapeles con éxito.`;
+        term.appendChild(row);
+        term.scrollTop = term.scrollHeight;
+      }
+    });
+  }
+
+  function clearTerminal() {
+    const term = document.getElementById('terminalBody');
+    if (term) {
+      term.innerHTML = `<div class="text-outline-variant">[${new Date().toLocaleTimeString()}] [BUFFER LIMPIADO] Esperando nuevos eventos de Postgres Realtime...</div>`;
+    }
+  }
+
+  function toggleSyncRow(elem, tableName) {
+    const term = document.getElementById('terminalBody');
+    if (!term) return;
+    const isChecked = elem.checked;
+    const row = document.createElement('div');
+    row.className = isChecked ? 'text-tertiary' : 'text-error';
+    row.textContent = `[${new Date().toLocaleTimeString()}] [CONFIG] Sincronización automática de '${tableName}' establecida en: ${isChecked ? 'HABILITADA' : 'PAUSADA'}`;
+    term.appendChild(row);
+    term.scrollTop = term.scrollHeight;
+  }
+
+  // Ping test simulator
+  const btnPing = document.getElementById('btnPingTest');
+  if (btnPing) {
+    btnPing.addEventListener('click', () => {
+      const pingVal = document.getElementById('pingValue');
+      const pingIcon = document.getElementById('pingIcon');
+      if (pingIcon) pingIcon.classList.add('animate-spin');
+      
+      setTimeout(() => {
+        const randPing = Math.floor(Math.random() * 8) + 21;
+        if (pingVal) pingVal.textContent = randPing + ' ms';
+        if (pingIcon) pingIcon.classList.remove('animate-spin');
+        
+        const term = document.getElementById('terminalBody');
+        if (term) {
+          const row = document.createElement('div');
+          row.className = 'text-tertiary';
+          row.textContent = `[${new Date().toLocaleTimeString()}] [PING] Pong recibido de Supabase Frankfurt: ${randPing}ms (RTT estable)`;
+          term.appendChild(row);
+          term.scrollTop = term.scrollHeight;
+        }
+      }, 400);
+    });
+  }
+
+  // Environment Switcher micro-interaction
+  const envProd = document.getElementById('envProd');
+  const envStaging = document.getElementById('envStaging');
+  if (envProd && envStaging) {
+    envProd.addEventListener('click', () => {
+      envProd.className = 'py-space-xs px-space-sm rounded font-body-sm font-medium bg-surface-container-high text-primary shadow-sm flex items-center justify-center gap-space-xs';
+      envStaging.className = 'py-space-xs px-space-sm rounded font-body-sm font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-space-xs';
+      document.getElementById('inputUrl').value = 'https://bendito-laser-prod.supabase.co';
+    });
+    envStaging.addEventListener('click', () => {
+      envStaging.className = 'py-space-xs px-space-sm rounded font-body-sm font-medium bg-surface-container-high text-secondary shadow-sm flex items-center justify-center gap-space-xs';
+      envProd.className = 'py-space-xs px-space-sm rounded font-body-sm font-medium text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-space-xs';
+      document.getElementById('inputUrl').value = 'https://bendito-laser-staging.supabase.co';
+    });
+  }
+
+  // Sync All Simulator
+  const btnSync = document.getElementById('btnSyncAll');
+  if (btnSync) {
+    btnSync.addEventListener('click', () => {
+      btnSync.disabled = true;
+      btnSync.classList.add('opacity-75');
+      const term = document.getElementById('terminalBody');
+      if (term) {
+        const row = document.createElement('div');
+        row.className = 'text-primary font-bold';
+        row.textContent = `[${new Date().toLocaleTimeString()}] [BATCH-SYNC] Iniciando sincronización masiva de 5 tablas con Supabase...`;
+        term.appendChild(row);
+        
+        setTimeout(() => {
+          const endRow = document.createElement('div');
+          endRow.className = 'text-tertiary';
+          endRow.textContent = `[${new Date().toLocaleTimeString()}] [BATCH-SYNC OK] 142 registros cotejados, 0 conflictos detectados. Base de datos al día.`;
+          term.appendChild(endRow);
+          term.scrollTop = term.scrollHeight;
+          btnSync.disabled = false;
+          btnSync.classList.remove('opacity-75');
+        }, 800);
+      }
+    });
+  }
+
+  // DDL Script Modal / Terminal readout
+  const btnDDL = document.getElementById('btnExportDDL');
+  if (btnDDL) {
+    btnDDL.addEventListener('click', () => {
+      const term = document.getElementById('terminalBody');
+      if (term) {
+        const row = document.createElement('div');
+        row.className = 'text-on-surface font-mono text-body-sm';
+        row.textContent = `[${new Date().toLocaleTimeString()}] [DDL MIGRATION GENERATED] CREATE TABLE materials_pricing, production_presets_20w, lightburn_files, diagnostic_tests, quotes_orders WITH RLS ENABLED;`;
+        term.appendChild(row);
+        term.scrollTop = term.scrollHeight;
+      }
+    });
+  }
+
+  const btnSQL = document.getElementById('btnExportSQL');
+  if (btnSQL) {
+    btnSQL.addEventListener('click', () => {
+      const term = document.getElementById('terminalBody');
+      if (term) {
+        const row = document.createElement('div');
+        row.className = 'text-secondary font-mono text-body-sm';
+        row.textContent = `[${new Date().toLocaleTimeString()}] [DUMP SQL] Generando dump comprimido bendito_lab_supabase_backup.sql.gz (1.4 MB)...`;
+        term.appendChild(row);
+        term.scrollTop = term.scrollHeight;
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.4)]"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-mono text-label-mono uppercase"><div class="flex items-center gap-space-sm"><span class="text-tertiary">●</span><span>TELEMETRÍA LOCAL: PUERTO COM3 (115200 BAUD)</span></div><div class="flex items-center gap-space-lg"><span>FIRMWARE GRBL 1.1h</span><span>CALIBRACIÓN DE FOCO: 2.0MM</span><span>© BENDITO LAB PRODUCCIÓN</span></div></div></footer></body></html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#006731", "on-tertiary": "#003918", "primary": "#c3f5ff", "secondary-container": "#fd6c00", "error": "#ffb4ab", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "on-tertiary-fixed-variant": "#005226", "secondary": "#ffb692", "secondary-fixed-dim": "#ffb692", "on-secondary-fixed-variant": "#7a3000", "on-background": "#dde3ee", "surface-container-highest": "#2f353e", "on-error": "#690005", "error-container": "#93000a", "surface-container-lowest": "#090f16", "surface-bright": "#343a42", "inverse-primary": "#006875", "tertiary-fixed": "#62ff96", "primary-container": "#00e5ff", "on-primary-fixed-variant": "#004f58", "surface-container-high": "#242a33", "on-tertiary-fixed": "#00210b", "on-surface": "#dde3ee", "primary-fixed-dim": "#00daf3", "background": "#0e141c", "primary-fixed": "#9cf0ff", "on-secondary": "#562000", "surface": "#0e141c", "on-secondary-fixed": "#341100", "secondary-fixed": "#ffdbcb", "tertiary-container": "#22ef7e", "inverse-surface": "#dde3ee", "surface-tint": "#00daf3", "surface-container-low": "#161c24", "on-error-container": "#ffdad6", "inverse-on-surface": "#2b3139", "surface-container": "#1a2028", "tertiary": "#b1ffbf", "on-primary": "#00363d", "tertiary-fixed-dim": "#00e475", "surface-dim": "#0e141c", "on-secondary-container": "#562000", "surface-variant": "#2f353e", "on-primary-fixed": "#001f24", "on-primary-container": "#00626e", "outline": "#849396" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-md": "0.75rem", "margin-mobile": "1rem", "margin": "1.5rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-md": ["Inter"], "metric-md": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "code-param": ["JetBrains Mono"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "title-sm": ["Inter"], "headline-md": ["Space Grotesk"], "metric-xl": ["JetBrains Mono"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "metric-md": ["16px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-param": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "title-sm": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }], "metric-xl": ["24px", { lineHeight: "28px", letterSpacing: "-0.03em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,229,255,0.2)]"><span class="material-symbols-outlined text-[20px]">blur_on</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">OpticCut</span><span class="font-metric-md text-code-param text-primary-container leading-none">20W</span></div><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#22ef7e]"></span><span class="font-label-mono text-label-mono text-tertiary uppercase">Diodo 20W • Listo</span></div></div></div><div class="flex items-center gap-space-sm"><button aria-label="Estado de conexión máquina" class="h-11 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded flex items-center gap-1.5 transition-colors" type="button"><span class="material-symbols-outlined text-primary-container text-[18px]">link</span><span class="font-label-mono text-label-mono text-on-surface uppercase hidden sm:inline">Conectado</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full pb-8">
+<!-- Header / Subheader Section -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-primary-container font-label-mono text-label-mono uppercase shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+        Análisis Fotográfico
+      </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-label-mono text-label-mono uppercase">
+        Diodo 20W • Óptica F20
+      </span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+      Diagnóstico por Foto y Ajuste LightBurn
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Comparamos la foto física de tu pieza cortada con los parámetros de tu archivo LightBurn para corregir defectos térmicos y optimizar la vida útil del diodo.
+    </p>
+</div>
+<!-- Active LightBurn Source File Container -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md mb-space-md shadow-md">
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-code-param text-code-param text-on-surface truncate font-semibold">caja_alhajero_3mm.lbrn2</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-label-mono text-label-mono uppercase">C02 Rojo</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant truncate">Capa: Corte Ranuras Perimetral</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+</div>
+<!-- Parameter Tag Capsule -->
+<div class="bg-surface-container rounded p-2 flex flex-wrap items-center gap-x-3 gap-y-1 font-code-param text-code-param">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-on-surface font-metric-md">400</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm/min</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-secondary font-metric-md">90%</span>
+<span class="font-label-mono text-label-mono text-secondary">(18W)</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-on-surface font-metric-md">1</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Pase</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">air</span>
+<span class="font-label-mono text-label-mono">Air M8 ON</span>
+</div>
+</div>
+</div>
+<!-- Visual Inspection Viewport (Macro Shot Simulation) -->
+<div class="w-full flex flex-col bg-surface-container-low rounded-xl p-space-md mb-space-md shadow-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">photo_camera_back</span>
+<span class="font-title-sm text-title-sm text-on-surface">Muestra Física de Corte</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary bg-surface-container-highest px-2 py-0.5 rounded">Macro 3.2x • 8K AI</span>
+</div>
+<!-- Photo Container Frame with CAD Registration Markings -->
+<div class="relative w-full h-72 rounded-lg overflow-hidden bg-surface-container-lowest shadow-inner flex items-center justify-center">
+<!-- Macro Cut Texture Placeholder -->
+<img class="w-full h-full object-cover opacity-80 mix-blend-screen" data-alt="Extreme macro extreme close up photograph of laser cut 3mm MDF wood edge showing dark carbon charring, burnt resin line, micro soot deposits, and glowing technological analysis crosshair graphics with optical diagnostic overlays in industrial laboratory lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDKedLJDSf07LzoFvvO4ePuY7cFSfFkMYXVTxc_uGbGqDwlcQ8p8OPxTIYtys3qF73cyLco0WTm-HoXq0L4QTJUu_vc7BYBOmX7qXiK_Q4ytKjzmg1ksrZWApEgwBLV6gkOYMn4tVSKNKNKtU67eEROEkrADhrwLYOzApkbZNO0uZrxnaT9WMRf4G1-mhpnj1oXmGhRu7vySbDQtmCCQRpT5ggoBErnOplTdsS-TdTFeLPiASJyOc7Lw"/>
+<!-- Coordinate Grid and Crosshairs -->
+<div class="absolute inset-0 pointer-events-none flex flex-col justify-between p-3 opacity-60">
+<div class="flex justify-between font-label-mono text-label-mono text-primary-container/80">
+<span>[X:+14.28mm]</span>
+<span>KERF: 0.18mm</span>
+</div>
+<div class="flex justify-center items-center">
+<div class="w-12 h-12 rounded-full border border-primary-container/30 flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-primary-container/50"></span>
+</div>
+</div>
+<div class="flex justify-between font-label-mono text-label-mono text-primary-container/80">
+<span>[Z: 20.00mm]</span>
+<span>OPTIC_TEMP: 42°C</span>
+</div>
+</div>
+<!-- Detection Pin 1: Hollín / Charring (Top-Right edge) -->
+<div class="absolute top-10 right-6 group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-secondary-container/30 animate-ping"></span>
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary shadow-md z-10">
+<span class="font-label-mono text-label-mono font-bold">1</span>
+</div>
+</div>
+<div class="absolute top-7 right-0 min-w-[190px] p-2 bg-surface-container-highest/95 backdrop-blur-md rounded shadow-xl flex flex-col gap-0.5 z-20 pointer-events-none">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span class="font-label-mono text-label-mono uppercase font-bold">Hollín Detectado</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Carbonizado excesivo por calor latente en borde MDF</span>
+</div>
+</div>
+<!-- Detection Pin 2: Micro-desfase térmico / Conicidad (Bottom-Left) -->
+<div class="absolute bottom-16 left-6 group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-primary-container/30 animate-pulse"></span>
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-md z-10">
+<span class="font-label-mono text-label-mono font-bold">2</span>
+</div>
+</div>
+<div class="absolute bottom-7 left-0 min-w-[180px] p-2 bg-surface-container-highest/95 backdrop-blur-md rounded shadow-xl flex flex-col gap-0.5 z-20 pointer-events-none">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[14px]">square_foot</span>
+<span class="font-label-mono text-label-mono uppercase font-bold">Conicidad 86°</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Bisel angular irregular en lugar de 90° recto</span>
+</div>
+</div>
+<!-- Detection Pin 3: Penetración 100% (Center-Bottom) -->
+<div class="absolute bottom-4 right-16 group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<div class="w-5 h-5 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary shadow-md z-10">
+<span class="material-symbols-outlined text-[13px] font-bold">check</span>
+</div>
+</div>
+<div class="absolute bottom-6 right-0 min-w-[160px] p-1.5 bg-surface-container-highest/95 backdrop-blur-md rounded shadow-xl flex items-center gap-1.5 z-20 pointer-events-none">
+<span class="material-symbols-outlined text-tertiary-container text-[14px]">done_all</span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">Penetración 100%</span>
+</div>
+</div>
+</div>
+<!-- Secondary Photo Button -->
+<div class="mt-space-sm flex items-center justify-between gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+        Pieza alineada al plano focal
+      </span>
+<button class="h-9 px-space-sm bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest rounded text-on-surface flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-container">flip_camera_ios</span>
+<span class="font-label-mono text-label-mono uppercase">Cambiar Foto</span>
+</button>
+</div>
+</div>
+<!-- Optical AI Diagnostic Card (Root Cause) -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md mb-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface">Diagnóstico Óptico 20W</h2>
+<span class="font-label-mono text-label-mono text-secondary uppercase">Anomalía Térmica Detectada</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-3 mt-1 flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">warning</span>
+<p class="font-code-param text-code-param text-on-surface font-semibold">Exceso de acumulación térmica en fibra de MDF</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        El láser a 90% (18W) y 400 mm/min generó una sobrefocalización calórica en los aglutinantes de resina. Se provocó tizne y desbalance en la conicidad del corte. El flujo de aire de stock (M8 estándar) fue insuficiente para eyectar las micropartículas humeantes a esa velocidad de avance.
+      </p>
+</div>
+</div>
+<!-- Parameter Comparison Grid (ANTES vs AHORA) -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md mb-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">tune</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Ajuste Quirúrgico Recomendado</h2>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary uppercase bg-surface-container-highest px-2 py-0.5 rounded">Delta Calibrado</span>
+</div>
+<!-- Metric Rows Stack -->
+<div class="flex flex-col gap-2">
+<!-- Metric: Velocidad -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Velocidad</span>
+<span class="font-code-param text-code-param text-on-surface-variant line-through">400 mm/min</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-primary-container font-bold">460 mm/min</span>
+<span class="font-label-mono text-label-mono text-tertiary">+15% velocidad</span>
+</div>
+</div>
+</div>
+<!-- Metric: Potencia -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Potencia Láser</span>
+<span class="font-code-param text-code-param text-on-surface-variant line-through">90% (18.0W)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-secondary font-bold">82% (16.4W)</span>
+<span class="font-label-mono text-label-mono text-secondary">Punto Óptimo Diodo</span>
+</div>
+</div>
+</div>
+<!-- Metric: Pases -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Pases Totales</span>
+<span class="font-code-param text-code-param text-on-surface">1 Pase</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-mono text-label-mono uppercase">Sin Cambios</span>
+</div>
+</div>
+<!-- Metric: Air Assist Pressure -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Asistencia de Aire</span>
+<span class="font-code-param text-code-param text-on-surface-variant line-through">M8 Estándar</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
+<div class="flex flex-col items-end">
+<span class="font-metric-md text-metric-md text-tertiary-container font-bold">2.8 Bar</span>
+<span class="font-label-mono text-label-mono text-tertiary">Eyección Continua</span>
+</div>
+</div>
+</div>
+<!-- Metric: Enfoque Z -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Distancia Focal Z</span>
+<span class="font-code-param text-code-param text-on-surface">20.0 mm</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary-container text-[16px]">cleaning_services</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Limpiar lente</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action CTA Stack -->
+<div class="flex flex-col gap-space-xs w-full">
+<!-- Main Big CTA -->
+<button class="w-full h-13 py-3 px-4 bg-primary-container hover:bg-primary-fixed-dim active:scale-[0.99] rounded text-on-primary font-display-hero-mobile text-[16px] font-bold tracking-normal flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(0,229,255,0.3)] cursor-pointer" id="btn-apply-lbrn" type="button">
+<span class="material-symbols-outlined text-[22px]">save_as</span>
+<span>Aplicar y Actualizar .lbrn2</span>
+</button>
+<!-- Secondary CTA -->
+<button class="w-full h-11 py-2.5 px-4 bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.99] rounded text-on-surface font-title-sm text-title-sm flex items-center justify-center gap-2 transition-all shadow-sm cursor-pointer" type="button">
+<span class="material-symbols-outlined text-primary-container text-[20px]">calculate</span>
+<span>Enviar Ajustes a Calculadora Rápida</span>
+</button>
+<!-- Tertiary Action -->
+<div class="flex justify-center mt-1">
+<a class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary-container hover:underline uppercase tracking-wider py-1 px-2" href="#">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        Descargar .clb corregido para librería LightBurn
+      </a>
+</div>
+</div>
+<!-- Toast Notification Feedback (Hidden by default, triggered via JS) -->
+<div class="fixed bottom-20 inset-x-4 mx-auto max-w-sm bg-surface-container-highest text-on-surface px-4 py-3 rounded-lg shadow-2xl flex items-center gap-3 transition-opacity duration-300 opacity-0 pointer-events-none z-50" id="status-toast">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm font-semibold">Parámetros Inyectados</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">caja_alhajero_3mm.lbrn2 actualizado a 460 mm/min.</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const applyBtn = document.getElementById('btn-apply-lbrn');
+    const toast = document.getElementById('status-toast');
+
+    if (applyBtn && toast) {
+      applyBtn.addEventListener('click', function() {
+        // Micro feedback animation
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        toast.classList.add('opacity-100');
+
+        setTimeout(function() {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 3200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="ia-parametros" href="#"><span class="material-symbols-outlined text-[22px]">target</span><span class="font-label-mono text-label-mono uppercase">IA Calc</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="mi-maquina" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-mono text-label-mono uppercase">Máquina</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="test-lab" href="#"><span class="material-symbols-outlined text-[22px]">science</span><span class="font-label-mono text-label-mono uppercase">Test Lab</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="nuevo-test" href="#"><span class="material-symbols-outlined text-[22px]">add_a_photo</span><span class="font-label-mono text-label-mono uppercase">+ Test</span></a></div></nav></body></html>

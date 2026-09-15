@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#dde3ee", "on-secondary-container": "#562000", "error": "#ffb4ab", "primary-container": "#00e5ff", "secondary-fixed": "#ffdbcb", "error-container": "#93000a", "surface-container-high": "#242a33", "surface-tint": "#00daf3", "on-tertiary-container": "#006731", "surface": "#0e141c", "inverse-primary": "#006875", "on-tertiary-fixed": "#00210b", "primary": "#c3f5ff", "on-primary-container": "#00626e", "on-secondary-fixed-variant": "#7a3000", "surface-container-lowest": "#090f16", "on-secondary": "#562000", "tertiary-fixed": "#62ff96", "inverse-surface": "#dde3ee", "secondary": "#ffb692", "on-primary-fixed-variant": "#004f58", "secondary-fixed-dim": "#ffb692", "on-error": "#690005", "background": "#0e141c", "outline-variant": "#3b494c", "surface-dim": "#0e141c", "secondary-container": "#fd6c00", "on-background": "#dde3ee", "on-primary": "#00363d", "on-surface-variant": "#bac9cc", "tertiary-container": "#22ef7e", "inverse-on-surface": "#2b3139", "on-error-container": "#ffdad6", "outline": "#849396", "tertiary": "#b1ffbf", "primary-fixed-dim": "#00daf3", "tertiary-fixed-dim": "#00e475", "on-tertiary-fixed-variant": "#005226", "primary-fixed": "#9cf0ff", "surface-container": "#1a2028", "surface-container-low": "#161c24", "surface-variant": "#2f353e", "surface-container-highest": "#2f353e", "on-secondary-fixed": "#341100", "on-primary-fixed": "#001f24", "surface-bright": "#343a42", "on-tertiary": "#003918" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2rem", "space-lg": "1.25rem", "margin": "1.5rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "metric-md": [ "JetBrains Mono" ], "display-hero-mobile": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "metric-xl": [ "JetBrains Mono" ], "code-param": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "display-hero": [ "Space Grotesk" ], "title-sm": [ "Inter" ], "body-md": [ "Inter" ], "label-mono": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "metric-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "metric-xl": [ "24px", { "lineHeight": "28px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "code-param": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-hero": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "headline-lg-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-md px-space-xs"><div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center p-space-xs"><img alt="Bendito Lab" class="w-full h-full object-contain filter invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight font-bold leading-none">BENDITO LAB</span><span class="font-body-sm text-body-sm text-on-surface-variant">Parámetros de Producción</span></div></div><div class="px-space-xs py-space-sm bg-surface-container-lowest rounded-lg flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-mono text-label-mono text-tertiary tracking-wider uppercase">Diodo 20W • En Línea | GRBL 1.1f</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,229,255,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="calculadora-control" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Calculadora &amp; Control</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ficha-tecnica-jl3-pro" href="#"><span class="material-symbols-outlined text-[20px]">memory</span><span class="font-title-sm text-title-sm">Ficha Técnica JL3-PRO</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="diagnostico-tests" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="font-title-sm text-title-sm">Diagnóstico &amp; Tests</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="asistente-ia-taller" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-title-sm text-title-sm">Asistente IA Taller</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-sm bg-surface-container rounded-lg"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Área Activa</span><span class="font-code-param text-code-param text-on-surface">300 × 300 mm</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Firmware</span><span class="font-code-param text-code-param text-on-surface">v1.1f Custom</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-mono text-label-mono uppercase">Laser Optic</span><span class="font-code-param text-code-param text-secondary">20.000 mW</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-sm"><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-container">grid_view</span><span class="font-code-param text-code-param text-on-surface">Cama: 300x300mm</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">speed</span><span class="font-code-param text-code-param text-on-surface">Frecuencia: 1kHz</span></div><div class="px-space-md py-space-xs rounded-lg bg-surface-container-high flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="font-code-param text-code-param text-tertiary">LightBurn USB OK</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">terminal</span></button><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm leading-tight text-on-surface">Operador CNC</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Bendito Diode Team</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UvCL7HWEE7NlpV-bHiswdasJApS0MXCTCHWTPZy00oIu0yh9PMMTFCP94T1XW1JKhTzwogVb2kQF7TyFLNKOvp-VAM67_hWKLdDVD6mAKQTZu8Z86daq6v0YxGmKEUCGn-VPsuyOUz16plwm8HNj4Skqe6f-VGhjsWVDA0G3QZhO-k12RXhszI1g9RA1ZzJv7LqwcAO2V6KeDKXqd2Y4OgrN4Vpxh09a1EHrIN-uaDu3H6TAfIZgS2L3Dlq3R3icfHJRuF3UbRrhI"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-space-sm py-0.5 rounded-lg bg-primary-container/10 text-primary-container font-label-mono text-label-mono uppercase tracking-widest">CALC-ENGINE V4.2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Optical Power: 20,000mW High Density</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">Calculadora Rápida &amp; Control de Producción 20W</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vevor JL3-PRO • Compensación Focal &amp; Telemetría en Tiempo Real</p>
+</div>
+<div class="flex items-center gap-space-sm self-stretch lg:self-auto">
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">air</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase leading-none">Air Assist Compresor</span>
+<span class="font-metric-md text-metric-md text-on-surface leading-tight">2.4 Bar • ACTIVO</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-surface-container-lowest font-title-sm text-title-sm hover:opacity-95 shadow-md shadow-primary-container/20 transition-all" id="btn-sync-all">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sincronizar Parámetros con LightBurn</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Parámetros del Material</span>
+</div>
+<span class="font-label-mono text-label-mono text-primary-container bg-surface-container-high px-space-xs py-0.5 rounded">CALC-READY</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Sustrato de Trabajo</label>
+<select class="w-full bg-surface-container-low text-on-surface font-title-sm text-title-sm rounded-lg p-space-sm focus:outline-none focus:bg-surface-container-highest transition-colors" id="calc-material">
+<option data-air="2.5" data-cut-pass="1" data-cut-pwr="92" data-cut-spd="320" data-eng-pwr="35" data-eng-spd="2800" data-focal="18.5" data-kerf="0.14" data-thick="3.0" value="chopo-3mm">Contrachapado Chopo 3.0 mm (Grado Láser)</option>
+<option data-air="2.8" data-cut-pass="1" data-cut-pwr="95" data-cut-spd="240" data-eng-pwr="40" data-eng-spd="2400" data-focal="18.5" data-kerf="0.18" data-thick="3.0" value="mdf-3mm">MDF Fibras 3.0 mm (Standard E1)</option>
+<option data-air="0.8" data-cut-pass="2" data-cut-pwr="90" data-cut-spd="180" data-eng-pwr="22" data-eng-spd="3200" data-focal="20.0" data-kerf="0.11" data-thick="3.0" value="acrilico-3mm">Acrílico Negro Cast Opaco 3.0 mm</option>
+<option data-air="3.0" data-cut-pass="3" data-cut-pwr="100" data-cut-spd="140" data-eng-pwr="45" data-eng-spd="1900" data-focal="18.5" data-kerf="0.22" data-thick="10.0" value="pino-10mm">Madera Maciza Pino Alistonado 10.0 mm</option>
+<option data-air="1.5" data-cut-pass="1" data-cut-pwr="75" data-cut-spd="480" data-eng-pwr="28" data-eng-spd="3600" data-focal="18.5" data-kerf="0.12" data-thick="2.0" value="cuero-2mm">Cuero Curtido Vegetal 2.0 mm</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Modo de Operación</label>
+<div class="grid grid-cols-2 gap-space-xs p-1 bg-surface-container-lowest rounded-lg">
+<button class="py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all bg-surface-container-high text-primary-container shadow-sm flex items-center justify-center gap-1" id="mode-cut" type="button">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+<span>Corte Pasante</span>
+</button>
+<button class="py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1" id="mode-engrave" type="button">
+<span class="material-symbols-outlined text-[16px]">gradient</span>
+<span>Grabado Raster</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Espesor Calibrado</label>
+<span class="font-code-param text-code-param text-primary" id="thick-val">3.0 mm</span>
+</div>
+<input class="w-full accent-primary-container h-1.5 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer" id="thick-slider" max="15.0" min="0.5" step="0.5" type="range" value="3.0"/>
+<div class="flex justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>0.5 mm</span>
+<span>Focus Spot: 0.08 × 0.06 mm</span>
+<span>15 mm</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Velocidad Sugerida</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-primary-container font-bold" id="res-speed">320</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">mm/min</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-1">Feedrate nominal GRBL</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Potencia Óptica</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-secondary font-bold" id="res-power">92%</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant" id="res-watts">(18.4W)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-1">S-Value: S920 / 1000</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Estrategia Pasadas</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-on-surface font-bold" id="res-passes">1</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Pass (Z-step 0)</span>
+</div>
+<span class="font-body-sm text-[11px] text-tertiary mt-1">Kerf estimado: 0.14mm</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Asistencia Neumática</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-xl text-metric-xl text-primary font-bold" id="res-air">2.5</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Bar (High Flow)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-1">Evita carbonización</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[22px]">straighten</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Galga Focal Vevor JL3</span>
+<span class="font-title-sm text-title-sm text-tertiary font-bold" id="res-focal">Bloque Patrón 18.5 mm</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-mono text-[10px] text-on-surface">CAMA PLANA</span>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest hover:text-primary-container transition-all flex items-center justify-center gap-space-xs shadow-sm" id="btn-export-clb">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span class="font-title-sm text-title-sm">Exportar Capa a LightBurn (.clb)</span>
+</button>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-secondary-container text-on-secondary-container hover:opacity-95 font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-all shadow-md shadow-secondary-container/20" id="btn-send-queue">
+<span class="material-symbols-outlined text-[18px]">queue_play_next</span>
+<span>Enviar a Cola de Producción Bendito</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">warning</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seguridad Activa: Gafas OD5+ Obligatorias (455nm)</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary">INTERLOCK OK</span>
+</div>
+</div>
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">grid_4x4</span>
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Cama Interactiva 300 × 300 mm</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant hover:text-primary hover:bg-surface-container-highest font-label-mono text-[11px] transition-colors" id="btn-home">$H (Home)</button>
+<button class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-container font-label-mono text-[11px] hover:bg-primary-container/30 transition-colors" id="btn-frame">Frame Bounding</button>
+</div>
+</div>
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center cursor-crosshair select-none" id="laser-bed">
+<div class="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#3b494c_1px,transparent_1px),linear-gradient(to_bottom,#3b494c_1px,transparent_1px)] bg-[size:30px_30px]"></div>
+<div class="absolute top-2 left-2 font-label-mono text-[10px] text-outline">X0 Y0 (ORIGEN GRBL)</div>
+<div class="absolute top-2 right-2 font-label-mono text-[10px] text-outline">X300 Y0</div>
+<div class="absolute bottom-2 left-2 font-label-mono text-[10px] text-outline">X0 Y300</div>
+<div class="absolute bottom-2 right-2 font-label-mono text-[10px] text-outline">X300 Y300</div>
+<div class="absolute w-[50%] h-[50%] bg-surface-container-high/40 rounded shadow-sm flex flex-col items-center justify-between p-2 transition-all" id="work-piece">
+<div class="w-full flex justify-between font-label-mono text-[9px] text-primary-container uppercase">
+<span>BOUNDING BOX</span>
+<span id="box-dimensions">150 × 150 mm</span>
+</div>
+<div class="flex flex-col items-center justify-center pointer-events-none opacity-80">
+<span class="material-symbols-outlined text-primary text-[32px]">architecture</span>
+<span class="font-code-param text-[11px] text-primary mt-1">PROD-JOB #2409</span>
+</div>
+<div class="w-full flex justify-end font-label-mono text-[9px] text-tertiary">
+<span>Área: 225 cm²</span>
+</div>
+</div>
+<div class="absolute left-0 right-0 h-px bg-primary-container/70 pointer-events-none transition-all duration-75" id="crosshair-h"></div>
+<div class="absolute top-0 bottom-0 w-px bg-primary-container/70 pointer-events-none transition-all duration-75" id="crosshair-v"></div>
+<div class="absolute w-6 h-6 -ml-3 -mt-3 rounded-full bg-secondary/20 flex items-center justify-center pointer-events-none shadow-[0_0_12px_rgba(255,182,146,0.8)] transition-all duration-75" id="laser-head">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="absolute w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 px-space-sm py-0.5 rounded-lg bg-surface-container/90 backdrop-blur-sm flex items-center gap-space-sm font-label-mono text-[11px]">
+<span class="text-on-surface-variant">POS CABEZAL:</span>
+<span class="text-primary-container" id="coord-x">X: 150.0 mm</span>
+<span class="text-primary-container" id="coord-y">Y: 150.0 mm</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Tiempo Estimado</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-lg text-metric-lg text-tertiary font-bold" id="runtime-est">04m 12s</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Vector Pathing Opt.</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Distancia Total</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-lg text-metric-lg text-on-surface font-bold">1,344</span>
+<span class="font-label-mono text-[11px] text-on-surface-variant">mm</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Cortes: 42 tramos</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Carga Diodo 20W</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-metric-lg text-metric-lg text-secondary font-bold" id="thermal-stress">78.2%</span>
+</div>
+<span class="font-body-sm text-[11px] text-tertiary mt-0.5">T° Módulo: 38°C</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs px-space-xs">
+<div class="flex items-center gap-space-xs font-label-mono text-[11px] text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Simulador Activo: Haz clic en la cama para reposicionar cabezal</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-secondary-container/20 text-secondary font-label-mono text-[11px] hover:bg-secondary-container hover:text-on-secondary-container transition-all" id="btn-fire-test">
+            Pulsar Test 1% (200mW)
+          </button>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Vevor JL3-PRO • Perfil de Aceleración</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">X/Y Max Accel: 1200 mm/s² • Jerk Control: Smooth S-Curve</span>
+</div>
+</div>
+<span class="font-label-mono text-label-mono text-primary bg-primary/10 px-space-sm py-1 rounded-lg">CALIBRADO</span>
+</div>
+</div>
+<div class="xl:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container rounded-lg p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">table_rows</span>
+<span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Presets Vevor 20W</span>
+</div>
+<span class="font-label-mono text-label-mono text-tertiary">6 VERIFICADOS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ajustes probados en taller Bendito Lab para corte limpio sin quemaduras laterales.</p>
+<div class="flex flex-col gap-space-xs mt-1" id="presets-list">
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="2.5" data-focal="18.5" data-id="p1" data-kerf="0.14" data-mat="chopo-3mm" data-mode="cut" data-pass="1" data-pwr="92" data-spd="320" data-thick="3.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-primary">Chopo 3.0 mm Corte</span>
+<span class="font-label-mono text-[10px] text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded">1 PASE</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">320</span></div>
+<div>Pot: <span class="text-secondary font-semibold">92%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">2.5b</span></div>
+</div>
+</div>
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="2.8" data-focal="18.5" data-id="p2" data-kerf="0.18" data-mat="mdf-3mm" data-mode="cut" data-pass="1" data-pwr="95" data-spd="240" data-thick="3.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">MDF 3.0 mm Pasante</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">1 PASE</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">240</span></div>
+<div>Pot: <span class="text-secondary font-semibold">95%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">2.8b</span></div>
+</div>
+</div>
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="0.8" data-focal="20.0" data-id="p3" data-kerf="0.11" data-mat="acrilico-3mm" data-mode="cut" data-pass="2" data-pwr="90" data-spd="180" data-thick="3.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Acrílico Negro 3mm</span>
+<span class="font-label-mono text-[10px] text-secondary bg-secondary/10 px-1.5 py-0.5 rounded">2 PASES</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">180</span></div>
+<div>Pot: <span class="text-secondary font-semibold">90%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">0.8b</span></div>
+</div>
+</div>
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="3.0" data-focal="18.5" data-id="p4" data-kerf="0.22" data-mat="pino-10mm" data-mode="cut" data-pass="3" data-pwr="100" data-spd="140" data-thick="10.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Pino Macizo 10mm</span>
+<span class="font-label-mono text-[10px] text-secondary bg-secondary/10 px-1.5 py-0.5 rounded">3 PASES</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">140</span></div>
+<div>Pot: <span class="text-secondary font-semibold">100%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">3.0b</span></div>
+</div>
+</div>
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="0.6" data-focal="18.5" data-id="p5" data-kerf="0.08" data-mat="chopo-3mm" data-mode="engrave" data-pass="1" data-pwr="35" data-spd="2800" data-thick="3.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Grabado Fino Madera</span>
+<span class="font-label-mono text-[10px] text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded">RASTER</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">2800</span></div>
+<div>Pot: <span class="text-secondary font-semibold">35%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">0.6b</span></div>
+</div>
+</div>
+<div class="preset-card bg-surface-container-low hover:bg-surface-container-high rounded-lg p-space-sm cursor-pointer transition-colors" data-air="1.5" data-focal="18.5" data-id="p6" data-kerf="0.12" data-mat="cuero-2mm" data-mode="cut" data-pass="1" data-pwr="75" data-spd="480" data-thick="2.0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface">Cuero Natural 2mm</span>
+<span class="font-label-mono text-[10px] text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">1 PASE</span>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 text-left font-code-param text-[11px] text-on-surface-variant">
+<div>Vel: <span class="text-on-surface font-semibold">480</span></div>
+<div>Pot: <span class="text-secondary font-semibold">75%</span></div>
+<div>Air: <span class="text-primary-container font-semibold">1.5b</span></div>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary-container font-title-sm text-title-sm transition-colors flex items-center justify-center gap-space-xs" id="btn-sync-single">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+<span>Aplicar Preset Seleccionado</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>VIDA LENTE FOCAL</span>
+<span class="text-tertiary">91% RESTANTE</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 91%"></div>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-1">Limpieza con Alcohol Isopropílico sugerida cada 18 horas de corte pasante.</span>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 z-50 bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notify">
+<span class="material-symbols-outlined text-primary-container text-[20px]">check_circle</span>
+<span class="font-title-sm text-title-sm" id="toast-text">Parámetros transferidos con éxito.</span>
+</div>
+<script>
+    (function() {
+      let currentMode = 'cut';
+      const matSelect = document.getElementById('calc-material');
+      const thickSlider = document.getElementById('thick-slider');
+      const thickVal = document.getElementById('thick-val');
+      const btnCut = document.getElementById('mode-cut');
+      const btnEng = document.getElementById('mode-engrave');
+      
+      const resSpeed = document.getElementById('res-speed');
+      const resPower = document.getElementById('res-power');
+      const resWatts = document.getElementById('res-watts');
+      const resPasses = document.getElementById('res-passes');
+      const resAir = document.getElementById('res-air');
+      const resFocal = document.getElementById('res-focal');
+      const runtimeEst = document.getElementById('runtime-est');
+      const thermalStress = document.getElementById('thermal-stress');
+      
+      const laserBed = document.getElementById('laser-bed');
+      const laserHead = document.getElementById('laser-head');
+      const crosshairH = document.getElementById('crosshair-h');
+      const crosshairV = document.getElementById('crosshair-v');
+      const coordX = document.getElementById('coord-x');
+      const coordY = document.getElementById('coord-y');
+      const toast = document.getElementById('toast-notify');
+      const toastText = document.getElementById('toast-text');
+
+      function showToast(msg) {
+        toastText.textContent = msg;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 2500);
+      }
+
+      function recalculate() {
+        const opt = matSelect.options[matSelect.selectedIndex];
+        const baseThick = parseFloat(opt.dataset.thick) || 3.0;
+        const actualThick = parseFloat(thickSlider.value);
+        const thickFactor = actualThick / baseThick;
+        
+        let spd, pwr, passes, air, focal;
+
+        if (currentMode === 'cut') {
+          const baseSpd = parseFloat(opt.dataset.cutSpd);
+          const basePwr = parseFloat(opt.dataset.cutPwr);
+          const basePasses = parseInt(opt.dataset.cutPass);
+
+          if (thickFactor > 1.2) {
+            spd = Math.max(90, Math.round(baseSpd / (thickFactor * 0.85)));
+            pwr = Math.min(100, Math.round(basePwr * 1.05));
+            passes = Math.ceil(basePasses * (thickFactor * 1.1));
+          } else if (thickFactor < 0.8) {
+            spd = Math.round(baseSpd * 1.25);
+            pwr = Math.round(basePwr * 0.85);
+            passes = basePasses;
+          } else {
+            spd = baseSpd;
+            pwr = basePwr;
+            passes = basePasses;
+          }
+          air = parseFloat(opt.dataset.air);
+          focal = opt.dataset.focal;
+        } else {
+          spd = parseFloat(opt.dataset.engSpd);
+          pwr = parseFloat(opt.dataset.engPwr);
+          passes = 1;
+          air = 0.6;
+          focal = opt.dataset.focal;
+        }
+
+        resSpeed.textContent = spd;
+        resPower.textContent = pwr + '%';
+        resWatts.textContent = '(' + (20 * (pwr / 100)).toFixed(1) + 'W)';
+        resPasses.textContent = passes;
+        resAir.textContent = air.toFixed(1);
+        resFocal.textContent = 'Bloque Patrón ' + focal + ' mm';
+
+        const calcTimeSeconds = Math.max(45, Math.round((1344 / spd) * 60 * passes));
+        const mins = Math.floor(calcTimeSeconds / 60).toString().padStart(2, '0');
+        const secs = (calcTimeSeconds % 60).toString().padStart(2, '0');
+        runtimeEst.textContent = mins + 'm ' + secs + 's';
+
+        const stress = (pwr * (passes > 1 ? 0.95 : 0.82)).toFixed(1);
+        thermalStress.textContent = stress + '%';
+      }
+
+      thickSlider.addEventListener('input', (e) => {
+        thickVal.textContent = parseFloat(e.target.value).toFixed(1) + ' mm';
+        recalculate();
+      });
+
+      matSelect.addEventListener('change', () => {
+        const opt = matSelect.options[matSelect.selectedIndex];
+        const t = parseFloat(opt.dataset.thick);
+        thickSlider.value = t;
+        thickVal.textContent = t.toFixed(1) + ' mm';
+        recalculate();
+      });
+
+      btnCut.addEventListener('click', () => {
+        currentMode = 'cut';
+        btnCut.className = 'py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all bg-surface-container-high text-primary-container shadow-sm flex items-center justify-center gap-1';
+        btnEng.className = 'py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1';
+        recalculate();
+      });
+
+      btnEng.addEventListener('click', () => {
+        currentMode = 'engrave';
+        btnEng.className = 'py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all bg-surface-container-high text-primary-container shadow-sm flex items-center justify-center gap-1';
+        btnCut.className = 'py-space-xs px-space-sm rounded font-title-sm text-title-sm transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1';
+        recalculate();
+      });
+
+      function updateLaserPos(pctX, pctY) {
+        pctX = Math.max(0, Math.min(100, pctX));
+        pctY = Math.max(0, Math.min(100, pctY));
+        laserHead.style.left = pctX + '%';
+        laserHead.style.top = pctY + '%';
+        crosshairH.style.top = pctY + '%';
+        crosshairV.style.left = pctX + '%';
+        
+        const mmX = (pctX * 3).toFixed(1);
+        const mmY = (pctY * 3).toFixed(1);
+        coordX.textContent = 'X: ' + mmX + ' mm';
+        coordY.textContent = 'Y: ' + mmY + ' mm';
+      }
+
+      laserBed.addEventListener('click', (e) => {
+        const rect = laserBed.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        updateLaserPos(x, y);
+      });
+
+      document.getElementById('btn-home').addEventListener('click', () => {
+        updateLaserPos(0, 0);
+        showToast('Cabezal retornado a Home GRBL ($H) X0 Y0');
+      });
+
+      document.getElementById('btn-frame').addEventListener('click', () => {
+        updateLaserPos(25, 25);
+        showToast('Framing láser activo: Delimitando caja 150x150mm');
+      });
+
+      document.getElementById('btn-fire-test').addEventListener('click', () => {
+        showToast('Pulso de prueba láser disparado: 1% (200mW) por 500ms');
+      });
+
+      document.getElementById('btn-export-clb').addEventListener('click', () => {
+        showToast('Archivo de capa LightBurn (.clb) generado para Vevor 20W');
+      });
+
+      document.getElementById('btn-send-queue').addEventListener('click', () => {
+        showToast('Trabajo añadido a Cola de Producción Bendito Lab');
+      });
+
+      document.getElementById('btn-sync-all').addEventListener('click', () => {
+        showToast('Todos los perfiles sincronizados con LightBurn vía USB Serial');
+      });
+
+      document.getElementById('btn-sync-single').addEventListener('click', () => {
+        showToast('Preset de material aplicado al calculador principal');
+      });
+
+      document.querySelectorAll('.preset-card').forEach(card => {
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.preset-card').forEach(c => c.classList.remove('bg-surface-container-high', 'ring-1'));
+          card.classList.add('bg-surface-container-high');
+
+          const mat = card.dataset.mat;
+          const thick = parseFloat(card.dataset.thick);
+          const mode = card.dataset.mode;
+
+          matSelect.value = mat;
+          thickSlider.value = thick;
+          thickVal.textContent = thick.toFixed(1) + ' mm';
+
+          if (mode === 'cut') {
+            btnCut.click();
+          } else {
+            btnEng.click();
+          }
+          showToast('Cargado preset: ' + card.querySelector('.font-title-sm').textContent);
+        });
+      });
+
+      updateLaserPos(50, 50);
+      recalculate();
+    })();
+  </script>
+</div></main></div></body></html>
